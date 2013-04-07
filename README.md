@@ -51,6 +51,9 @@ You must update to latest version of Sass (3.2), then Compass(0.13)
     
         @include font-size($size)
 
+        +inline-block
+        +opacity(1)
+
 # Helper Classes
 ========
 * [SASS / SCSS Mixin for Clearfix - best approach?](http://stackoverflow.com/questions/7154705/sass-scss-mixin-for-clearfix-best-approach/7154716#7154716)
@@ -60,11 +63,9 @@ You must update to latest version of Sass (3.2), then Compass(0.13)
             background: url('img/logo.png') no-repeat
             height: 34px
             @extend %ir
-        @extend hidden
-        @extend visuallyhidden
-        @extend invisible
+
         /* Include clearfix on parent elements with floated children */
-        .nav
+        ul
             @extend .clearfix
             li
                 float: left
@@ -107,7 +108,7 @@ Fonts go in the /fonts folder, update the name in _fonts.sass
 
 # Plugins
 ========
-* [Easing](http://gsgd.co.uk/sandbox/jquery/easing/) - **Easing is used in scrollio - located in main.coffee**
+* [Easing](http://gsgd.co.uk/sandbox/jquery/easing/) - Easing is used in **scrollio** - located in main.coffee, but can be removed.
 * [fitVids](https://github.com/davatron5000/FitVids.js)
 
         // Must uncomment the script in plugins.js to use.
