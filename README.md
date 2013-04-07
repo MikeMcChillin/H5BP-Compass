@@ -1,3 +1,12 @@
+========
+     _____    _____    _ _ _ 
+    |   __|  |  |  |  | | | |
+    |__   |  |     |  | | | |
+    |_____|  |__|__|  |_____|
+
+========
+                             
+
 
 This is a **Mobile-First** boilerplate that leverages [HTML5 Boilerplate v. 4.0.1](http://html5boilerplate.com) with [SASS 3.2 - Including @content Mediaqueries](http://sass-lang.com/) & [Compass v0.13](http://compass-style.org/).
 The rest was added & customized by [@MikeMcChillin](https://twitter.com/mikemcchillin)
@@ -8,6 +17,7 @@ You must update to latest version of Sass (3.2), then Compass(0.13):
     sudo gem install compass --pre
 
 # Global Styles
+========
 Refer to these articles
 [* { Box-sizing: Border-box } FTW](http://paulirish.com/2012/box-sizing-border-box-ftw/)
 [Webkit Font Smoothing](http://maxvoltar.com/archive/-webkit-font-smoothing)
@@ -31,9 +41,12 @@ Refer to these articles
         line-height: 1
         text-rendering: optimizeLegibility
 # Mixins
-    **Both a fix for IE 7 & 8 with Rems, and a reminder to always use ems**
+========
+[Mixins for Rem Font Sizing](http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/)
+[SASS / SCSS Mixin for Clearfix - best approach?](http://stackoverflow.com/questions/7154705/sass-scss-mixin-for-clearfix-best-approach/7154716#7154716)
     @include font-size($size)
 # Helper Classes
+========
     /* Replace text with an image */
     .logo
         background: url('img/logo.png') no-repeat
@@ -48,8 +61,9 @@ Refer to these articles
         li
             float: left
 # Animation
-The most efficient way to animate an element is to add a class, and define the styles within sass
-    To animate something, include the following on the element:
+========
+The most efficient way to animate an element is to add a class, and define the styles within sass. Many of these are based on the animations found in [Animate.css](daneden.me/animate/)
+To animate something, include the following on the element:
     @include animated($duration, $delay)
 
     .shake - Used on forms with errors.
@@ -58,8 +72,10 @@ The most efficient way to animate an element is to add a class, and define the s
     .bounceInDown
     .bounceInLeft
 # Fonts
+========
 Fonts go in the /fonts folder, update the name in _fonts.sass
 # Mediaqueries
+========
     // http://blog.divshot.com/post/29552945105/useful-sass-mixins-for-responsive-design-font-sizing
     ///////////////////////
     // Example Usage
@@ -71,6 +87,7 @@ Fonts go in the /fonts folder, update the name in _fonts.sass
         @include respond-to(large-desktop)
             margin-right: 40px
 # Main.coffee
+========
     /* Smooth scrolls, given target and speed */
     scrollio('body', 2000)
 
@@ -78,6 +95,7 @@ Fonts go in the /fonts folder, update the name in _fonts.sass
     // https://gist.github.com/jdennes/1155479
 
 # Plugins
+========
 **easing:** Used in scrollio
     // Fit vids allows for responsive videos - works on Youtube, Vimeo, etc
     // Must uncomment the script in plugins.js to use.
