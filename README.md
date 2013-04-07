@@ -105,7 +105,7 @@ Baked in animations in this repo include: `.shake`, `.fadeIn`, `.fadeOut`, `.bou
 ##### [Responsive @content with Sass v3.2](http://blog.divshot.com/post/29552945105/useful-sass-mixins-for-responsive-design-font-sizing)
 ##### **Start with mobile styles**, and build up from there. You will likely never need to `@include respond-to(phone)`.
 
-    #menu
+    .menu
         margin-right: 10px
         @include respond-to(tablet-portrait)
             margin-right: 20px

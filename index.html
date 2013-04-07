@@ -30,39 +30,152 @@
         <hr>
 
         <section id="main_content">
-          <h3>Welcome to GitHub Pages.</h3>
+            
+     ______     __   __     __     __    
+    /\  ___\   /\ \__\ \   /\ \  _ \ \   
+    \ \___  \  \ \  ___ \  \ \ \/ ".\ \  
+     \/\_____\  \ \_\\ \_\  \ \__/".~\_\ 
+      \/_____/   \/_/ \/_/   \/_/   \/_/ 
+    
+    Simple.Honest.Work.
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+                             
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+This is a **Mobile-First** boilerplate that leverages [HTML5 Boilerplate v. 4.0.1](http://html5boilerplate.com) with [SASS 3.2 - Including @content Mediaqueries](http://sass-lang.com/) & [Compass v0.13](http://compass-style.org/).
+The rest was added & customized by [@MikeMcChillin](https://twitter.com/mikemcchillin)
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+**Required:** 
+You must update to latest version of Sass (3.2), then Compass(0.13)
 
-<h3>Designer Templates</h3>
+    sudo gem install sass --pre
+    sudo gem install compass --pre
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+## Global Styles
+##### [* { Box-sizing: Border-box } FTW](http://paulirish.com/2012/box-sizing-border-box-ftw/)
 
-<h3>Rather Drive Stick?</h3>
+    *
+        +box-sizing(border-box)
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+##### [Webkit Font Smoothing](http://maxvoltar.com/archive/-webkit-font-smoothing)
 
-<h3>Authors and Contributors</h3>
+    html
+            -webkit-font-smoothing: antialiased
+            font-smoothing: antialiased
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+##### [Optimize Legibility](http://www.usabilitypost.com/2012/11/06/optimize-legibility/)
 
-<h3>Support or Contact</h3>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6
+        font-size: 1em
+        margin: 0
+        line-height: 1
+        text-rendering: optimizeLegibility
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+
+##### [Sweet SASS function to convert PX to EM](http://www.pjmccormick.com/sweet-sass-function-convert-px-em)
+
+    font-size: em(48px)
+
+
+## Common Mixins / Compass
+
+* `+inline-block` - [+inline-block](http://compass-style.org/reference/compass/css3/inline_block/)
+* `+opacity(1)` - [+opacity(1)](http://compass-style.org/reference/compass/css3/opacity/)
+* `+transition(.3s ease all)` - [+transition(.3s ease all)](http://compass-style.org/reference/compass/css3/transition/)
+* `+border-radius(50%)` - [+border-radius(50%)](http://compass-style.org/reference/compass/css3/border_radius/)
+    
+
+## Helper Classes
+
+##### [.ir mixin](https://github.com/h5bp/html5-boilerplate/blob/master/doc/css.md#ir)
+
+    // Replace text with an image
+    <div class="logo">This is the name of the site</div>
+
+    .logo
+        background: url('img/logo.png') no-repeat
+        height: 34px
+        width: 100px
+        @extend %ir
+
+##### [.clearfix mixin](http://stackoverflow.com/questions/7154705/sass-scss-mixin-for-clearfix-best-approach/7154716#7154716)
+
+    // Extend clearfix on parent elements with floated children
+    <ul>
+        <li>Floated Left</li>
+        <li>Floated Left</li>
+        <li>Floated Left</li>
+    </ul>
+
+    ul
+        @extend .clearfix
+        li
+            float: left
+
+## Animation
+
+The most efficient way to animate an element is to add a class, and define the styles within sass. 
+##### [Animate.css](http://daneden.me/animate/)
+Baked in animations in this repo include: `.shake`, `.fadeIn`, `.fadeOut`, `.bounceInDown`, `.bounceInLeft`
+
+    @include animated($duration, $delay)
+
+
+##### [Use translate-X/Y instead of top/left](http://paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/)
+
+
+## Fonts
+
+##### Fonts go in the `/fonts` folder, update the name in `_fonts.sass`
+
+## Mediaqueries
+
+##### [Responsive @content with Sass v3.2](http://blog.divshot.com/post/29552945105/useful-sass-mixins-for-responsive-design-font-sizing)
+##### **Start with mobile styles**, and build up from there. You will likely never need to `@include respond-to(phone)`.
+
+    .menu
+        margin-right: 10px
+        @include respond-to(tablet-portrait)
+            margin-right: 20px
+        @include respond-to(large-desktop)
+            margin-right: 40px
+
+## Main.coffee
+
+##### Scrollio - Smooth scrolls, given target & speed
+    
+    scrollio('body', 2000)
+
+##### [Campaign Monitor Ajax](https://gist.github.com/jdennes/1155479)
+    
+    <form id="subscribe">
+        <input type="email" />
+        <input type="submit" />
+    </form>
+    <p class="message"></p>
+
+## Plugins
+
+##### [Easing](http://gsgd.co.uk/sandbox/jquery/easing/)
+Easing is used in **scrollio** - located in main.coffee
+
+    scrollio = (target, speed) ->
+        $("html, body").animate
+            scrollTop: $(target).offset().top
+              , speed, "easeInOutExpo"
+
+
+##### [fitVids](https://github.com/davatron5000/FitVids.js)
+Must uncomment the script in plugins.js to use.
+
+    $('.video-container').fitVids()
+
+
         </section>
-
-        <footer>
-          H5bp-compass is maintained by <a href="https://github.com/MikeMcChillin">MikeMcChillin</a><br>
-          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.
-        </footer>
-
         
       </div>
     </div>
