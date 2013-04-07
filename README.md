@@ -47,12 +47,13 @@ You must update to latest version of Sass (3.2), then Compass(0.13)
 # Mixins
 ========
 * [Mixins for Rem Font Sizing](http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/)
-* [SASS / SCSS Mixin for Clearfix - best approach?](http://stackoverflow.com/questions/7154705/sass-scss-mixin-for-clearfix-best-approach/7154716#7154716)
     
         @include font-size($size)
-    
+
 # Helper Classes
 ========
+* [SASS / SCSS Mixin for Clearfix - best approach?](http://stackoverflow.com/questions/7154705/sass-scss-mixin-for-clearfix-best-approach/7154716#7154716)
+
     /* Replace text with an image */
     .logo
         background: url('img/logo.png') no-repeat
@@ -68,7 +69,7 @@ You must update to latest version of Sass (3.2), then Compass(0.13)
             float: left
 # Animation
 ========
-The most efficient way to animate an element is to add a class, and define the styles within sass. Many of these are based on the animations found in [Animate.css](daneden.me/animate/)
+The most efficient way to animate an element is to add a class, and define the styles within sass. Many of these are based on the animations found in [Animate.css](daneden.me/animate/). Also be sure to animate using [translate-X & translate-Y](http://paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/), rather than top or left.
 To animate something, include the following on the element:
     @include animated($duration, $delay)
 
@@ -77,21 +78,21 @@ To animate something, include the following on the element:
     .fadeOut
     .bounceInDown
     .bounceInLeft
+
 # Fonts
 ========
 Fonts go in the /fonts folder, update the name in _fonts.sass
+
 # Mediaqueries
 ========
-    // http://blog.divshot.com/post/29552945105/useful-sass-mixins-for-responsive-design-font-sizing
-    ///////////////////////
-    // Example Usage
-    ///////////////////////
+* [Responsive @content with Sass v3.2](http://blog.divshot.com/post/29552945105/useful-sass-mixins-for-responsive-design-font-sizing)
     #menu
         margin-right: 10px
         @include respond-to(tablet-portrait)
             margin-right: 20px
         @include respond-to(large-desktop)
             margin-right: 40px
+
 # Main.coffee
 ========
     /* Smooth scrolls, given target and speed */
@@ -102,9 +103,8 @@ Fonts go in the /fonts folder, update the name in _fonts.sass
 
 # Plugins
 ========
-**easing:** Used in scrollio
-    // Fit vids allows for responsive videos - works on Youtube, Vimeo, etc
+* [Easing](http://gsgd.co.uk/sandbox/jquery/easing/) - **Easing is used in scrollio - located in main.coffee**
+* [fitVids](https://github.com/davatron5000/FitVids.js)
     // Must uncomment the script in plugins.js to use.
-    /https://github.com/davatron5000/FitVids.js
     $('.video-container').fitVids()
 
