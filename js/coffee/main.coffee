@@ -17,6 +17,11 @@ $ ->
     $(window).scroll ->
         scroll = $(window).scrollTop()
 
+    #########################
+    # Resize events
+    #########################
+    $(window).resize ->
+        scroll = $(window).scrollTop()
 
 
     #######################
