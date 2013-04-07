@@ -1,8 +1,11 @@
 ========
-     _____    _____    _ _ _ 
-    |   __|  |  |  |  | | | |
-    |__   |  |     |  | | | |
-    |_____|  |__|__|  |_____|
+     ______     __  __     __     __    
+    /\  ___\   /\ \_\ \   /\ \  _ \ \   
+    \ \___  \  \ \  __ \  \ \ \/ ".\ \  
+     \/\_____\  \ \_\ \_\  \ \__/".~\_\ 
+      \/_____/   \/_/\/_/   \/_/   \/_/ 
+    
+    Simple.Honest.Work.
 
 ========
                              
@@ -12,16 +15,17 @@ This is a **Mobile-First** boilerplate that leverages [HTML5 Boilerplate v. 4.0.
 The rest was added & customized by [@MikeMcChillin](https://twitter.com/mikemcchillin)
 
 **Required:** 
-You must update to latest version of Sass (3.2), then Compass(0.13):
+You must update to latest version of Sass (3.2), then Compass(0.13)
+
     sudo gem install sass --pre
     sudo gem install compass --pre
 
 # Global Styles
 ========
 Refer to these articles
-[* { Box-sizing: Border-box } FTW](http://paulirish.com/2012/box-sizing-border-box-ftw/)
-[Webkit Font Smoothing](http://maxvoltar.com/archive/-webkit-font-smoothing)
-[Optimize Legibility](http://www.usabilitypost.com/2012/11/06/optimize-legibility/)
+* [* { Box-sizing: Border-box } FTW](http://paulirish.com/2012/box-sizing-border-box-ftw/)
+* [Webkit Font Smoothing](http://maxvoltar.com/archive/-webkit-font-smoothing)
+& [Optimize Legibility](http://www.usabilitypost.com/2012/11/06/optimize-legibility/)
     *
         +box-sizing(border-box)
     html
