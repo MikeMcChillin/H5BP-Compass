@@ -26,6 +26,7 @@ Refer to these articles
 * [* { Box-sizing: Border-box } FTW](http://paulirish.com/2012/box-sizing-border-box-ftw/)
 * [Webkit Font Smoothing](http://maxvoltar.com/archive/-webkit-font-smoothing)
 * [Optimize Legibility](http://www.usabilitypost.com/2012/11/06/optimize-legibility/)
+
     *
         +box-sizing(border-box)
     html
