@@ -25,7 +25,7 @@ You must update to latest version of Sass (3.2), then Compass(0.13)
 Refer to these articles
 * [* { Box-sizing: Border-box } FTW](http://paulirish.com/2012/box-sizing-border-box-ftw/)
 * [Webkit Font Smoothing](http://maxvoltar.com/archive/-webkit-font-smoothing)
-& [Optimize Legibility](http://www.usabilitypost.com/2012/11/06/optimize-legibility/)
+* [Optimize Legibility](http://www.usabilitypost.com/2012/11/06/optimize-legibility/)
     *
         +box-sizing(border-box)
     html
@@ -46,8 +46,8 @@ Refer to these articles
         text-rendering: optimizeLegibility
 # Mixins
 ========
-[Mixins for Rem Font Sizing](http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/)
-[SASS / SCSS Mixin for Clearfix - best approach?](http://stackoverflow.com/questions/7154705/sass-scss-mixin-for-clearfix-best-approach/7154716#7154716)
+* [Mixins for Rem Font Sizing](http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/)
+* [SASS / SCSS Mixin for Clearfix - best approach?](http://stackoverflow.com/questions/7154705/sass-scss-mixin-for-clearfix-best-approach/7154716#7154716)
     @include font-size($size)
 # Helper Classes
 ========
