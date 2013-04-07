@@ -62,7 +62,7 @@ You must update to latest version of Sass (3.2), then Compass(0.13)
 
 ## Helper Classes
 
-##### [`.ir` mixin](https://github.com/h5bp/html5-boilerplate/blob/master/doc/css.md#ir)
+##### [.ir mixin](https://github.com/h5bp/html5-boilerplate/blob/master/doc/css.md#ir)
 
         // Replace text with an image
         .logo
@@ -71,7 +71,7 @@ You must update to latest version of Sass (3.2), then Compass(0.13)
             width: 100px
             @extend %ir
 
-##### [`.clearfix` mixin](http://stackoverflow.com/questions/7154705/sass-scss-mixin-for-clearfix-best-approach/7154716#7154716)
+##### [.clearfix mixin](http://stackoverflow.com/questions/7154705/sass-scss-mixin-for-clearfix-best-approach/7154716#7154716)
 
         // Extend clearfix on parent elements with floated children
         ul
@@ -82,9 +82,7 @@ You must update to latest version of Sass (3.2), then Compass(0.13)
 ## Animation
 
 The most efficient way to animate an element is to add a class, and define the styles within sass. 
-
 ##### [Animate.css](http://daneden.me/animate/)
-
 Baked in animations in this repo include: `.shake`, `.fadeIn`, `.fadeOut`, `.bounceInDown`, `.bounceInLeft`
 
     @include animated($duration, $delay)
@@ -100,8 +98,7 @@ Baked in animations in this repo include: `.shake`, `.fadeIn`, `.fadeOut`, `.bou
 ## Mediaqueries
 
 ##### [Responsive @content with Sass v3.2](http://blog.divshot.com/post/29552945105/useful-sass-mixins-for-responsive-design-font-sizing)
-
-##### **Start with mobile styles**, and build up from there. You will likely never need to `@include respond-to(phone)`, because all styles should be built up from there.
+##### **Start with mobile styles**, and build up from there. You will likely never need to `@include respond-to(phone)`.
 
         #menu
             margin-right: 10px
@@ -117,12 +114,17 @@ Baked in animations in this repo include: `.shake`, `.fadeIn`, `.fadeOut`, `.bou
     scrollio('body', 2000)
 
 ##### [Campaign Monitor Ajax](https://gist.github.com/jdennes/1155479)
-### Don't forget to add `<p class="message"></p>` under the form for feedback reports.
+    
+    <form id="subscribe">
+        <input type="email" />
+        <input type="submit" />
+    </form>
+    <p class="message"></p>
 
 ## Plugins
 
 ##### [Easing](http://gsgd.co.uk/sandbox/jquery/easing/)
-### Easing is used in **scrollio** - located in main.coffee
+Easing is used in **scrollio** - located in main.coffee
 
     scrollio = (target, speed) ->
         $("html, body").animate
@@ -131,7 +133,7 @@ Baked in animations in this repo include: `.shake`, `.fadeIn`, `.fadeOut`, `.bou
 
 
 ##### [fitVids](https://github.com/davatron5000/FitVids.js)
-### Must uncomment the script in plugins.js to use.
+Must uncomment the script in plugins.js to use.
 
         $('.video-container').fitVids()
 
