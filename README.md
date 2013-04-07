@@ -54,19 +54,19 @@ You must update to latest version of Sass (3.2), then Compass(0.13)
 ========
 * [SASS / SCSS Mixin for Clearfix - best approach?](http://stackoverflow.com/questions/7154705/sass-scss-mixin-for-clearfix-best-approach/7154716#7154716)
 
-    /* Replace text with an image */
-    .logo
-        background: url('img/logo.png') no-repeat
-        height: 34px
-        @extend %ir
-    @extend hidden
-    @extend visuallyhidden
-    @extend invisible
-    /* Include clearfix on parent elements with floated children */
-    .nav
-        @extend .clearfix
-        li
-            float: left
+        /* Replace text with an image */
+        .logo
+            background: url('img/logo.png') no-repeat
+            height: 34px
+            @extend %ir
+        @extend hidden
+        @extend visuallyhidden
+        @extend invisible
+        /* Include clearfix on parent elements with floated children */
+        .nav
+            @extend .clearfix
+            li
+                float: left
 # Animation
 ========
 The most efficient way to animate an element is to add a class, and define the styles within sass. Many of these are based on the animations found in [Animate.css](daneden.me/animate/). Also be sure to animate using [translate-X & translate-Y](http://paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/), rather than top or left.
