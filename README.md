@@ -49,7 +49,7 @@ You must update to latest version of Sass (3.2), then Compass(0.13)
 * [Mixins for Rem Font Sizing](http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/)
 * [SASS / SCSS Mixin for Clearfix - best approach?](http://stackoverflow.com/questions/7154705/sass-scss-mixin-for-clearfix-best-approach/7154716#7154716)
     
-    @include font-size($size)
+        @include font-size($size)
     
 # Helper Classes
 ========
