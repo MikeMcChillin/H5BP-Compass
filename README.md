@@ -49,16 +49,13 @@ You must update to latest version of Sass (3.2), then Compass(0.13)
     font-size: em(48px)
 
 
-## Mixins
+## Common Mixins / Compass
 
-
-##### [+inline-block](http://compass-style.org/reference/compass/css3/inline_block/)
-
-    +inline-block
-
-##### [+opacity(1)](http://compass-style.org/reference/compass/css3/opacity/)
-
-    +opacity(1)
+* `+inline-block` - [+inline-block](http://compass-style.org/reference/compass/css3/inline_block/)
+* `+opacity(1)` - [+opacity(1)](http://compass-style.org/reference/compass/css3/opacity/)
+* `+transition(.3s ease all)` - [+transition(.3s ease all)](http://compass-style.org/reference/compass/css3/transition/)
+* `+border-radius(50%)` - [+border-radius(50%)](http://compass-style.org/reference/compass/css3/border_radius/)
+    
 
 ## Helper Classes
 
