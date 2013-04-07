@@ -50,4 +50,14 @@
     &:after
         clear: both
 
+// Converts px to ems
+// http://www.pjmccormick.com/sweet-sass-function-convert-px-em
+// font-size: em(24px)
+@function em($target, $context: $base-font-size) 
+    @if $target == 0
+        @return 0 
+    @return $target / $context + 0em
+ 
+$base-font-size: 16px
+
     

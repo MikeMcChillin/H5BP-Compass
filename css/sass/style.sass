@@ -11,35 +11,37 @@
 //////////////////////////////
 // Variables
 //////////////////////////////
+// Main Color Palette
+
+// Accent Colors
 $white: #fff
 $maintextcolor: #222
 
 
-// Media Query Variables
-$phone: 480px
-$tablet-portrait: 767px
-$large-desktop: 1200px
 
 //////////////////////////////
 // Mixins
 //////////////////////////////
-// Both a fix for IE 7 & 8 with Rems, and a reminder to always use ems
-@mixin font-size($size)
-    font-size: ($size * 10) + px
-    font-size: $size + rem
 
-// Media queries
+
+
+
+//////////////////////////////
+// Media Queries
+//////////////////////////////
 // http://blog.divshot.com/post/29552945105/useful-sass-mixins-for-responsive-design-font-sizing
 // This style of media query uses Sass 3.2 and Compass 0.13. Must update for it to work.
 // Do not style media queries here. They go inline like so:
 //
 //      ul
-//          margin: 0
-//          padding: 0
 //          border-top: 1px solid #808080
 //          @include respond-to(tablet-portrait)
-//              margin: 0 0 0 -0.25em
 //              border: 0
+
+// Media Query Variables
+$phone: 480px
+$tablet-portrait: 767px
+$large-desktop: 1200px
 
 @mixin respond-to($media)
     // Phone
@@ -50,17 +52,14 @@ $large-desktop: 1200px
     @if $media == tablet-portrait
         @media only screen and (min-width: $tablet-portrait)
             @content
-            font-size: 24px
     // Tablet Landscape - Desktop
     @if $media == tablet-landscape-desktop
         @media only screen and (min-width: $tablet-portrait + 1) and (max-width: $large-desktop - 1)
             @content
-            font-size: 36px
     // Large Desktop
     @if $media == large-desktop
         @media only screen and (min-width: $large-desktop)
             @content
-            font-size: 48px
     // Non-Retina
     @if $media == non-retina
         @media screen and (-webkit-max-device-pixel-ratio: 1)
@@ -78,6 +77,7 @@ $large-desktop: 1200px
     @include respond-to(large-desktop)
 
 
+    
 
 //////////////////////////////
 // Global Styles
@@ -93,13 +93,20 @@ textarea
     color: $maintextcolor
 
 html
-    font-size: 62.5%
     // http://maxvoltar.com/archive/-webkit-font-smoothing
     -webkit-font-smoothing: antialiased
     font-smoothing: antialiased
 body
-    font-size: 1.6rem
+    font-size: $base-font-size
     line-height: 1.4
+    // Set the body font-size at the mediaqueries
+    // http://trentwalton.com/2013/01/07/flexible-foundations/
+    @include respond-to(tablet-portrait)
+        font-size: em(18px)
+    @include respond-to(tablet-landscape-desktop)
+        font-size: em(22px)
+    @include respond-to(large-desktop)
+        font-size: em(24px)
 
 ::-moz-selection
     background: rgba(0,0,0,.3)
@@ -134,6 +141,11 @@ textarea
     color: #000
     padding: 0.2em 0
 
+
+
+//////////////////////////////
+// Custom Styles
+//////////////////////////////
 
 
 
