@@ -1,0 +1,132 @@
+@import compass/css3
+@import normalize
+// CUSTOM IMPORTS
+@import fonts
+@import animation
+// BOILERPLATE IMPORTS
+@import helperclasses
+@import mediaqueries
+@import print
+
+
+//////////////////////////////
+// Variables
+//////////////////////////////
+$white: #fff
+$maintextcolor: #222
+
+
+//////////////////////////////
+// Mixins
+//////////////////////////////
+// Both a fix for IE 7&8 with Rems, and a reminder to always use ems
+@mixin font-size($size)
+    font-size: ($size * 10) + px
+    font-size: $size + rem
+
+
+//////////////////////////////
+// Global Styles
+//////////////////////////////
+*
+    -webkit-font-smoothing: antialiased
+    font-smoothing: antialiased
+    text-rendering: optimizeLegibility
+    +box-sizing(border-box)
+
+html,
+button,
+input,
+select,
+textarea
+    color: $maintextcolor
+
+html
+    font-size: 62.5%
+body
+    font-size: 1.6rem
+    line-height: 1.4
+
+::-moz-selection
+    background: #b3d4fc
+    text-shadow: none
+
+::selection 
+    background: #b3d4fc
+    text-shadow: none
+
+hr 
+    display: block
+    height: 1px
+    border: 0
+    border-top: 1px solid #ccc
+    margin: 1em 0
+    padding: 0
+
+img 
+    vertical-align: middle
+
+fieldset 
+    border: 0
+    margin: 0
+    padding: 0
+
+textarea
+    resize: vertical
+
+.chromeframe
+    margin: 0.2em 0
+    background: #ccc
+    color: #000
+    padding: 0.2em 0
+
+
+
+
+
+$phone: 480px
+$tablet-portrait: 767px
+$large-desktop: 1200px
+
+// http://blog.divshot.com/post/29552945105/useful-sass-mixins-for-responsive-design-font-sizing
+=respond-to($media)
+    // Phone
+    @if $media == phone
+        @media (max-width: $phone)
+            @content
+    // Tablet Portrait
+    @if $media == tablet-portrait
+        @media (max-width: $tablet-portrait)
+            @content
+    // Tablet Landscape - Desktop
+    @if $media == tablet-landscape-desktop
+        @media (min-width: $tablet-portrait + 1) and (max-width: $large-desktop - 1)
+            @content
+    // Large Desktop
+    @if $media == large-desktop
+        @media (min-width: $large-desktop)
+            @content
+    // Non-Retina
+    @if $media == non-retina
+        @media screen and (-webkit-max-device-pixel-ratio: 1)
+            @content
+    // Retina Only
+    @if $media == retina
+        @media screen and (-webkit-min-device-pixel-ratio: 2)
+            @content
+
+    
+.oldie
+    @include respond-to(phone)
+    @include respond-to(tablet-portrait)
+    @include respond-to(tablet-landscape-desktop)
+    @include respond-to(large-desktop)
+
+
+
+
+
+
+
+
+
