@@ -1,5 +1,5 @@
 
-This repo contains all of [HTML5 Boilerplate v. 4.0.1](http://html5boilerplate.com) with [SASS](http://sass-lang.com/) & [Compass](http://compass-style.org/).
+This is a **Mobile-First** boilerplate that leverages [HTML5 Boilerplate v. 4.0.1](http://html5boilerplate.com) with [SASS 3.2 - Including @content Mediaqueries](http://sass-lang.com/) & [Compass v0.13](http://compass-style.org/).
 The rest was added & customized by [@MikeMcChillin](https://twitter.com/mikemcchillin)
 
 **Required:** 
@@ -31,7 +31,7 @@ Refer to these articles
         line-height: 1
         text-rendering: optimizeLegibility
 # Mixins
-    /* Both a fix for IE 7 & 8 with Rems, and a reminder to always use ems */
+    **Both a fix for IE 7 & 8 with Rems, and a reminder to always use ems**
     @include font-size($size)
 # Helper Classes
     /* Replace text with an image */
