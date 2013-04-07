@@ -1,15 +1,13 @@
-========
-     ______     __  __     __     __    
-    /\  ___\   /\ \_\ \   /\ \  _ \ \   
-    \ \___  \  \ \  __ \  \ \ \/ ".\ \  
-     \/\_____\  \ \_\ \_\  \ \__/".~\_\ 
-      \/_____/   \/_/\/_/   \/_/   \/_/ 
+
+     ______     __   __     __     __    
+    /\  ___\   /\ \__\ \   /\ \  _ \ \   
+    \ \___  \  \ \  ___ \  \ \ \/ ".\ \  
+     \/\_____\  \ \_\\ \_\  \ \__/".~\_\ 
+      \/_____/   \/_/ \/_/   \/_/   \/_/ 
     
     Simple.Honest.Work.
 
-========
                              
-
 
 This is a **Mobile-First** boilerplate that leverages [HTML5 Boilerplate v. 4.0.1](http://html5boilerplate.com) with [SASS 3.2 - Including @content Mediaqueries](http://sass-lang.com/) & [Compass v0.13](http://compass-style.org/).
 The rest was added & customized by [@MikeMcChillin](https://twitter.com/mikemcchillin)
@@ -89,7 +87,7 @@ Fonts go in the /fonts folder, update the name in _fonts.sass
 # Mediaqueries
 ========
 * [Responsive @content with Sass v3.2](http://blog.divshot.com/post/29552945105/useful-sass-mixins-for-responsive-design-font-sizing)
-* **Start with mobile styles**, and build up from there.
+* **Start with mobile styles**, and build up from there. You will likely never need to @include respond-to(phone), because all styles should be built up from there.
 
         #menu
             margin-right: 10px
