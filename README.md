@@ -27,24 +27,24 @@ Refer to these articles
 * [Webkit Font Smoothing](http://maxvoltar.com/archive/-webkit-font-smoothing)
 * [Optimize Legibility](http://www.usabilitypost.com/2012/11/06/optimize-legibility/)
 
-    *
-        +box-sizing(border-box)
-    html
-        // Sets 1em = 10px
-        font-size: 62.5%
-        -webkit-font-smoothing: antialiased
-        font-smoothing: antialiased
+        *
+            +box-sizing(border-box)
+        html
+            // Sets 1em = 10px
+            font-size: 62.5%
+            -webkit-font-smoothing: antialiased
+            font-smoothing: antialiased
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6
-        font-size: 1em
-        margin: 0
-        line-height: 1
-        text-rendering: optimizeLegibility
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6
+            font-size: 1em
+            margin: 0
+            line-height: 1
+            text-rendering: optimizeLegibility
 # Mixins
 ========
 * [Mixins for Rem Font Sizing](http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/)
