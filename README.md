@@ -51,9 +51,6 @@ You must update to latest version of Sass (3.2), then Compass(0.13)
 
 ## Mixins
 
-##### [Mixins for Rem Font Sizing](http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/)
-    
-        @include font-size($size)
 
 ##### [+inline-block](http://compass-style.org/reference/compass/css3/inline_block/)
 
