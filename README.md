@@ -88,12 +88,14 @@ Fonts go in the /fonts folder, update the name in _fonts.sass
 # Mediaqueries
 ========
 * [Responsive @content with Sass v3.2](http://blog.divshot.com/post/29552945105/useful-sass-mixins-for-responsive-design-font-sizing)
-    #menu
-        margin-right: 10px
-        @include respond-to(tablet-portrait)
-            margin-right: 20px
-        @include respond-to(large-desktop)
-            margin-right: 40px
+* **Start with mobile styles**, and build up from there.
+
+        #menu
+            margin-right: 10px
+            @include respond-to(tablet-portrait)
+                margin-right: 20px
+            @include respond-to(large-desktop)
+                margin-right: 40px
 
 # Main.coffee
 ========
