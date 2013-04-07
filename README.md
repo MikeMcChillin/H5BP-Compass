@@ -62,6 +62,8 @@ You must update to latest version of Sass (3.2), then Compass(0.13)
 ##### [.ir mixin](https://github.com/h5bp/html5-boilerplate/blob/master/doc/css.md#ir)
 
     // Replace text with an image
+    <div class="logo">This is the name of the site</div>
+
     .logo
         background: url('img/logo.png') no-repeat
         height: 34px
@@ -71,6 +73,12 @@ You must update to latest version of Sass (3.2), then Compass(0.13)
 ##### [.clearfix mixin](http://stackoverflow.com/questions/7154705/sass-scss-mixin-for-clearfix-best-approach/7154716#7154716)
 
     // Extend clearfix on parent elements with floated children
+    <ul>
+        <li>Floated Left</li>
+        <li>Floated Left</li>
+        <li>Floated Left</li>
+    </ul>
+
     ul
         @extend .clearfix
         li
