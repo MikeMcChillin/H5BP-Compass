@@ -68,7 +68,7 @@ You must update to latest version of Sass (3.2), then Compass(0.13)
             @extend .clearfix
             li
                 float: left
-                
+
 # Animation
 ========
 The most efficient way to animate an element is to add a class, and define the styles within sass. Many of these are based on the animations found in [Animate.css](daneden.me/animate/). Also be sure to animate using [translate-X & translate-Y](http://paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/), rather than top or left.
@@ -107,6 +107,7 @@ Fonts go in the /fonts folder, update the name in _fonts.sass
 ========
 * [Easing](http://gsgd.co.uk/sandbox/jquery/easing/) - **Easing is used in scrollio - located in main.coffee**
 * [fitVids](https://github.com/davatron5000/FitVids.js)
+
     // Must uncomment the script in plugins.js to use.
     $('.video-container').fitVids()
 
