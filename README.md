@@ -14,7 +14,7 @@ Updated to latest version of Sass (3.2), then Compass(0.13):
         text-rendering: optimizeLegibility
         +box-sizing(border-box)
 # Mixins
-    /* Both a fix for IE 7&8 with Rems, and a reminder to always use ems */
+    /* Both a fix for IE 7 & 8 with Rems, and a reminder to always use ems */
     @include font-size($size)
 # Helper Classes
     /* Replace text with an image */
@@ -46,5 +46,5 @@ Fonts go in the /fonts folder, update the name in _fonts.sass
         max-width: 640px
         @include respond-to(tablet-portrait)
             margin-right: 20px
-        @include respond-to(phone)
-            margin-right: 10px
+        @include respond-to(large-desktop)
+            margin-right: 40px

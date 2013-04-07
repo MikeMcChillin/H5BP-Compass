@@ -18,7 +18,7 @@ $maintextcolor: #222
 //////////////////////////////
 // Mixins
 //////////////////////////////
-// Both a fix for IE 7&8 with Rems, and a reminder to always use ems
+// Both a fix for IE 7 & 8 with Rems, and a reminder to always use ems
 @mixin font-size($size)
     font-size: ($size * 10) + px
     font-size: $size + rem
@@ -45,7 +45,6 @@ html
 body
     font-size: 1.6rem
     line-height: 1.4
-    background: green
 
 ::-moz-selection
     background: #b3d4fc
@@ -88,12 +87,25 @@ textarea
 
 
 
+//////////////////////////////
+// Media queries
+//////////////////////////////
+// http://blog.divshot.com/post/29552945105/useful-sass-mixins-for-responsive-design-font-sizing
+// This style of media query uses Sass 3.2 and Compass 0.13. Must update for it to work.
+// Do not style media queries here. They go inline like so:
+//
+//      ul
+//          margin: 0
+//          padding: 0
+//          border-top: 1px solid #808080
+//          @include respond-to(tablet-portrait)
+//              margin: 0 0 0 -0.25em
+//              border: 0
 
 $phone: 480px
 $tablet-portrait: 767px
 $large-desktop: 1200px
 
-// http://blog.divshot.com/post/29552945105/useful-sass-mixins-for-responsive-design-font-sizing
 @mixin respond-to($media)
     // Phone
     @if $media == phone
@@ -120,56 +132,11 @@ $large-desktop: 1200px
         @media screen and (-webkit-min-device-pixel-ratio: 2)
             @content
 
-    
+//  Fix for old browsers    
 .oldie
     @include respond-to(phone)
     @include respond-to(tablet-portrait)
     @include respond-to(tablet-landscape-desktop)
     @include respond-to(large-desktop)
-
-
-
-
-
-
-a.menu-link
-    float: right
-    display: block
-    padding: 1em
-    @include respond-to(tablet-portrait)
-        display: none
-
-nav[role=navigation]
-    clear: both
-    +transition(all .3s ease-out)
-
-.js nav[role=navigation]
-    overflow: hidden
-    max-height: 0
-    @include respond-to(tablet-portrait)
-        max-height: none
-
-nav[role=navigation].active
-    max-height: 15em
-
-nav[role=navigation] ul
-    margin: 0
-    padding: 0
-    border-top: 1px solid #808080
-    @include respond-to(tablet-portrait)
-        margin: 0 0 0 -0.25em
-        border: 0
-nav[role=navigation] li 
-    @include respond-to(tablet-portrait)
-        +inline-block
-        margin: 0 0.25em
-
-nav[role=navigation] li a
-    display: block
-    padding: 0.8em
-    border-bottom: 1px solid #808080
-    @include respond-to(tablet-portrait)
-        border: 0
-
 
 
