@@ -32,21 +32,21 @@ You must update to latest version of Sass (3.2), then Compass(0.13)
 
 ##### [Optimize Legibility](http://www.usabilitypost.com/2012/11/06/optimize-legibility/)
 
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6
-            font-size: 1em
-            margin: 0
-            line-height: 1
-            text-rendering: optimizeLegibility
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6
+        font-size: 1em
+        margin: 0
+        line-height: 1
+        text-rendering: optimizeLegibility
 
 
 ##### [Sweet SASS function to convert PX to EM](http://www.pjmccormick.com/sweet-sass-function-convert-px-em)
 
-        font-size: em(48px)
+    font-size: em(48px)
 
 
 ## Mixins
@@ -54,30 +54,30 @@ You must update to latest version of Sass (3.2), then Compass(0.13)
 
 ##### [+inline-block](http://compass-style.org/reference/compass/css3/inline_block/)
 
-        +inline-block
+    +inline-block
 
 ##### [+opacity(1)](http://compass-style.org/reference/compass/css3/opacity/)
 
-        +opacity(1)
+    +opacity(1)
 
 ## Helper Classes
 
 ##### [.ir mixin](https://github.com/h5bp/html5-boilerplate/blob/master/doc/css.md#ir)
 
-        // Replace text with an image
-        .logo
-            background: url('img/logo.png') no-repeat
-            height: 34px
-            width: 100px
-            @extend %ir
+    // Replace text with an image
+    .logo
+        background: url('img/logo.png') no-repeat
+        height: 34px
+        width: 100px
+        @extend %ir
 
 ##### [.clearfix mixin](http://stackoverflow.com/questions/7154705/sass-scss-mixin-for-clearfix-best-approach/7154716#7154716)
 
-        // Extend clearfix on parent elements with floated children
-        ul
-            @extend .clearfix
-            li
-                float: left
+    // Extend clearfix on parent elements with floated children
+    ul
+        @extend .clearfix
+        li
+            float: left
 
 ## Animation
 
@@ -100,12 +100,12 @@ Baked in animations in this repo include: `.shake`, `.fadeIn`, `.fadeOut`, `.bou
 ##### [Responsive @content with Sass v3.2](http://blog.divshot.com/post/29552945105/useful-sass-mixins-for-responsive-design-font-sizing)
 ##### **Start with mobile styles**, and build up from there. You will likely never need to `@include respond-to(phone)`.
 
-        #menu
-            margin-right: 10px
-            @include respond-to(tablet-portrait)
-                margin-right: 20px
-            @include respond-to(large-desktop)
-                margin-right: 40px
+    #menu
+        margin-right: 10px
+        @include respond-to(tablet-portrait)
+            margin-right: 20px
+        @include respond-to(large-desktop)
+            margin-right: 40px
 
 ## Main.coffee
 
@@ -135,5 +135,5 @@ Easing is used in **scrollio** - located in main.coffee
 ##### [fitVids](https://github.com/davatron5000/FitVids.js)
 Must uncomment the script in plugins.js to use.
 
-        $('.video-container').fitVids()
+    $('.video-container').fitVids()
 
