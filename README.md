@@ -2,6 +2,11 @@
 This repo contains all of [HTML5 Boilerplate v. 4.0.1](http://html5boilerplate.com) with [SASS](http://sass-lang.com/) & [Compass](http://compass-style.org/).
 The rest was added & customized by [@MikeMcChillin](https://twitter.com/mikemcchillin)
 
+** Required ** 
+Updated to latest version of Sass (3.2), then Compass(0.13):
+    sudo gem install sass --pre
+    sudo gem install compass --pre
+
 # Global Styles
     *
         -webkit-font-smoothing: antialiased

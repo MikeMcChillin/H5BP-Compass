@@ -45,6 +45,7 @@ html
 body
     font-size: 1.6rem
     line-height: 1.4
+    background: green
 
 ::-moz-selection
     background: #b3d4fc
@@ -83,12 +84,17 @@ textarea
 
 
 
+
+
+
+
+
 $phone: 480px
 $tablet-portrait: 767px
 $large-desktop: 1200px
 
 // http://blog.divshot.com/post/29552945105/useful-sass-mixins-for-responsive-design-font-sizing
-=respond-to($media)
+@mixin respond-to($media)
     // Phone
     @if $media == phone
         @media (max-width: $phone)
@@ -126,6 +132,44 @@ $large-desktop: 1200px
 
 
 
+a.menu-link
+    float: right
+    display: block
+    padding: 1em
+    @include respond-to(tablet-portrait)
+        display: none
+
+nav[role=navigation]
+    clear: both
+    +transition(all .3s ease-out)
+
+.js nav[role=navigation]
+    overflow: hidden
+    max-height: 0
+    @include respond-to(tablet-portrait)
+        max-height: none
+
+nav[role=navigation].active
+    max-height: 15em
+
+nav[role=navigation] ul
+    margin: 0
+    padding: 0
+    border-top: 1px solid #808080
+    @include respond-to(tablet-portrait)
+        margin: 0 0 0 -0.25em
+        border: 0
+nav[role=navigation] li 
+    @include respond-to(tablet-portrait)
+        +inline-block
+        margin: 0 0.25em
+
+nav[role=navigation] li a
+    display: block
+    padding: 0.8em
+    border-bottom: 1px solid #808080
+    @include respond-to(tablet-portrait)
+        border: 0
 
 
 
