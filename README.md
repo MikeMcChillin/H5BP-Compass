@@ -10,14 +10,16 @@ You must update to latest version of Sass (3.2), then Compass(0.13):
 # Global Styles
 Refer to these articles
 [* { Box-sizing: Border-box } FTW](http://paulirish.com/2012/box-sizing-border-box-ftw/)
+[Webkit Font Smoothing](http://maxvoltar.com/archive/-webkit-font-smoothing)
+[Optimize Legibility](http://www.usabilitypost.com/2012/11/06/optimize-legibility/)
     *
         +box-sizing(border-box)
     html
         // Sets 1em = 10px
         font-size: 62.5%
-        // http://maxvoltar.com/archive/-webkit-font-smoothing
         -webkit-font-smoothing: antialiased
         font-smoothing: antialiased
+
     h1,
     h2,
     h3,
@@ -27,33 +29,30 @@ Refer to these articles
         font-size: 1em
         margin: 0
         line-height: 1
-        // http://www.usabilitypost.com/2012/11/06/optimize-legibility/
         text-rendering: optimizeLegibility
 # Mixins
     /* Both a fix for IE 7 & 8 with Rems, and a reminder to always use ems */
     @include font-size($size)
 # Helper Classes
     /* Replace text with an image */
-    @include ir
-        .logo
-            background: url('img/logo.png') no-repeat
-            height: 34px
-            @extend %ir
-    @include hidden
-    @include visuallyhidden
-    @include invisible
+    .logo
+        background: url('img/logo.png') no-repeat
+        height: 34px
+        @extend %ir
+    @extend hidden
+    @extend visuallyhidden
+    @extend invisible
     /* Include clearfix on parent elements with floated children */
-    @include clearfix
-        .nav
-            @include clearfix
-            li
-                float: left
+    .nav
+        @extend .clearfix
+        li
+            float: left
 # Animation
 The most efficient way to animate an element is to add a class, and define the styles within sass
     To animate something, include the following on the element:
     @include animated($duration, $delay)
 
-    .shake
+    .shake - Used on forms with errors.
     .fadeIn
     .fadeOut
     .bounceInDown
@@ -66,9 +65,22 @@ Fonts go in the /fonts folder, update the name in _fonts.sass
     // Example Usage
     ///////////////////////
     #menu
-        float: right
-        max-width: 640px
+        margin-right: 10px
         @include respond-to(tablet-portrait)
             margin-right: 20px
         @include respond-to(large-desktop)
             margin-right: 40px
+# Main.coffee
+    /* Smooth scrolls, given target and speed */
+    scrollio('body', 2000)
+
+    /* Form is customized for Campaign Monitor ajaxiness. Must have proper id/class, and the list must be created on the Campaign Monitor site. Also requires a '<p class="message"></p>' for ajax feedback & success messages.
+    // https://gist.github.com/jdennes/1155479
+
+# Plugins
+**easing:** Used in scrollio
+    // Fit vids allows for responsive videos - works on Youtube, Vimeo, etc
+    // Must uncomment the script in plugins.js to use.
+    /https://github.com/davatron5000/FitVids.js
+    $('.video-container').fitVids()
+

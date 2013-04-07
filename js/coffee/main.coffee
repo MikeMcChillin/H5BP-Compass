@@ -7,7 +7,7 @@ $ ->
     scrollio = (target, speed) ->
         $("html, body").animate
             scrollTop: $(target).offset().top
-              , speed
+              , speed, "easeInOutExpo"
 
 
 

@@ -15,6 +15,11 @@ $white: #fff
 $maintextcolor: #222
 
 
+// Media Query Variables
+$phone: 480px
+$tablet-portrait: 767px
+$large-desktop: 1200px
+
 //////////////////////////////
 // Mixins
 //////////////////////////////
@@ -22,10 +27,57 @@ $maintextcolor: #222
 @mixin font-size($size)
     font-size: ($size * 10) + px
     font-size: $size + rem
-%hide-text
-    font: 0/0 a
-    text-shadow: none
-    color: transparent
+
+// Media queries
+// http://blog.divshot.com/post/29552945105/useful-sass-mixins-for-responsive-design-font-sizing
+// This style of media query uses Sass 3.2 and Compass 0.13. Must update for it to work.
+// Do not style media queries here. They go inline like so:
+//
+//      ul
+//          margin: 0
+//          padding: 0
+//          border-top: 1px solid #808080
+//          @include respond-to(tablet-portrait)
+//              margin: 0 0 0 -0.25em
+//              border: 0
+
+@mixin respond-to($media)
+    // Phone
+    @if $media == phone
+        @media (max-width: $phone)
+            @content
+    // Tablet Portrait
+    @if $media == tablet-portrait
+        @media only screen and (min-width: $tablet-portrait)
+            @content
+            font-size: 24px
+    // Tablet Landscape - Desktop
+    @if $media == tablet-landscape-desktop
+        @media only screen and (min-width: $tablet-portrait + 1) and (max-width: $large-desktop - 1)
+            @content
+            font-size: 36px
+    // Large Desktop
+    @if $media == large-desktop
+        @media only screen and (min-width: $large-desktop)
+            @content
+            font-size: 48px
+    // Non-Retina
+    @if $media == non-retina
+        @media screen and (-webkit-max-device-pixel-ratio: 1)
+            @content
+    // Retina Only
+    @if $media == retina
+        @media screen and (-webkit-min-device-pixel-ratio: 2)
+            @content
+
+//  Fix for old browsers    
+.oldie
+    @include respond-to(phone)
+    @include respond-to(tablet-portrait)
+    @include respond-to(tablet-landscape-desktop)
+    @include respond-to(large-desktop)
+
+
 
 //////////////////////////////
 // Global Styles
@@ -83,59 +135,5 @@ textarea
     padding: 0.2em 0
 
 
-
-
-
-//////////////////////////////
-// Media queries
-//////////////////////////////
-// http://blog.divshot.com/post/29552945105/useful-sass-mixins-for-responsive-design-font-sizing
-// This style of media query uses Sass 3.2 and Compass 0.13. Must update for it to work.
-// Do not style media queries here. They go inline like so:
-//
-//      ul
-//          margin: 0
-//          padding: 0
-//          border-top: 1px solid #808080
-//          @include respond-to(tablet-portrait)
-//              margin: 0 0 0 -0.25em
-//              border: 0
-
-$phone: 480px
-$tablet-portrait: 767px
-$large-desktop: 1200px
-
-@mixin respond-to($media)
-    // Phone
-    @if $media == phone
-        @media (max-width: $phone)
-            @content
-    // Tablet Portrait
-    @if $media == tablet-portrait
-        @media (max-width: $tablet-portrait)
-            @content
-    // Tablet Landscape - Desktop
-    @if $media == tablet-landscape-desktop
-        @media (min-width: $tablet-portrait + 1) and (max-width: $large-desktop - 1)
-            @content
-    // Large Desktop
-    @if $media == large-desktop
-        @media (min-width: $large-desktop)
-            @content
-    // Non-Retina
-    @if $media == non-retina
-        @media screen and (-webkit-max-device-pixel-ratio: 1)
-            @content
-    // Retina Only
-    @if $media == retina
-        @media screen and (-webkit-min-device-pixel-ratio: 2)
-            @content
-
-//  Fix for old browsers    
-.oldie
-    @include respond-to(phone)
-    @include respond-to(tablet-portrait)
-    @include respond-to(tablet-landscape-desktop)
-    @include respond-to(large-desktop)
 
 
