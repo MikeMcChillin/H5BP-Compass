@@ -22,15 +22,15 @@ $maintextcolor: #222
 @mixin font-size($size)
     font-size: ($size * 10) + px
     font-size: $size + rem
-
+%hide-text
+    font: 0/0 a
+    text-shadow: none
+    color: transparent
 
 //////////////////////////////
 // Global Styles
 //////////////////////////////
 *
-    -webkit-font-smoothing: antialiased
-    font-smoothing: antialiased
-    text-rendering: optimizeLegibility
     +box-sizing(border-box)
 
 html,
@@ -42,6 +42,9 @@ textarea
 
 html
     font-size: 62.5%
+    // http://maxvoltar.com/archive/-webkit-font-smoothing
+    -webkit-font-smoothing: antialiased
+    font-smoothing: antialiased
 body
     font-size: 1.6rem
     line-height: 1.4
@@ -78,8 +81,6 @@ textarea
     background: #ccc
     color: #000
     padding: 0.2em 0
-
-
 
 
 

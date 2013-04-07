@@ -95,6 +95,8 @@ h6
     font-size: 1em
     margin: 0
     line-height: 1
+    // http://www.usabilitypost.com/2012/11/06/optimize-legibility/
+    text-rendering: optimizeLegibility
 
 
 // Addresses styling not present in IE 7/8/9, Safari 5, and Chrome.
@@ -108,7 +110,7 @@ strong
     font-weight: bold
 
 blockquote
-    margin: 1em 40px
+    margin: 1em 0
 
 
 // Addresses styling not present in Safari 5 and Chrome.
@@ -301,10 +303,7 @@ input[type="radio"]
 //    (include `-moz` to future-proof).
 input[type="search"]
     -webkit-appearance: textfield /* 1 */
-    -moz-box-sizing: content-box
-    -webkit-box-sizing: content-box /* 2 */
-    box-sizing: content-box
-
+    +box-sizing(content-box)
 
 // Removes inner padding and search cancel button in Safari 5 and Chrome
 // on OS X.
