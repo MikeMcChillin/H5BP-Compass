@@ -108,6 +108,6 @@ Fonts go in the /fonts folder, update the name in _fonts.sass
 * [Easing](http://gsgd.co.uk/sandbox/jquery/easing/) - **Easing is used in scrollio - located in main.coffee**
 * [fitVids](https://github.com/davatron5000/FitVids.js)
 
-    // Must uncomment the script in plugins.js to use.
-    $('.video-container').fitVids()
+        // Must uncomment the script in plugins.js to use.
+        $('.video-container').fitVids()
 
