@@ -85,19 +85,16 @@ You must update to latest version of Sass (3.2), then Compass(0.13)
 
 ## Animation
 
-The most efficient way to animate an element is to add a class, and define the styles within sass. 
-##### [Animate.css](http://daneden.me/animate/)
-Baked in animations in this repo include: `.shake`, `.fadeIn`, `.fadeOut`, `.bounceInDown`, `.bounceInLeft`
+The most efficient way to animate an element is to add a class, and define the styles within sass.
+##### [Use translate-X/Y instead of top/left](http://paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/)
+##### [Animate.css](http://daneden.me/animate/): `.shake`, `.fadeIn`, `.fadeOut`, `.bounceInDown`, `.bounceInLeft`
 
     @include animated($duration, $delay)
 
 
-##### [Use translate-X/Y instead of top/left](http://paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/)
-
-
 ## Fonts
 
-##### Fonts go in the `/fonts` folder, update the name in `_fonts.sass`
+##### Place your font files in the `/fonts` folder, update the name in `_fonts.sass`
 
 ## Mediaqueries
 
@@ -111,7 +108,7 @@ Baked in animations in this repo include: `.shake`, `.fadeIn`, `.fadeOut`, `.bou
         @include respond-to(large-desktop)
             margin-right: 40px
 
-## Common Gists
+## Common CoffeeScript Snippets
 ##### Be sure to check out these commonly used coffeescript gists.
 * [scrollio](https://gist.github.com/MikeMcChillin/5333739) - In page navigation
 * [campaign-monitor-ajax-subscribe.coffee](https://gist.github.com/MikeMcChillin/5333820) - Ajax subscribe to a Campaign Monitor email address.
