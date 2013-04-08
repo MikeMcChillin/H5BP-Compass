@@ -97,12 +97,12 @@ The most efficient way to animate an element is to add a class, and define the s
 * [Responsive @content with Sass v3.2](http://blog.divshot.com/post/29552945105/useful-sass-mixins-for-responsive-design-font-sizing)
 * **Start with mobile styles**, and build up from there. You will likely never need to `@include respond-to(phone)`.
 
-    #menu
+    `#menu
         margin-right: 10px
         @include respond-to(tablet-portrait)
             margin-right: 20px
         @include respond-to(large-desktop)
-            margin-right: 40px
+            margin-right: 40px`
 
 ## Common CoffeeScript Snippets
 ##### Be sure to check out these commonly used coffeescript gists.
