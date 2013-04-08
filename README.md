@@ -87,7 +87,7 @@ The most efficient way to animate an element is to add a class, and define the s
 * [Use translate-X/Y instead of top/left](http://paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/)
 * [Animate.css](http://daneden.me/animate/): `.shake`, `.fadeIn`, `.fadeOut`, `.bounceInDown`, `.bounceInLeft`
 
-    @include animated($duration, $delay)
+#### Add this to the element you want to animate: `@include animated($duration, $delay)`
 
 
 ## Fonts
