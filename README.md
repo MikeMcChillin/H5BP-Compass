@@ -83,11 +83,9 @@ You must update to latest version of Sass (3.2), then Compass(0.13)
 
 ## Animation
 
-The most efficient way to animate an element is to add a class, and define the styles within sass.
+The most efficient way to animate an element is to add a class, and define the styles within sass. Then add this to the element you want to animate: `@include animated($duration, $delay)`
 * [Use translate-X/Y instead of top/left](http://paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/)
 * [Animate.css](http://daneden.me/animate/): `.shake`, `.fadeIn`, `.fadeOut`, `.bounceInDown`, `.bounceInLeft`
-
-#### Add this to the element you want to animate: `@include animated($duration, $delay)`
 
 
 ## Fonts
