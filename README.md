@@ -84,8 +84,8 @@ You must update to latest version of Sass (3.2), then Compass(0.13)
 ## Animation
 
 The most efficient way to animate an element is to add a class, and define the styles within sass.
-##### [Use translate-X/Y instead of top/left](http://paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/)
-##### [Animate.css](http://daneden.me/animate/): `.shake`, `.fadeIn`, `.fadeOut`, `.bounceInDown`, `.bounceInLeft`
+* [Use translate-X/Y instead of top/left](http://paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/)
+* [Animate.css](http://daneden.me/animate/): `.shake`, `.fadeIn`, `.fadeOut`, `.bounceInDown`, `.bounceInLeft`
 
     @include animated($duration, $delay)
 
@@ -96,8 +96,8 @@ The most efficient way to animate an element is to add a class, and define the s
 
 ## Mediaqueries
 
-##### [Responsive @content with Sass v3.2](http://blog.divshot.com/post/29552945105/useful-sass-mixins-for-responsive-design-font-sizing)
-##### **Start with mobile styles**, and build up from there. You will likely never need to `@include respond-to(phone)`.
+* [Responsive @content with Sass v3.2](http://blog.divshot.com/post/29552945105/useful-sass-mixins-for-responsive-design-font-sizing)
+* **Start with mobile styles**, and build up from there. You will likely never need to `@include respond-to(phone)`.
 
     #menu
         margin-right: 10px
