@@ -18,6 +18,7 @@ You must update to latest version of Sass (3.2), then Compass(0.13)
     sudo gem install sass --pre
     sudo gem install compass --pre
 
+
 ## Global Styles
 ##### [* { Box-sizing: Border-box } FTW](http://paulirish.com/2012/box-sizing-border-box-ftw/)
 
@@ -47,6 +48,7 @@ You must update to latest version of Sass (3.2), then Compass(0.13)
 ##### [Sweet SASS function to convert PX to EM](http://www.pjmccormick.com/sweet-sass-function-convert-px-em)
 
     font-size: em(48px)
+    width: em(300px)
 
 
 ## Common Mixins / Compass
@@ -112,33 +114,10 @@ Baked in animations in this repo include: `.shake`, `.fadeIn`, `.fadeOut`, `.bou
         @include respond-to(large-desktop)
             margin-right: 40px
 
-## Main.coffee
-
-##### Scrollio - Smooth scrolls, given target & speed
-    
-    scrollio('body', 2000)
-
-##### [Campaign Monitor Ajax](https://gist.github.com/jdennes/1155479)
-    
-    <form id="subscribe">
-        <input type="email" />
-        <input type="submit" />
-    </form>
-    <p class="message"></p>
-
-## Plugins
-
-##### [Easing](http://gsgd.co.uk/sandbox/jquery/easing/)
-Easing is used in **scrollio** - located in main.coffee
-
-    scrollio = (target, speed) ->
-        $("html, body").animate
-            scrollTop: $(target).offset().top
-              , speed, "easeInOutExpo"
-
-
-##### [fitVids](https://github.com/davatron5000/FitVids.js)
-Must uncomment the script in plugins.js to use.
-
-    $('.video-container').fitVids()
+## Common Gists
+##### Be sure to check out these commonly used coffeescript gists.
+* [scrollio](https://gist.github.com/MikeMcChillin/5333739) - In page navigation
+* [campaign-monitor-ajax-subscribe.coffee](https://gist.github.com/MikeMcChillin/5333820) - Ajax subscribe to a Campaign Monitor email address.
+* [scroll-events.coffee](https://gist.github.com/MikeMcChillin/5333753) - Set up scroll events using $(window).scroll and scrollTop()
+* [resize.coffe](https://gist.github.com/MikeMcChillin/5333787) - Set up $(window).resize()
 
