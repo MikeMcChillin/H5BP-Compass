@@ -113,4 +113,5 @@ The most efficient way to animate an element is to add a class, and define the s
 * [scroll-events.coffee](https://gist.github.com/MikeMcChillin/5333753) - Set up scroll events using $(window).scroll and scrollTop()
 * [resize.coffee](https://gist.github.com/MikeMcChillin/5333787) - Set up $(window).resize()
 * [widows.coffee](https://gist.github.com/MikeMcChillin/5338560) - Prevent widows on headlines
+* [arrow-key.coffee](https://gist.github.com/MikeMcChillin/5342967) - Arrow key functions
 
