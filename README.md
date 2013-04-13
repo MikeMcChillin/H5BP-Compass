@@ -7,7 +7,7 @@
                                                       |_|          
                      
     
-A **Mobile-First** boilerplate that leverages [HTML5 Boilerplate v. 4.0.1](http://html5boilerplate.com) with [SASS 3.2 - Including @content Mediaqueries](http://sass-lang.com/) & [Compass v0.13](http://compass-style.org/).
+**Mobile-First** boilerplate that leverages [HTML5 Boilerplate v. 4.0.1](http://html5boilerplate.com) with [SASS 3.2 - Including @content Mediaqueries](http://sass-lang.com/) & [Compass v0.13](http://compass-style.org/).
 The rest was added & customized by [@MikeMcChillin](https://twitter.com/mikemcchillin)
 
 ## Installation
@@ -17,6 +17,11 @@ You must update to latest version of Sass (3.2), then Compass(0.13)
     sudo gem install sass --pre
     sudo gem install compass --pre
 
+
+## File Structure
+`_global.sass` is where the global styles should be written. It's separate from `style.sass` and `oldie.sass` to get mediaquery styles in IE8 and below.
+
+Each new page on the website should get its own `_newpage.sass`, just be sure to `@import "newpage"` in `_global.sass`
 
 ## Global Styles
 ##### [* { Box-sizing: Border-box } FTW](http://paulirish.com/2012/box-sizing-border-box-ftw/)
@@ -97,6 +102,7 @@ The most efficient way to animate an element is to add a class, and define the s
 ## Mediaqueries
 
 * [Responsive @content with Sass v3.2](http://blog.divshot.com/post/29552945105/useful-sass-mixins-for-responsive-design-font-sizing)
+* [IE Fix for Sass 3.2 Media Queries](https://gist.github.com/rickharris/1493930) - `@mixin respond-to` is needed to overwrite the declaration in `style.sass`
 * **Start with mobile styles**, and build up from there. You will likely never need to `@include respond-to(phone)`.
 
         #menu

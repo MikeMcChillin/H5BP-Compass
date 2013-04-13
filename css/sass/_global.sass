@@ -1,0 +1,102 @@
+@import compass/css3
+@import normalize
+// CUSTOM IMPORTS
+@import fonts
+@import animation
+// BOILERPLATE IMPORTS
+@import helperclasses
+@import print
+
+
+//////////////////////////////
+// Variables
+//////////////////////////////
+// Main Color Palette
+
+// Accent Colors
+$white: #fff
+$maintextcolor: #222
+
+
+
+//////////////////////////////
+// Mixins
+//////////////////////////////
+
+
+    
+
+//////////////////////////////
+// Global Styles
+//////////////////////////////
+*
+    +box-sizing(border-box)
+
+html,
+button,
+input,
+select,
+textarea
+    color: $maintextcolor
+
+html
+    // http://maxvoltar.com/archive/-webkit-font-smoothing
+    -webkit-font-smoothing: antialiased
+    font-smoothing: antialiased
+body
+    font-size: $base-font-size
+    line-height: 1.4
+    // Set the body font-size at the mediaqueries
+    // http://trentwalton.com/2013/01/07/flexible-foundations/
+    @include respond-to(tablet-portrait)
+        font-size: em(18px)
+    @include respond-to(tablet-landscape-desktop)
+        font-size: em(22px)
+    @include respond-to(large-desktop)
+        font-size: em(24px)
+
+::-moz-selection
+    background: rgba(0,0,0,.3)
+    text-shadow: none
+
+::selection 
+    background: rgba(0,0,0,.3)
+    text-shadow: none
+
+hr 
+    display: block
+    height: 1px
+    border: 0
+    border-top: 1px solid #ccc
+    margin: 1em 0
+    padding: 0
+
+img 
+    vertical-align: middle
+
+fieldset 
+    border: 0
+    margin: 0
+    padding: 0
+
+textarea
+    resize: vertical
+
+.chromeframe
+    margin: 0
+    background: coral
+    color: $white
+    padding: 1em 0
+    text-align: center
+    font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+
+
+
+
+//////////////////////////////
+// Custom Styles
+//////////////////////////////
+
+
+
+

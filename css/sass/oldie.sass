@@ -1,0 +1,6 @@
+// This mixin is necessary to overwrite the mixin in style.sass
+// to get mediaquery styles to show up in IE8 and below.
+@mixin respond-to($media)
+    @content
+
+@import "global"

@@ -1,35 +1,8 @@
-@import compass/css3
-@import normalize
-// CUSTOM IMPORTS
-@import fonts
-@import animation
-// BOILERPLATE IMPORTS
-@import helperclasses
-@import print
-
-
-//////////////////////////////
-// Variables
-//////////////////////////////
-// Main Color Palette
-
-// Accent Colors
-$white: #fff
-$maintextcolor: #222
-
-
-
-//////////////////////////////
-// Mixins
-//////////////////////////////
-
-
-
-
 //////////////////////////////
 // Media Queries
 //////////////////////////////
 // http://blog.divshot.com/post/29552945105/useful-sass-mixins-for-responsive-design-font-sizing
+// https://gist.github.com/rickharris/1493930
 // This style of media query uses Sass 3.2 and Compass 0.13. Must update for it to work.
 // Do not style media queries here. They go inline like so:
 //
@@ -41,7 +14,7 @@ $maintextcolor: #222
 // Media Query Variables
 $phone: 480px
 $tablet-portrait: 767px
-$large-desktop: 1200px
+$desktop: 1200px
 
 @mixin respond-to($media)
     // Phone
@@ -50,102 +23,23 @@ $large-desktop: 1200px
             @content
     // Tablet Portrait
     @if $media == tablet-portrait
-        @media only screen and (min-width: $tablet-portrait)
+        @media (min-width: $tablet-portrait)
             @content
     // Tablet Landscape - Desktop
-    @if $media == tablet-landscape-desktop
-        @media only screen and (min-width: $tablet-portrait + 1)
+    @if $media == tablet-landscape
+        @media (min-width: $tablet-portrait + 1)
             @content
     // Large Desktop
-    @if $media == large-desktop
-        @media only screen and (min-width: $large-desktop)
+    @if $media == desktop
+        @media (min-width: $desktop)
             @content
     // Non-Retina
     @if $media == non-retina
-        @media screen and (-webkit-max-device-pixel-ratio: 1)
+        @media (-webkit-max-device-pixel-ratio: 1)
             @content
     // Retina Only
     @if $media == retina
-        @media screen and (-webkit-min-device-pixel-ratio: 2)
+        @media (-webkit-min-device-pixel-ratio: 2)
             @content
 
-//  Fix for old browsers    
-.oldie
-    @include respond-to(phone)
-    @include respond-to(tablet-portrait)
-    @include respond-to(tablet-landscape-desktop)
-    @include respond-to(large-desktop)
-
-
-    
-
-//////////////////////////////
-// Global Styles
-//////////////////////////////
-*
-    +box-sizing(border-box)
-
-html,
-button,
-input,
-select,
-textarea
-    color: $maintextcolor
-
-html
-    // http://maxvoltar.com/archive/-webkit-font-smoothing
-    -webkit-font-smoothing: antialiased
-    font-smoothing: antialiased
-body
-    font-size: $base-font-size
-    line-height: 1.4
-    // Set the body font-size at the mediaqueries
-    // http://trentwalton.com/2013/01/07/flexible-foundations/
-    @include respond-to(tablet-portrait)
-        font-size: em(18px)
-    @include respond-to(tablet-landscape-desktop)
-        font-size: em(22px)
-    @include respond-to(large-desktop)
-        font-size: em(24px)
-
-::-moz-selection
-    background: rgba(0,0,0,.3)
-    text-shadow: none
-
-::selection 
-    background: rgba(0,0,0,.3)
-    text-shadow: none
-
-hr 
-    display: block
-    height: 1px
-    border: 0
-    border-top: 1px solid #ccc
-    margin: 1em 0
-    padding: 0
-
-img 
-    vertical-align: middle
-
-fieldset 
-    border: 0
-    margin: 0
-    padding: 0
-
-textarea
-    resize: vertical
-
-.chromeframe
-    margin: 0.2em 0
-    background: #ccc
-    color: #000
-    padding: 0.2em 0
-
-
-
-
-//////////////////////////////
-// Custom Styles
-//////////////////////////////
-
-
+@import "global"
