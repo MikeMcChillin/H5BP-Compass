@@ -12,10 +12,11 @@ The rest was added & customized by [@MikeMcChillin](https://twitter.com/mikemcch
 
 ## Installation
 **Required:** 
-You must update to latest version of Sass (3.2), then Compass(0.13)
+You must update to latest version of Sass (3.2), then Compass(0.13). Also install companimation for some easy compass animations.
 
     sudo gem install sass --pre
     sudo gem install compass --pre
+    sudo gem install companimation
 
 
 ## File Structure
@@ -34,6 +35,10 @@ Each new page on the website should get its own `_newpage.sass`, just be sure to
     html
             -webkit-font-smoothing: antialiased
             font-smoothing: antialiased
+
+#### [Webkit Animation Flicker](http://bit.ly/NEdoDq)
+
+    -webkit-backface-visibility: hidden
 
 ##### [Optimize Legibility](http://www.usabilitypost.com/2012/11/06/optimize-legibility/)
 
@@ -89,10 +94,17 @@ Each new page on the website should get its own `_newpage.sass`, just be sure to
             float: left
 
 ## Animation
+In case you missed it above, you need to install companimation (a compass addon)
 
-The most efficient way to animate an element is to add a class, and define the styles within sass. Then add this to the element you want to animate: `@include animated($duration, $delay)`
+    sudo gem install companimation    
+
+* [Companimation](http://mikefowler.me/companimation/) - a basic set of mixins to help you create your own animations super quick, and a collection of presets (both original and sourced from Dan Eden's Animate.css) to get you up and running fast
+
+Change the default settings in `_animations.sass`
+
+The most efficient way to animate an element is to add a class, and define the styles within sass. Then extend the class that you're adding on the element in sass: `@extend %fadeIn`
 * [Use translate-X/Y instead of top/left](http://paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/)
-* [Animate.css](http://daneden.me/animate/): `.shake`, `.fadeIn`, `.fadeOut`, `.bounceInDown`, `.bounceInLeft`
+* [Animate.css](http://daneden.me/animate/): animation demos
 
 
 ## Fonts
@@ -104,6 +116,7 @@ The most efficient way to animate an element is to add a class, and define the s
 * [Responsive @content with Sass v3.2](http://blog.divshot.com/post/29552945105/useful-sass-mixins-for-responsive-design-font-sizing)
 * [IE Fix for Sass 3.2 Media Queries](https://gist.github.com/rickharris/1493930) - `@mixin respond-to` is needed to overwrite the declaration in `style.sass`
 * **Start with mobile styles**, and build up from there. You will likely never need to `@include respond-to(phone)`.
+* [Flexible Foundations](http://trentwalton.com/2013/01/07/flexible-foundations/)
 
         #menu
             margin-right: 10px

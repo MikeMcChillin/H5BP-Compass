@@ -1,248 +1,193 @@
-///////////////////////////
-// Shake
-///////////////////////////
+// Companimation: https://github.com/mikefowler/companimation
+// Docs: http://mikefowler.me/companimation/
+//
+// Defaults - Must be before @import 'companimation'
+$default-animation-duration: 1s
+$default-animation-timing-function: ease
+$default-animation-fill-mode: both
+$default-animation-iterations: 1
+$default-animation-direction: normal
+$default-animation-play-state: running
+$default-animation-delay: 2s
 
-@-webkit-keyframes shake 
-    0%, 100% 
-        -webkit-transform: translateX(0)
-    10%, 30%, 50%, 70%, 90% 
-        -webkit-transform: translateX(-10px)
-    20%, 40%, 60%, 80% 
-        -webkit-transform: translateX(10px)
-
-
-@-moz-keyframes shake 
-    0%, 100% 
-        -moz-transform: translateX(0)
-    10%, 30%, 50%, 70%, 90% 
-        -moz-transform: translateX(-10px)
-    20%, 40%, 60%, 80% 
-        -moz-transform: translateX(10px)
+@import 'companimation'
+@import 'companimation/preset'
+//@import 'companimation/preset/filters'
 
 
-@-o-keyframes shake 
-    0%, 100% 
-        -o-transform: translateX(0)
-    10%, 30%, 50%, 70%, 90% 
-        -o-transform: translateX(-10px)
-    20%, 40%, 60%, 80% 
-        -o-transform: translateX(10px)
 
 
-@keyframes shake 
-    0%, 100%  
-        transform: translateX(0)
-    10%, 30%, 50%, 70%, 90% 
-        transform: translateX(-10px)
-    20%, 40%, 60%, 80% 
-        transform: translateX(10px)
+//   Extending on a class name that is the same as the animation
+//   name isn't exactly the most logical thing, but it works
+//   best for swapping animations in and out by changing class
+//   names.
 
+// Bounce
 
-.shake 
-    -webkit-animation-name: shake
-    -moz-animation-name: shake
-    -o-animation-name: shake
-    animation-name: shake
+.bounce
+    @extend %bounce
 
+.bounceIn
+    @extend %bounceIn
+.bounceInDown
+    @extend %bounceInDown
+.bounceInLeft
+    @extend %bounceInLeft
+.bounceInRight
+    @extend %bounceInRight
+.bounceInUp
+    @extend %bounceInUp
 
-///////////////////////////
-// fadeIn
-///////////////////////////
+.bounceOut
+    @extend %bounceOut
+.bounceOutDown
+    @extend %bounceOutDown
+.bounceOutLeft
+    @extend %bounceOutLeft
+.bounceOutRight
+    @extend %bounceOutRight
+.bounceOutUp
+    @extend %bounceOutUp
 
-@-webkit-keyframes fadeIn
-    0% 
-        +opacity(0) 
-    100% 
-        +opacity(1)
-@-moz-keyframes fadeIn
-    0% 
-        +opacity(0)
-    100% 
-        +opacity(1)
-@-o-keyframes fadeIn
-    0% 
-        +opacity(0)
-    100% 
-        +opacity(1)
-@keyframes fadeIn
-    0% 
-        +opacity(0)  
-    100% 
-        +opacity(1)
+// Fade
+
 .fadeIn
-    -webkit-animation-name: fadeIn
-    -moz-animation-name: fadeIn
-    -o-animation-name: fadeIn
-    animation-name: fadeIn
-
-///////////////////////////
-// fadeOut
-///////////////////////////
-@-webkit-keyframes fadeOut
-    0%
-        +opacity(1)
-    100%
-        +opacity(0)
-
-@-moz-keyframes fadeOut
-    0% 
-        +opacity(1)
-    100%
-        +opacity(0)
-
-
-@-o-keyframes fadeOut
-    0% 
-        +opacity(1)
-    100% 
-        +opacity(0)
-
-@keyframes fadeOut
-    0%
-        +opacity(1)
-    100%
-        +opacity(0)
+    @extend %fadeIn
+.fadeInDown
+    @extend %fadeInDown
+.fadeInDownBig
+    @extend %fadeInDownBig
+.fadeInLeft
+    @extend %fadeInLeft
+.fadeInLeftBig
+    @extend %fadeInLeftBig
+.fadeInRight
+    @extend %fadeInRight
+.fadeInRightBig
+    @extend %fadeInRightBig
+.fadeInUp
+    @extend %fadeInUp
+.fadeInUpBig
+    @extend %fadeInUpBig
 
 .fadeOut
-    -webkit-animation-name: fadeOut
-    -moz-animation-name: fadeOut
-    -o-animation-name: fadeOut
-    animation-name: fadeOut
-    visibility: hidden
+    @extend %fadeOut
+.fadeOutDown
+    @extend %fadeOutDown
+.fadeOutDownBig
+    @extend %fadeOutDownBig
+.fadeOutLeft
+    @extend %fadeOutLeft
+.fadeOutLeftBig
+    @extend %fadeOutLeftBig
+.fadeOutRight
+    @extend %fadeOutRight
+.fadeOutRightBig
+    @extend %fadeOutRightBig
+.fadeOutUp
+    @extend %fadeOutUp
+.fadeOutUpBig
+    @extend %fadeOutUpBig
 
-///////////////////////////
-// bounceInDown
-///////////////////////////
-@-webkit-keyframes bounceInDown
-    0%
-        +opacity(0)
-        -webkit-transform: translateY(-20px)
-    60%
-        +opacity(1)
-        -webkit-transform: translateY(10px)
-    80%
-        -webkit-transform: translateY(-5px)
-    100%
-        -webkit-transform: translateY(0)
+// Filters (Experimental)
 
-@-moz-keyframes bounceInDown
-    0%
-        +opacity(0)
-        -moz-transform: translateY(-20px)
-    60%
-        +opacity(1)
-        -moz-transform: translateY(10px)
-    80%
-        -moz-transform: translateY(-5px) 
-    100%
-        -moz-transform: translateY(0)
+.blurIn
+    @extend %blurIn
+.blurInDown
+    @extend %blurInDown
+.blurInLeft
+    @extend %blurInLeft
+.blurInRight
+    @extend %blurInRight
+.blurInUp
+    @extend %blurInUp
 
-@-o-keyframes bounceInDown
-    0%
-        +opacity(0)
-        -o-transform: translateY(-20px)
-    60%
-        +opacity(1)
-        -o-transform: translateY(10px)
-    80%
-        -o-transform: translateY(-5px)
-    100%
-        -o-transform: translateY(0)
+.blurOut
+    @extend %blurOut
+.blurOutDown
+    @extend %blurOutDown
+.blurOutLeft
+    @extend %blurOutLeft
+.blurOutRight
+    @extend %blurOutRight
+.blurOutUp
+    @extend %blurOutUp
 
-@keyframes bounceInDown
-    0%
-        +opacity(0)
-        transform: translateY(-20px)
-    60%
-        +opacity(1)
-        transform: translateY(10px)
-    80%
-        transform: translateY(-5px)
-    100%
-        transform: translateY(0)
+.grayscaleIn
+    @extend %grayscaleIn
+.grayscaleOut
+    @extend %grayscaleOut
 
-.bounceInDown
-    -webkit-animation-name: bounceInDown
-    -moz-animation-name: bounceInDown
-    -o-animation-name: bounceInDown
-    animation-name: bounceInDown
+// Flip
 
+.flip
+    @extend %flip
+.flipInX
+    @extend %flipInX
+.flipInY
+    @extend %flipInY
+.flipOutX
+    @extend %flipOutX
+.flipOutY
+    @extend %flipOutY
 
-///////////////////////////
-// bounceInLeft
-///////////////////////////
-@-webkit-keyframes bounceInLeft
-    0%
-        +opacity(0)
-        -webkit-transform: translateX(-20px)
-    60%
-        +opacity(1)
-        -webkit-transform: translateX(10px)
-    80%
-        -webkit-transform: translateX(-5px)   
-    100%
-        -webkit-transform: translateX(0)
+// Roll
 
-@-moz-keyframes bounceInLeft
-    0%
-        +opacity(0)
-        -moz-transform: translateX(-20px)
-    60%
-        +opacity(1)
-        -moz-transform: translateX(10px)
-    80%
-        -moz-transform: translateX(-5px)
-    100%
-        -moz-transform: translateX(0)
+.rollIn
+    @extend %rollIn
+.rollOut
+    @extend %rollOut
 
-@-o-keyframes bounceInLeft
-    0%
-        +opacity(0)
-        -o-transform: translateX(-20px)
-    60%
-        +opacity(1)
-        -o-transform: translateX(10px)
-    80%
-        -o-transform: translateX(-5px)
-    100%
-        -o-transform: translateX(0)
+// Rotate
 
-@keyframes bounceInLeft
-    0%
-        +opacity(0)
-        transform: translateX(-20px)
-    60%
-        +opacity(1)
-        transform: translateX(10px)
-    80%
-        transform: translateX(-5px)
-    100%
-        transform: translateX(0)
+.rotateIn
+    @extend %rotateIn
+.rotateInDownLeft
+    @extend %rotateInDownLeft
+.rotateInDownRight
+    @extend %rotateInUpRight
+.rotateInUpLeft
+    @extend %rotateInUpLeft
+.rotateInUpRight
+    @extend %rotateInUpRight
+.rotateOut
+    @extend %rotateOut
+.rotateOutDownLeft
+    @extend %rotateOutDownLeft
+.rotateOutDownRight
+    @extend %rotateOutDownRight
+.rotateOutUpLeft
+    @extend %rotateOutUpLeft
+.rotateOutUpRight
+    @extend %rotateOutUpRight
 
-.bounceInLeft
-    -webkit-animation-name: bounceInLeft
-    -moz-animation-name: bounceInLeft
-    -o-animation-name: bounceInLeft
-    animation-name: bounceInLeft
+// Special
+
+.flash
+    @extend %flash
+.hinge
+    @extend %hinge
+.lightSpeedIn
+    @extend %lightSpeedIn
+.lightSpeedOut
+    @extend %lightSpeedOut
+.pulse
+    @extend %pulse
+.shake
+    @extend %shake
+.swing
+    @extend %swing
+.tada
+    @extend %tada
+.wiggle
+    @extend %wiggle
+.wobble
+    @extend %wobble
 
 
 
-@mixin animated($animation-duration, $animation-delay)
-    -webkit-animation-fill-mode: both
-    -moz-animation-fill-mode: both
-    -ms-animation-fill-mode: both
-    -o-animation-fill-mode: both
-    animation-fill-mode: both
-    -webkit-animation-duration: $animation-duration
-    -moz-animation-duration: $animation-duration
-    -ms-animation-duration: $animation-duration
-    -o-animation-duration: $animation-duration
-    animation-duration: $animation-duration
-    -webkit-animation-delay: $animation-delay
-    -moz-animation-delay: $animation-delay
-    -ms-animation-delay: $animation-delay
-    -o-animation-delay: $animation-delay
-    animation-delay: $animation-delay
-    -webkit-backface-visibility: hidden
-    -moz-backface-visibility: hidden
-    -ms-backface-visibility: hidden
+
+
+
+
+

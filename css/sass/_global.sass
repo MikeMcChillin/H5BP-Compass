@@ -1,11 +1,11 @@
-@import compass/css3
-@import normalize
+@import "compass/css3"
+@import "normalize"
 // CUSTOM IMPORTS
-@import fonts
-@import animation
+@import "fonts"
+@import "animation"
 // BOILERPLATE IMPORTS
-@import helperclasses
-@import print
+@import "helperclasses"
+@import "print"
 
 
 //////////////////////////////
@@ -40,14 +40,11 @@ textarea
     color: $maintextcolor
 
 html
-    // http://maxvoltar.com/archive/-webkit-font-smoothing
     -webkit-font-smoothing: antialiased
     font-smoothing: antialiased
-body
+body    
     font-size: $base-font-size
     line-height: 1.4
-    // Set the body font-size at the mediaqueries
-    // http://trentwalton.com/2013/01/07/flexible-foundations/
     @include respond-to(tablet-portrait)
         font-size: em(18px)
     @include respond-to(tablet-landscape-desktop)

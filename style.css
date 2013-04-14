@@ -1,1 +1,5227 @@
-/* normalize.css v1.0.1 | MIT License | git.io/normalize */article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block}audio,canvas,video{display:inline-block;*display:inline;*zoom:1}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}textarea{font-family:sans-serif}body{margin:0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1,h2,h3,h4,h5,h6{font-size:1em;margin:0;line-height:1;text-rendering:optimizeLegibility}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}blockquote{margin:1em 0}dfn{font-style:italic}mark{background:#ff0;color:#000}p,pre{margin:1em 0}code,kbd,pre,samp{font-family:monospace,serif;_font-family:"courier new",monospace;font-size:1em}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}q{quotes:none}q:before,q:after{content:"";content:none}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}dl,menu,ol,ul{margin:0}dd{margin:0}menu,ol,ul{padding:0}nav ul,nav li,nav ol{list-style:none;list-style-image:none}img{border:0;-ms-interpolation-mode:bicubic}svg:not(:root){overflow:hidden}figure{margin:0}form{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0;white-space:normal;*margin-left:-7px}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle}button,input{line-height:normal}input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;*overflow:visible}button[disabled],input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;*height:13px;*width:13px}input[type="search"]{-webkit-appearance:textfield;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}@-webkit-keyframes shake{0%,100%{-webkit-transform:translateX(0)}10%,30%,50%,70%,90%{-webkit-transform:translateX(-10px)}20%,40%,60%,80%{-webkit-transform:translateX(10px)}}@-moz-keyframes shake{0%,100%{-moz-transform:translateX(0)}10%,30%,50%,70%,90%{-moz-transform:translateX(-10px)}20%,40%,60%,80%{-moz-transform:translateX(10px)}}@-o-keyframes shake{0%,100%{-o-transform:translateX(0)}10%,30%,50%,70%,90%{-o-transform:translateX(-10px)}20%,40%,60%,80%{-o-transform:translateX(10px)}}@keyframes shake{0%,100%{transform:translateX(0)}10%,30%,50%,70%,90%{transform:translateX(-10px)}20%,40%,60%,80%{transform:translateX(10px)}}.shake{-webkit-animation-name:shake;-moz-animation-name:shake;-o-animation-name:shake;animation-name:shake}@-webkit-keyframes fadeIn{0%{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);opacity:0}100%{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);opacity:1}}@-moz-keyframes fadeIn{0%{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);opacity:0}100%{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);opacity:1}}@-o-keyframes fadeIn{0%{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);opacity:0}100%{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);opacity:1}}@keyframes fadeIn{0%{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);opacity:0}100%{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);opacity:1}}.fadeIn{-webkit-animation-name:fadeIn;-moz-animation-name:fadeIn;-o-animation-name:fadeIn;animation-name:fadeIn}@-webkit-keyframes fadeOut{0%{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);opacity:1}100%{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);opacity:0}}@-moz-keyframes fadeOut{0%{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);opacity:1}100%{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);opacity:0}}@-o-keyframes fadeOut{0%{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);opacity:1}100%{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);opacity:0}}@keyframes fadeOut{0%{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);opacity:1}100%{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);opacity:0}}.fadeOut{-webkit-animation-name:fadeOut;-moz-animation-name:fadeOut;-o-animation-name:fadeOut;animation-name:fadeOut;visibility:hidden}@-webkit-keyframes bounceInDown{0%{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);opacity:0;-webkit-transform:translateY(-20px)}60%{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);opacity:1;-webkit-transform:translateY(10px)}80%{-webkit-transform:translateY(-5px)}100%{-webkit-transform:translateY(0)}}@-moz-keyframes bounceInDown{0%{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);opacity:0;-moz-transform:translateY(-20px)}60%{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);opacity:1;-moz-transform:translateY(10px)}80%{-moz-transform:translateY(-5px)}100%{-moz-transform:translateY(0)}}@-o-keyframes bounceInDown{0%{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);opacity:0;-o-transform:translateY(-20px)}60%{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);opacity:1;-o-transform:translateY(10px)}80%{-o-transform:translateY(-5px)}100%{-o-transform:translateY(0)}}@keyframes bounceInDown{0%{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);opacity:0;transform:translateY(-20px)}60%{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);opacity:1;transform:translateY(10px)}80%{transform:translateY(-5px)}100%{transform:translateY(0)}}.bounceInDown{-webkit-animation-name:bounceInDown;-moz-animation-name:bounceInDown;-o-animation-name:bounceInDown;animation-name:bounceInDown}@-webkit-keyframes bounceInLeft{0%{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);opacity:0;-webkit-transform:translateX(-20px)}60%{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);opacity:1;-webkit-transform:translateX(10px)}80%{-webkit-transform:translateX(-5px)}100%{-webkit-transform:translateX(0)}}@-moz-keyframes bounceInLeft{0%{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);opacity:0;-moz-transform:translateX(-20px)}60%{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);opacity:1;-moz-transform:translateX(10px)}80%{-moz-transform:translateX(-5px)}100%{-moz-transform:translateX(0)}}@-o-keyframes bounceInLeft{0%{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);opacity:0;-o-transform:translateX(-20px)}60%{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);opacity:1;-o-transform:translateX(10px)}80%{-o-transform:translateX(-5px)}100%{-o-transform:translateX(0)}}@keyframes bounceInLeft{0%{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);opacity:0;transform:translateX(-20px)}60%{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);opacity:1;transform:translateX(10px)}80%{transform:translateX(-5px)}100%{transform:translateX(0)}}.bounceInLeft{-webkit-animation-name:bounceInLeft;-moz-animation-name:bounceInLeft;-o-animation-name:bounceInLeft;animation-name:bounceInLeft}.ir{background-color:transparent;border:0;overflow:hidden;*text-indent:-9999px}.ir:before{content:"";display:block;width:0;height:100%}.hidden{display:none !important;visibility:hidden}.visuallyhidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.visuallyhidden.focusable:active,.visuallyhidden.focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}.invisible{visibility:hidden}.clearfix{zoom:1}.clearfix:before,.clearfix:after{content:"\0020";display:block;height:0;overflow:hidden}.clearfix:after{clear:both}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a,a:visited{text-decoration:underline}a[href]:after{content:" (" attr(href) ")"}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h2,h3{page-break-after:avoid}}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html,button,input,select,textarea{color:#222}html{-webkit-font-smoothing:antialiased;font-smoothing:antialiased}body{font-size:16px;line-height:1.4}@media (min-width: 767px){body{font-size:1.125em}}::-moz-selection{background:rgba(0,0,0,0.3);text-shadow:none}::selection{background:rgba(0,0,0,0.3);text-shadow:none}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}img{vertical-align:middle}fieldset{border:0;margin:0;padding:0}textarea{resize:vertical}.chromeframe{margin:0;background:coral;color:#fff;padding:1em 0;text-align:center;font-family:"HelveticaNeue-Bold","Helvetica Neue Bold","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif}
+/* normalize.css v1.0.1 | MIT License | git.io/normalize */
+/* line 4, css/sass/_normalize.sass */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* line 19, css/sass/_normalize.sass */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* line 29, css/sass/_normalize.sass */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 37, css/sass/_normalize.sass */
+[hidden] {
+  display: none;
+}
+
+/* line 49, css/sass/_normalize.sass */
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 61, css/sass/_normalize.sass */
+textarea {
+  font-family: sans-serif;
+}
+
+/* line 66, css/sass/_normalize.sass */
+body {
+  margin: 0;
+}
+
+/* line 73, css/sass/_normalize.sass */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 78, css/sass/_normalize.sass */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* line 89, css/sass/_normalize.sass */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1em;
+  margin: 0;
+  line-height: 1;
+  text-rendering: optimizeLegibility;
+}
+
+/* line 103, css/sass/_normalize.sass */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 108, css/sass/_normalize.sass */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 112, css/sass/_normalize.sass */
+blockquote {
+  margin: 1em 0;
+}
+
+/* line 117, css/sass/_normalize.sass */
+dfn {
+  font-style: italic;
+}
+
+/* line 122, css/sass/_normalize.sass */
+mark {
+  background: yellow;
+  color: black;
+}
+
+/* line 128, css/sass/_normalize.sass */
+p,
+pre {
+  margin: 1em 0;
+}
+
+/* line 133, css/sass/_normalize.sass */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  _font-family: "courier new", monospace;
+  font-size: 1em;
+}
+
+/* line 142, css/sass/_normalize.sass */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 149, css/sass/_normalize.sass */
+q {
+  quotes: none;
+}
+
+/* line 154, css/sass/_normalize.sass */
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+/* line 160, css/sass/_normalize.sass */
+small {
+  font-size: 80%;
+}
+
+/* line 165, css/sass/_normalize.sass */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 171, css/sass/_normalize.sass */
+sup {
+  top: -0.5em;
+}
+
+/* line 173, css/sass/_normalize.sass */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 181, css/sass/_normalize.sass */
+dl,
+menu,
+ol,
+ul {
+  margin: 0;
+}
+
+/* line 187, css/sass/_normalize.sass */
+dd {
+  margin: 0;
+}
+
+/* line 191, css/sass/_normalize.sass */
+menu,
+ol,
+ul {
+  padding: 0;
+}
+
+/* line 197, css/sass/_normalize.sass */
+nav ul,
+nav li,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+/* line 212, css/sass/_normalize.sass */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 218, css/sass/_normalize.sass */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 224, css/sass/_normalize.sass */
+figure {
+  margin: 0;
+}
+
+/* line 232, css/sass/_normalize.sass */
+form {
+  margin: 0;
+}
+
+/* line 236, css/sass/_normalize.sass */
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 245, css/sass/_normalize.sass */
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px;
+}
+
+/* line 256, css/sass/_normalize.sass */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+/* line 267, css/sass/_normalize.sass */
+button,
+input {
+  line-height: normal;
+}
+
+/* line 280, css/sass/_normalize.sass */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  *overflow: visible;
+}
+
+/* line 288, css/sass/_normalize.sass */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+/* line 297, css/sass/_normalize.sass */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px;
+}
+
+/* line 308, css/sass/_normalize.sass */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 314, css/sass/_normalize.sass */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 320, css/sass/_normalize.sass */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 328, css/sass/_normalize.sass */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* line 337, css/sass/_normalize.sass */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 145, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.bounce, .bounceIn, .bounceInUp, .bounceInDown, .bounceInLeft, .bounceInRight, .bounceOut, .bounceOutUp, .bounceOutDown, .bounceOutLeft, .bounceOutRight, .fadeIn, .fadeInUp, .fadeInDown, .fadeInLeft, .fadeInRight, .fadeInUpBig, .fadeInLeftBig, .fadeInRightBig, .fadeInDownBig, .fadeOut, .fadeOutUp, .fadeOutDown, .fadeOutRight, .fadeOutLeft, .fadeOutUpBig, .fadeOutDownBig, .fadeOutRightBig, .fadeOutLeftBig, .flip, .flipInX, .flipOutX, .flipInY, .flipOutY, .rollIn, .rollOut, .rotateIn, .rotateInUpLeft, .rotateInDownLeft, .rotateInDownRight, .rotateInUpRight, .rotateOut, .rotateOutUpLeft, .rotateOutDownLeft, .rotateOutUpRight, .rotateOutDownRight, .flash, .shake, .tada, .swing, .wobble, .pulse, .hinge, .lightSpeedIn, .lightSpeedOut, .wiggle {
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: visible !important;
+  -moz-backface-visibility: visible !important;
+  -o-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.bounce {
+  -webkit-animation-name: bounce;
+  -moz-animation-name: bounce;
+  -o-animation-name: bounce;
+  animation-name: bounce;
+}
+
+@-webkit-keyframes bounce {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounce.scss */
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+  }
+
+  /* line 7, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounce.scss */
+  40% {
+    -webkit-transform: translateY(-30px);
+  }
+
+  /* line 8, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounce.scss */
+  60% {
+    -webkit-transform: translateY(-15px);
+  }
+}
+
+@-moz-keyframes bounce {
+  /* line 11, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounce.scss */
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+  }
+
+  /* line 12, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounce.scss */
+  40% {
+    -moz-transform: translateY(-30px);
+  }
+
+  /* line 13, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounce.scss */
+  60% {
+    -moz-transform: translateY(-15px);
+  }
+}
+
+@-opera-keyframes bounce {
+  /* line 16, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounce.scss */
+  0%, 20%, 50%, 80%, 100% {
+    -o-transform: translateY(0);
+  }
+
+  /* line 17, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounce.scss */
+  40% {
+    -o-transform: translateY(-30px);
+  }
+
+  /* line 18, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounce.scss */
+  60% {
+    -o-transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce {
+  /* line 21, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounce.scss */
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+
+  /* line 22, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounce.scss */
+  40% {
+    transform: translateY(-30px);
+  }
+
+  /* line 23, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounce.scss */
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.bounceIn {
+  -webkit-animation-name: bounceIn;
+  -moz-animation-name: bounceIn;
+  -o-animation-name: bounceIn;
+  animation-name: bounceIn;
+}
+
+@-webkit-keyframes bounceIn {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceIn.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+  }
+
+  /* line 11, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceIn.scss */
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.05);
+  }
+
+  /* line 16, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceIn.scss */
+  70% {
+    -webkit-transform: scale(0.9);
+  }
+
+  /* line 20, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceIn.scss */
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@-moz-keyframes bounceIn {
+  /* line 25, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceIn.scss */
+  0% {
+    opacity: 0;
+    -moz-transform: scale(0.3);
+  }
+
+  /* line 30, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceIn.scss */
+  50% {
+    opacity: 1;
+    -moz-transform: scale(1.05);
+  }
+
+  /* line 35, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceIn.scss */
+  70% {
+    -moz-transform: scale(0.9);
+  }
+
+  /* line 39, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceIn.scss */
+  100% {
+    -moz-transform: scale(1);
+  }
+}
+
+@-opera-keyframes bounceIn {
+  /* line 44, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceIn.scss */
+  0% {
+    opacity: 0;
+    -o-transform: scale(0.3);
+  }
+
+  /* line 49, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceIn.scss */
+  50% {
+    opacity: 1;
+    -o-transform: scale(1.05);
+  }
+
+  /* line 54, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceIn.scss */
+  70% {
+    -o-transform: scale(0.9);
+  }
+
+  /* line 58, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceIn.scss */
+  100% {
+    -o-transform: scale(1);
+  }
+}
+
+@keyframes bounceIn {
+  /* line 63, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceIn.scss */
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+
+  /* line 68, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceIn.scss */
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+
+  /* line 73, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceIn.scss */
+  70% {
+    transform: scale(0.9);
+  }
+
+  /* line 77, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceIn.scss */
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.bounceInUp {
+  -webkit-animation-name: bounceInUp;
+  -moz-animation-name: bounceInUp;
+  -o-animation-name: bounceInUp;
+  animation-name: bounceInUp;
+}
+
+@-webkit-keyframes bounceInUp {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInUp.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+  }
+
+  /* line 11, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInUp.scss */
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(-30px);
+  }
+
+  /* line 16, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInUp.scss */
+  80% {
+    -webkit-transform: translateY(10px);
+  }
+
+  /* line 20, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInUp.scss */
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes bounceInUp {
+  /* line 25, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInUp.scss */
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(2000px);
+  }
+
+  /* line 30, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInUp.scss */
+  60% {
+    opacity: 1;
+    -moz-transform: translateY(-30px);
+  }
+
+  /* line 35, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInUp.scss */
+  80% {
+    -moz-transform: translateY(10px);
+  }
+
+  /* line 39, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInUp.scss */
+  100% {
+    -moz-transform: translateY(0);
+  }
+}
+
+@-opera-keyframes bounceInUp {
+  /* line 44, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInUp.scss */
+  0% {
+    opacity: 0;
+    -o-transform: translateY(2000px);
+  }
+
+  /* line 49, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInUp.scss */
+  60% {
+    opacity: 1;
+    -o-transform: translateY(-30px);
+  }
+
+  /* line 54, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInUp.scss */
+  80% {
+    -o-transform: translateY(10px);
+  }
+
+  /* line 58, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInUp.scss */
+  100% {
+    -o-transform: translateY(0);
+  }
+}
+
+@keyframes bounceInUp {
+  /* line 63, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInUp.scss */
+  0% {
+    opacity: 0;
+    transform: translateY(2000px);
+  }
+
+  /* line 68, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInUp.scss */
+  60% {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+
+  /* line 73, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInUp.scss */
+  80% {
+    transform: translateY(10px);
+  }
+
+  /* line 77, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInUp.scss */
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.bounceInDown {
+  -webkit-animation-name: bounceInDown;
+  -moz-animation-name: bounceInDown;
+  -o-animation-name: bounceInDown;
+  animation-name: bounceInDown;
+}
+
+@-webkit-keyframes bounceInDown {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInDown.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+  }
+
+  /* line 11, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInDown.scss */
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+  }
+
+  /* line 16, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInDown.scss */
+  80% {
+    -webkit-transform: translateY(-10px);
+  }
+
+  /* line 20, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInDown.scss */
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes bounceInDown {
+  /* line 25, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInDown.scss */
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(-2000px);
+  }
+
+  /* line 30, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInDown.scss */
+  60% {
+    opacity: 1;
+    -moz-transform: translateY(30px);
+  }
+
+  /* line 35, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInDown.scss */
+  80% {
+    -moz-transform: translateY(-10px);
+  }
+
+  /* line 39, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInDown.scss */
+  100% {
+    -moz-transform: translateY(0);
+  }
+}
+
+@-opera-keyframes bounceInDown {
+  /* line 44, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInDown.scss */
+  0% {
+    opacity: 0;
+    -o-transform: translateY(-2000px);
+  }
+
+  /* line 49, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInDown.scss */
+  60% {
+    opacity: 1;
+    -o-transform: translateY(30px);
+  }
+
+  /* line 54, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInDown.scss */
+  80% {
+    -o-transform: translateY(-10px);
+  }
+
+  /* line 58, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInDown.scss */
+  100% {
+    -o-transform: translateY(0);
+  }
+}
+
+@keyframes bounceInDown {
+  /* line 63, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInDown.scss */
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
+
+  /* line 68, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInDown.scss */
+  60% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+
+  /* line 73, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInDown.scss */
+  80% {
+    transform: translateY(-10px);
+  }
+
+  /* line 77, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInDown.scss */
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.bounceInLeft {
+  -webkit-animation-name: bounceInLeft;
+  -moz-animation-name: bounceInLeft;
+  -o-animation-name: bounceInLeft;
+  animation-name: bounceInLeft;
+}
+
+@-webkit-keyframes bounceInLeft {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInLeft.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-2000px);
+  }
+
+  /* line 11, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInLeft.scss */
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(30px);
+  }
+
+  /* line 16, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInLeft.scss */
+  80% {
+    -webkit-transform: translateX(-10px);
+  }
+
+  /* line 20, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInLeft.scss */
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-moz-keyframes bounceInLeft {
+  /* line 25, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInLeft.scss */
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-2000px);
+  }
+
+  /* line 30, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInLeft.scss */
+  60% {
+    opacity: 1;
+    -moz-transform: translateX(30px);
+  }
+
+  /* line 35, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInLeft.scss */
+  80% {
+    -moz-transform: translateX(-10px);
+  }
+
+  /* line 39, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInLeft.scss */
+  100% {
+    -moz-transform: translateX(0);
+  }
+}
+
+@-opera-keyframes bounceInLeft {
+  /* line 44, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInLeft.scss */
+  0% {
+    opacity: 0;
+    -o-transform: translateX(-2000px);
+  }
+
+  /* line 49, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInLeft.scss */
+  60% {
+    opacity: 1;
+    -o-transform: translateX(30px);
+  }
+
+  /* line 54, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInLeft.scss */
+  80% {
+    -o-transform: translateX(-10px);
+  }
+
+  /* line 58, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInLeft.scss */
+  100% {
+    -o-transform: translateX(0);
+  }
+}
+
+@keyframes bounceInLeft {
+  /* line 63, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInLeft.scss */
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+
+  /* line 68, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInLeft.scss */
+  60% {
+    opacity: 1;
+    transform: translateX(30px);
+  }
+
+  /* line 73, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInLeft.scss */
+  80% {
+    transform: translateX(-10px);
+  }
+
+  /* line 77, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInLeft.scss */
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.bounceInRight {
+  -webkit-animation-name: bounceInRight;
+  -moz-animation-name: bounceInRight;
+  -o-animation-name: bounceInRight;
+  animation-name: bounceInRight;
+}
+
+@-webkit-keyframes bounceInRight {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInRight.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(2000px);
+  }
+
+  /* line 11, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInRight.scss */
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(-30px);
+  }
+
+  /* line 16, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInRight.scss */
+  80% {
+    -webkit-transform: translateX(10px);
+  }
+
+  /* line 20, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInRight.scss */
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-moz-keyframes bounceInRight {
+  /* line 25, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInRight.scss */
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(2000px);
+  }
+
+  /* line 30, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInRight.scss */
+  60% {
+    opacity: 1;
+    -moz-transform: translateX(-30px);
+  }
+
+  /* line 35, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInRight.scss */
+  80% {
+    -moz-transform: translateX(10px);
+  }
+
+  /* line 39, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInRight.scss */
+  100% {
+    -moz-transform: translateX(0);
+  }
+}
+
+@-opera-keyframes bounceInRight {
+  /* line 44, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInRight.scss */
+  0% {
+    opacity: 0;
+    -o-transform: translateX(2000px);
+  }
+
+  /* line 49, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInRight.scss */
+  60% {
+    opacity: 1;
+    -o-transform: translateX(-30px);
+  }
+
+  /* line 54, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInRight.scss */
+  80% {
+    -o-transform: translateX(10px);
+  }
+
+  /* line 58, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInRight.scss */
+  100% {
+    -o-transform: translateX(0);
+  }
+}
+
+@keyframes bounceInRight {
+  /* line 63, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInRight.scss */
+  0% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+
+  /* line 68, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInRight.scss */
+  60% {
+    opacity: 1;
+    transform: translateX(-30px);
+  }
+
+  /* line 73, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInRight.scss */
+  80% {
+    transform: translateX(10px);
+  }
+
+  /* line 77, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceInRight.scss */
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.bounceOut {
+  -webkit-animation-name: bounceOut;
+  -moz-animation-name: bounceOut;
+  -o-animation-name: bounceOut;
+  animation-name: bounceOut;
+}
+
+@-webkit-keyframes bounceOut {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOut.scss */
+  0% {
+    -webkit-transform: scale(1);
+  }
+
+  /* line 10, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOut.scss */
+  25% {
+    -webkit-transform: scale(0.95);
+  }
+
+  /* line 14, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOut.scss */
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+  }
+
+  /* line 19, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOut.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+  }
+}
+
+@-moz-keyframes bounceOut {
+  /* line 25, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOut.scss */
+  0% {
+    -moz-transform: scale(1);
+  }
+
+  /* line 29, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOut.scss */
+  25% {
+    -moz-transform: scale(0.95);
+  }
+
+  /* line 33, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOut.scss */
+  50% {
+    opacity: 1;
+    -moz-transform: scale(1.1);
+  }
+
+  /* line 38, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOut.scss */
+  100% {
+    opacity: 0;
+    -moz-transform: scale(0.3);
+  }
+}
+
+@-opera-keyframes bounceOut {
+  /* line 44, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOut.scss */
+  0% {
+    -o-transform: scale(1);
+  }
+
+  /* line 48, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOut.scss */
+  25% {
+    -o-transform: scale(0.95);
+  }
+
+  /* line 52, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOut.scss */
+  50% {
+    opacity: 1;
+    -o-transform: scale(1.1);
+  }
+
+  /* line 57, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOut.scss */
+  100% {
+    opacity: 0;
+    -o-transform: scale(0.3);
+  }
+}
+
+@keyframes bounceOut {
+  /* line 63, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOut.scss */
+  0% {
+    transform: scale(1);
+  }
+
+  /* line 67, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOut.scss */
+  25% {
+    transform: scale(0.95);
+  }
+
+  /* line 71, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOut.scss */
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  /* line 76, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOut.scss */
+  100% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.bounceOutUp {
+  -webkit-animation-name: bounceOutUp;
+  -moz-animation-name: bounceOutUp;
+  -o-animation-name: bounceOutUp;
+  animation-name: bounceOutUp;
+}
+
+@-webkit-keyframes bounceOutUp {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutUp.scss */
+  0% {
+    -webkit-transform: translateY(0);
+  }
+
+  /* line 10, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutUp.scss */
+  20% {
+    opacity: 1;
+    -webkit-transform: translateY(20px);
+  }
+
+  /* line 15, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutUp.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+  }
+}
+
+@-moz-keyframes bounceOutUp {
+  /* line 21, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutUp.scss */
+  0% {
+    -moz-transform: translateY(0);
+  }
+
+  /* line 25, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutUp.scss */
+  20% {
+    opacity: 1;
+    -moz-transform: translateY(20px);
+  }
+
+  /* line 30, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutUp.scss */
+  100% {
+    opacity: 0;
+    -moz-transform: translateY(-2000px);
+  }
+}
+
+@-opera-keyframes bounceOutUp {
+  /* line 36, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutUp.scss */
+  0% {
+    -o-transform: translateY(0);
+  }
+
+  /* line 40, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutUp.scss */
+  20% {
+    opacity: 1;
+    -o-transform: translateY(20px);
+  }
+
+  /* line 45, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutUp.scss */
+  100% {
+    opacity: 0;
+    -o-transform: translateY(-2000px);
+  }
+}
+
+@keyframes bounceOutUp {
+  /* line 51, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutUp.scss */
+  0% {
+    transform: translateY(0);
+  }
+
+  /* line 55, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutUp.scss */
+  20% {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+
+  /* line 60, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutUp.scss */
+  100% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.bounceOutDown {
+  -webkit-animation-name: bounceOutDown;
+  -moz-animation-name: bounceOutDown;
+  -o-animation-name: bounceOutDown;
+  animation-name: bounceOutDown;
+}
+
+@-webkit-keyframes bounceOutDown {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutDown.scss */
+  0% {
+    -webkit-transform: translateY(0);
+  }
+
+  /* line 10, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutDown.scss */
+  20% {
+    opacity: 1;
+    -webkit-transform: translateY(-20px);
+  }
+
+  /* line 15, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutDown.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+  }
+}
+
+@-moz-keyframes bounceOutDown {
+  /* line 20, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutDown.scss */
+  0% {
+    -moz-transform: translateY(0);
+  }
+
+  /* line 24, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutDown.scss */
+  20% {
+    opacity: 1;
+    -moz-transform: translateY(-20px);
+  }
+
+  /* line 29, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutDown.scss */
+  100% {
+    opacity: 0;
+    -moz-transform: translateY(2000px);
+  }
+}
+
+@-opera-keyframes bounceOutDown {
+  /* line 34, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutDown.scss */
+  0% {
+    -o-transform: translateY(0);
+  }
+
+  /* line 38, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutDown.scss */
+  20% {
+    opacity: 1;
+    -o-transform: translateY(-20px);
+  }
+
+  /* line 43, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutDown.scss */
+  100% {
+    opacity: 0;
+    -o-transform: translateY(2000px);
+  }
+}
+
+@keyframes bounceOutDown {
+  /* line 48, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutDown.scss */
+  0% {
+    transform: translateY(0);
+  }
+
+  /* line 52, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutDown.scss */
+  20% {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+
+  /* line 57, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutDown.scss */
+  100% {
+    opacity: 0;
+    transform: translateY(2000px);
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.bounceOutLeft {
+  -webkit-animation-name: bounceOutLeft;
+  -moz-animation-name: bounceOutLeft;
+  -o-animation-name: bounceOutLeft;
+  animation-name: bounceOutLeft;
+}
+
+@-webkit-keyframes bounceOutLeft {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutLeft.scss */
+  0% {
+    -webkit-transform: translateX(0);
+  }
+
+  /* line 10, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutLeft.scss */
+  20% {
+    opacity: 1;
+    -webkit-transform: translateX(20px);
+  }
+
+  /* line 15, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutLeft.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-2000px);
+  }
+}
+
+@-moz-keyframes bounceOutLeft {
+  /* line 21, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutLeft.scss */
+  0% {
+    -moz-transform: translateX(0);
+  }
+
+  /* line 25, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutLeft.scss */
+  20% {
+    opacity: 1;
+    -moz-transform: translateX(20px);
+  }
+
+  /* line 30, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutLeft.scss */
+  100% {
+    opacity: 0;
+    -moz-transform: translateX(-2000px);
+  }
+}
+
+@-opera-keyframes bounceOutLeft {
+  /* line 36, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutLeft.scss */
+  0% {
+    -o-transform: translateX(0);
+  }
+
+  /* line 40, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutLeft.scss */
+  20% {
+    opacity: 1;
+    -o-transform: translateX(20px);
+  }
+
+  /* line 45, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutLeft.scss */
+  100% {
+    opacity: 0;
+    -o-transform: translateX(-2000px);
+  }
+}
+
+@keyframes bounceOutLeft {
+  /* line 51, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutLeft.scss */
+  0% {
+    transform: translateX(0);
+  }
+
+  /* line 55, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutLeft.scss */
+  20% {
+    opacity: 1;
+    transform: translateX(20px);
+  }
+
+  /* line 60, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutLeft.scss */
+  100% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.bounceOutRight {
+  -webkit-animation-name: bounceOutRight;
+  -moz-animation-name: bounceOutRight;
+  -o-animation-name: bounceOutRight;
+  animation-name: bounceOutRight;
+}
+
+@-webkit-keyframes bounceOutRight {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutRight.scss */
+  0% {
+    -webkit-transform: translateX(0);
+  }
+
+  /* line 10, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutRight.scss */
+  20% {
+    opacity: 1;
+    -webkit-transform: translateX(-20px);
+  }
+
+  /* line 15, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutRight.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(2000px);
+  }
+}
+
+@-moz-keyframes bounceOutRight {
+  /* line 21, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutRight.scss */
+  0% {
+    -moz-transform: translateX(0);
+  }
+
+  /* line 25, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutRight.scss */
+  20% {
+    opacity: 1;
+    -moz-transform: translateX(-20px);
+  }
+
+  /* line 30, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutRight.scss */
+  100% {
+    opacity: 0;
+    -moz-transform: translateX(2000px);
+  }
+}
+
+@-opera-keyframes bounceOutRight {
+  /* line 36, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutRight.scss */
+  0% {
+    -o-transform: translateX(0);
+  }
+
+  /* line 40, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutRight.scss */
+  20% {
+    opacity: 1;
+    -o-transform: translateX(-20px);
+  }
+
+  /* line 45, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutRight.scss */
+  100% {
+    opacity: 0;
+    -o-transform: translateX(2000px);
+  }
+}
+
+@keyframes bounceOutRight {
+  /* line 51, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutRight.scss */
+  0% {
+    transform: translateX(0);
+  }
+
+  /* line 55, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutRight.scss */
+  20% {
+    opacity: 1;
+    transform: translateX(-20px);
+  }
+
+  /* line 60, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/bounce/_bounceOutRight.scss */
+  100% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeIn {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeIn.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 7, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeIn.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeIn.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 7, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeIn.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeIn.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 7, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeIn.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeIn.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 7, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeIn.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  -moz-animation-name: fadeInUp;
+  -o-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@-webkit-keyframes fadeInUp {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInUp.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+  }
+
+  /* line 11, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInUp.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes fadeInUp {
+  /* line 17, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInUp.scss */
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(20px);
+  }
+
+  /* line 22, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInUp.scss */
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+
+@-opera-keyframes fadeInUp {
+  /* line 28, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInUp.scss */
+  0% {
+    opacity: 0;
+    -o-transform: translateY(20px);
+  }
+
+  /* line 33, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInUp.scss */
+  100% {
+    opacity: 1;
+    -o-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  /* line 39, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInUp.scss */
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  /* line 44, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInUp.scss */
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  -moz-animation-name: fadeInDown;
+  -o-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+@-webkit-keyframes fadeInDown {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInDown.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+  }
+
+  /* line 11, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInDown.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes fadeInDown {
+  /* line 17, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInDown.scss */
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(-20px);
+  }
+
+  /* line 22, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInDown.scss */
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+
+@-opera-keyframes fadeInDown {
+  /* line 28, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInDown.scss */
+  0% {
+    opacity: 0;
+    -o-transform: translateY(-20px);
+  }
+
+  /* line 33, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInDown.scss */
+  100% {
+    opacity: 1;
+    -o-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  /* line 39, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInDown.scss */
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  /* line 44, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInDown.scss */
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  -moz-animation-name: fadeInLeft;
+  -o-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+@-webkit-keyframes fadeInLeft {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInLeft.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+  }
+
+  /* line 11, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInLeft.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-moz-keyframes fadeInLeft {
+  /* line 17, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInLeft.scss */
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-20px);
+  }
+
+  /* line 22, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInLeft.scss */
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+}
+
+@-opera-keyframes fadeInLeft {
+  /* line 28, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInLeft.scss */
+  0% {
+    opacity: 0;
+    -o-transform: translateX(-20px);
+  }
+
+  /* line 33, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInLeft.scss */
+  100% {
+    opacity: 1;
+    -o-transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  /* line 39, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInLeft.scss */
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  /* line 44, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInLeft.scss */
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  -moz-animation-name: fadeInRight;
+  -o-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+@-webkit-keyframes fadeInRight {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInRight.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+  }
+
+  /* line 11, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInRight.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-moz-keyframes fadeInRight {
+  /* line 17, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInRight.scss */
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(20px);
+  }
+
+  /* line 22, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInRight.scss */
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+}
+
+@-opera-keyframes fadeInRight {
+  /* line 28, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInRight.scss */
+  0% {
+    opacity: 0;
+    -o-transform: translateX(20px);
+  }
+
+  /* line 33, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInRight.scss */
+  100% {
+    opacity: 1;
+    -o-transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  /* line 39, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInRight.scss */
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  /* line 44, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInRight.scss */
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.fadeInUpBig {
+  -webkit-animation-name: fadeInUpBig;
+  -moz-animation-name: fadeInUpBig;
+  -o-animation-name: fadeInUpBig;
+  animation-name: fadeInUpBig;
+}
+
+@-webkit-keyframes fadeInUpBig {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInUpBig.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+  }
+
+  /* line 11, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInUpBig.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes fadeInUpBig {
+  /* line 17, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInUpBig.scss */
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(2000px);
+  }
+
+  /* line 22, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInUpBig.scss */
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+
+@-opera-keyframes fadeInUpBig {
+  /* line 28, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInUpBig.scss */
+  0% {
+    opacity: 0;
+    -o-transform: translateY(2000px);
+  }
+
+  /* line 33, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInUpBig.scss */
+  100% {
+    opacity: 1;
+    -o-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUpBig {
+  /* line 39, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInUpBig.scss */
+  0% {
+    opacity: 0;
+    transform: translateY(2000px);
+  }
+
+  /* line 44, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInUpBig.scss */
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.fadeInLeftBig {
+  -webkit-animation-name: fadeInLeftBig;
+  -moz-animation-name: fadeInLeftBig;
+  -o-animation-name: fadeInLeftBig;
+  animation-name: fadeInLeftBig;
+}
+
+@-webkit-keyframes fadeInLeftBig {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInLeftBig.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-2000px);
+  }
+
+  /* line 11, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInLeftBig.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-moz-keyframes fadeInLeftBig {
+  /* line 17, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInLeftBig.scss */
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-2000px);
+  }
+
+  /* line 22, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInLeftBig.scss */
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+}
+
+@-opera-keyframes fadeInLeftBig {
+  /* line 28, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInLeftBig.scss */
+  0% {
+    opacity: 0;
+    -o-transform: translateX(-2000px);
+  }
+
+  /* line 33, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInLeftBig.scss */
+  100% {
+    opacity: 1;
+    -o-transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeftBig {
+  /* line 39, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInLeftBig.scss */
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+
+  /* line 44, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInLeftBig.scss */
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.fadeInRightBig {
+  -webkit-animation-name: fadeInRightBig;
+  -moz-animation-name: fadeInRightBig;
+  -o-animation-name: fadeInRightBig;
+  animation-name: fadeInRightBig;
+}
+
+@-webkit-keyframes fadeInRightBig {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInRightBig.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(2000px);
+  }
+
+  /* line 11, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInRightBig.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-moz-keyframes fadeInRightBig {
+  /* line 17, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInRightBig.scss */
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(2000px);
+  }
+
+  /* line 22, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInRightBig.scss */
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+}
+
+@-opera-keyframes fadeInRightBig {
+  /* line 28, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInRightBig.scss */
+  0% {
+    opacity: 0;
+    -o-transform: translateX(2000px);
+  }
+
+  /* line 33, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInRightBig.scss */
+  100% {
+    opacity: 1;
+    -o-transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRightBig {
+  /* line 39, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInRightBig.scss */
+  0% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+
+  /* line 44, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInRightBig.scss */
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.fadeInDownBig {
+  -webkit-animation-name: fadeInDownBig;
+  -moz-animation-name: fadeInDownBig;
+  -o-animation-name: fadeInDownBig;
+  animation-name: fadeInDownBig;
+}
+
+@-webkit-keyframes fadeInDownBig {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInDownBig.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+  }
+
+  /* line 11, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInDownBig.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes fadeInDownBig {
+  /* line 17, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInDownBig.scss */
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(-2000px);
+  }
+
+  /* line 22, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInDownBig.scss */
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+
+@-opera-keyframes fadeInDownBig {
+  /* line 28, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInDownBig.scss */
+  0% {
+    opacity: 0;
+    -o-transform: translateY(-2000px);
+  }
+
+  /* line 33, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInDownBig.scss */
+  100% {
+    opacity: 1;
+    -o-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDownBig {
+  /* line 39, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInDownBig.scss */
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
+
+  /* line 44, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeInDownBig.scss */
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  -moz-animation-name: fadeOut;
+  -o-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+@-webkit-keyframes fadeOut {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOut.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 7, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOut.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOut.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 7, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOut.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes fadeOut {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOut.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 7, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOut.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOut.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 7, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOut.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.fadeOutUp {
+  -webkit-animation-name: fadeOutUp;
+  -moz-animation-name: fadeOutUp;
+  -o-animation-name: fadeOutUp;
+  animation-name: fadeOutUp;
+}
+
+@-webkit-keyframes fadeOutUp {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutUp.scss */
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+
+  /* line 11, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutUp.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+  }
+}
+
+@-moz-keyframes fadeOutUp {
+  /* line 17, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutUp.scss */
+  0% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+
+  /* line 22, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutUp.scss */
+  100% {
+    opacity: 0;
+    -moz-transform: translateY(-20px);
+  }
+}
+
+@-opera-keyframes fadeOutUp {
+  /* line 28, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutUp.scss */
+  0% {
+    opacity: 1;
+    -o-transform: translateY(0);
+  }
+
+  /* line 33, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutUp.scss */
+  100% {
+    opacity: 0;
+    -o-transform: translateY(-20px);
+  }
+}
+
+@keyframes fadeOutUp {
+  /* line 39, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutUp.scss */
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* line 44, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutUp.scss */
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.fadeOutDown {
+  -webkit-animation-name: fadeOutDown;
+  -moz-animation-name: fadeOutDown;
+  -o-animation-name: fadeOutDown;
+  animation-name: fadeOutDown;
+}
+
+@-webkit-keyframes fadeOutDown {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutDown.scss */
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+
+  /* line 11, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutDown.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+  }
+}
+
+@-moz-keyframes fadeOutDown {
+  /* line 17, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutDown.scss */
+  0% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+
+  /* line 22, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutDown.scss */
+  100% {
+    opacity: 0;
+    -moz-transform: translateY(20px);
+  }
+}
+
+@-opera-keyframes fadeOutDown {
+  /* line 28, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutDown.scss */
+  0% {
+    opacity: 1;
+    -o-transform: translateY(0);
+  }
+
+  /* line 33, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutDown.scss */
+  100% {
+    opacity: 0;
+    -o-transform: translateY(20px);
+  }
+}
+
+@keyframes fadeOutDown {
+  /* line 39, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutDown.scss */
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* line 44, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutDown.scss */
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.fadeOutRight {
+  -webkit-animation-name: fadeOutRight;
+  -moz-animation-name: fadeOutRight;
+  -o-animation-name: fadeOutRight;
+  animation-name: fadeOutRight;
+}
+
+@-webkit-keyframes fadeOutRight {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutRight.scss */
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+
+  /* line 11, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutRight.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+  }
+}
+
+@-moz-keyframes fadeOutRight {
+  /* line 17, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutRight.scss */
+  0% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+
+  /* line 22, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutRight.scss */
+  100% {
+    opacity: 0;
+    -moz-transform: translateX(20px);
+  }
+}
+
+@-opera-keyframes fadeOutRight {
+  /* line 28, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutRight.scss */
+  0% {
+    opacity: 1;
+    -o-transform: translateX(0);
+  }
+
+  /* line 33, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutRight.scss */
+  100% {
+    opacity: 0;
+    -o-transform: translateX(20px);
+  }
+}
+
+@keyframes fadeOutRight {
+  /* line 39, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutRight.scss */
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  /* line 44, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutRight.scss */
+  100% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.fadeOutLeft {
+  -webkit-animation-name: fadeOutLeft;
+  -moz-animation-name: fadeOutLeft;
+  -o-animation-name: fadeOutLeft;
+  animation-name: fadeOutLeft;
+}
+
+@-webkit-keyframes fadeOutLeft {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutLeft.scss */
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+
+  /* line 11, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutLeft.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+  }
+}
+
+@-moz-keyframes fadeOutLeft {
+  /* line 17, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutLeft.scss */
+  0% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+
+  /* line 22, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutLeft.scss */
+  100% {
+    opacity: 0;
+    -moz-transform: translateX(-20px);
+  }
+}
+
+@-opera-keyframes fadeOutLeft {
+  /* line 28, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutLeft.scss */
+  0% {
+    opacity: 1;
+    -o-transform: translateX(0);
+  }
+
+  /* line 33, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutLeft.scss */
+  100% {
+    opacity: 0;
+    -o-transform: translateX(-20px);
+  }
+}
+
+@keyframes fadeOutLeft {
+  /* line 39, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutLeft.scss */
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  /* line 44, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutLeft.scss */
+  100% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.fadeOutUpBig {
+  -webkit-animation-name: fadeOutUpBig;
+  -moz-animation-name: fadeOutUpBig;
+  -o-animation-name: fadeOutUpBig;
+  animation-name: fadeOutUpBig;
+}
+
+@-webkit-keyframes fadeOutUpBig {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutUpBig.scss */
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+
+  /* line 11, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutUpBig.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+  }
+}
+
+@-moz-keyframes fadeOutUpBig {
+  /* line 17, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutUpBig.scss */
+  0% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+
+  /* line 22, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutUpBig.scss */
+  100% {
+    opacity: 0;
+    -moz-transform: translateY(-2000px);
+  }
+}
+
+@-opera-keyframes fadeOutUpBig {
+  /* line 28, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutUpBig.scss */
+  0% {
+    opacity: 1;
+    -o-transform: translateY(0);
+  }
+
+  /* line 33, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutUpBig.scss */
+  100% {
+    opacity: 0;
+    -o-transform: translateY(-2000px);
+  }
+}
+
+@keyframes fadeOutUpBig {
+  /* line 39, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutUpBig.scss */
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* line 44, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutUpBig.scss */
+  100% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.fadeOutDownBig {
+  -webkit-animation-name: fadeOutDownBig;
+  -moz-animation-name: fadeOutDownBig;
+  -o-animation-name: fadeOutDownBig;
+  animation-name: fadeOutDownBig;
+}
+
+@-webkit-keyframes fadeOutDownBig {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutDownBig.scss */
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+
+  /* line 11, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutDownBig.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+  }
+}
+
+@-moz-keyframes fadeOutDownBig {
+  /* line 17, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutDownBig.scss */
+  0% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+
+  /* line 22, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutDownBig.scss */
+  100% {
+    opacity: 0;
+    -moz-transform: translateY(2000px);
+  }
+}
+
+@-opera-keyframes fadeOutDownBig {
+  /* line 28, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutDownBig.scss */
+  0% {
+    opacity: 1;
+    -o-transform: translateY(0);
+  }
+
+  /* line 33, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutDownBig.scss */
+  100% {
+    opacity: 0;
+    -o-transform: translateY(2000px);
+  }
+}
+
+@keyframes fadeOutDownBig {
+  /* line 39, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutDownBig.scss */
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* line 44, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutDownBig.scss */
+  100% {
+    opacity: 0;
+    transform: translateY(2000px);
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.fadeOutRightBig {
+  -webkit-animation-name: fadeOutRightBig;
+  -moz-animation-name: fadeOutRightBig;
+  -o-animation-name: fadeOutRightBig;
+  animation-name: fadeOutRightBig;
+}
+
+@-webkit-keyframes fadeOutRightBig {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutRightBig.scss */
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+
+  /* line 11, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutRightBig.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(2000px);
+  }
+}
+
+@-moz-keyframes fadeOutRightBig {
+  /* line 17, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutRightBig.scss */
+  0% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+
+  /* line 22, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutRightBig.scss */
+  100% {
+    opacity: 0;
+    -moz-transform: translateX(2000px);
+  }
+}
+
+@-opera-keyframes fadeOutRightBig {
+  /* line 28, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutRightBig.scss */
+  0% {
+    opacity: 1;
+    -o-transform: translateX(0);
+  }
+
+  /* line 33, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutRightBig.scss */
+  100% {
+    opacity: 0;
+    -o-transform: translateX(2000px);
+  }
+}
+
+@keyframes fadeOutRightBig {
+  /* line 39, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutRightBig.scss */
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  /* line 44, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutRightBig.scss */
+  100% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.fadeOutLeftBig {
+  -webkit-animation-name: fadeOutLeftBig;
+  -moz-animation-name: fadeOutLeftBig;
+  -o-animation-name: fadeOutLeftBig;
+  animation-name: fadeOutLeftBig;
+}
+
+@-webkit-keyframes fadeOutLeftBig {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutLeftBig.scss */
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+
+  /* line 11, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutLeftBig.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-2000px);
+  }
+}
+
+@-moz-keyframes fadeOutLeftBig {
+  /* line 17, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutLeftBig.scss */
+  0% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+
+  /* line 22, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutLeftBig.scss */
+  100% {
+    opacity: 0;
+    -moz-transform: translateX(-2000px);
+  }
+}
+
+@-opera-keyframes fadeOutLeftBig {
+  /* line 28, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutLeftBig.scss */
+  0% {
+    opacity: 1;
+    -o-transform: translateX(0);
+  }
+
+  /* line 33, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutLeftBig.scss */
+  100% {
+    opacity: 0;
+    -o-transform: translateX(-2000px);
+  }
+}
+
+@keyframes fadeOutLeftBig {
+  /* line 39, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutLeftBig.scss */
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  /* line 44, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/fade/_fadeOutLeftBig.scss */
+  100% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.flip {
+  -webkit-animation-name: flip;
+  -moz-animation-name: flip;
+  -o-animation-name: flip;
+  animation-name: flip;
+}
+
+@-webkit-keyframes flip {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flip.scss */
+  0% {
+    -webkit-transform: perspective(400px) rotateY(0);
+    -webkit-animation-timing-function: ease-out;
+  }
+
+  /* line 10, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flip.scss */
+  40% {
+    -webkit-transform: perspective(400px) translateZ(150px) rotateY(170deg);
+    -webkit-animation-timing-function: ease-out;
+  }
+
+  /* line 14, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flip.scss */
+  50% {
+    -webkit-transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+    -webkit-animation-timing-function: ease-in;
+  }
+
+  /* line 18, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flip.scss */
+  80% {
+    -webkit-transform: perspective(400px) rotateY(360deg) scale(0.95);
+    -webkit-animation-timing-function: ease-in;
+  }
+
+  /* line 22, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flip.scss */
+  100% {
+    -webkit-transform: perspective(400px) scale(1);
+    -webkit-animation-timing-function: ease-in;
+  }
+}
+
+@-moz-keyframes flip {
+  /* line 28, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flip.scss */
+  0% {
+    -moz-transform: perspective(400px) rotateY(0);
+    -moz-animation-timing-function: ease-out;
+  }
+
+  /* line 32, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flip.scss */
+  40% {
+    -moz-transform: perspective(400px) translateZ(150px) rotateY(170deg);
+    -moz-animation-timing-function: ease-out;
+  }
+
+  /* line 36, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flip.scss */
+  50% {
+    -moz-transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+    -moz-animation-timing-function: ease-in;
+  }
+
+  /* line 40, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flip.scss */
+  80% {
+    -moz-transform: perspective(400px) rotateY(360deg) scale(0.95);
+    -moz-animation-timing-function: ease-in;
+  }
+
+  /* line 44, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flip.scss */
+  100% {
+    -moz-transform: perspective(400px) scale(1);
+    -moz-animation-timing-function: ease-in;
+  }
+}
+
+@-opera-keyframes flip {
+  /* line 50, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flip.scss */
+  0% {
+    -o-transform: perspective(400px) rotateY(0);
+    -o-animation-timing-function: ease-out;
+  }
+
+  /* line 54, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flip.scss */
+  40% {
+    -o-transform: perspective(400px) translateZ(150px) rotateY(170deg);
+    -o-animation-timing-function: ease-out;
+  }
+
+  /* line 58, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flip.scss */
+  50% {
+    -o-transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+    -o-animation-timing-function: ease-in;
+  }
+
+  /* line 62, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flip.scss */
+  80% {
+    -o-transform: perspective(400px) rotateY(360deg) scale(0.95);
+    -o-animation-timing-function: ease-in;
+  }
+
+  /* line 66, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flip.scss */
+  100% {
+    -o-transform: perspective(400px) scale(1);
+    -o-animation-timing-function: ease-in;
+  }
+}
+
+@keyframes flip {
+  /* line 72, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flip.scss */
+  0% {
+    transform: perspective(400px) rotateY(0);
+    animation-timing-function: ease-out;
+  }
+
+  /* line 76, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flip.scss */
+  40% {
+    transform: perspective(400px) translateZ(150px) rotateY(170deg);
+    animation-timing-function: ease-out;
+  }
+
+  /* line 80, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flip.scss */
+  50% {
+    transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+    animation-timing-function: ease-in;
+  }
+
+  /* line 84, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flip.scss */
+  80% {
+    transform: perspective(400px) rotateY(360deg) scale(0.95);
+    animation-timing-function: ease-in;
+  }
+
+  /* line 88, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flip.scss */
+  100% {
+    transform: perspective(400px) scale(1);
+    animation-timing-function: ease-in;
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.flipInX {
+  -webkit-animation-name: flipInX;
+  -moz-animation-name: flipInX;
+  -o-animation-name: flipInX;
+  animation-name: flipInX;
+}
+
+@-webkit-keyframes flipInX {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipInX.scss */
+  0% {
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+
+  /* line 11, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipInX.scss */
+  40% {
+    -webkit-transform: perspective(400px) rotateX(-10deg);
+  }
+
+  /* line 15, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipInX.scss */
+  70% {
+    -webkit-transform: perspective(400px) rotateX(10deg);
+  }
+
+  /* line 19, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipInX.scss */
+  100% {
+    -webkit-transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes flipInX {
+  /* line 25, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipInX.scss */
+  0% {
+    -moz-transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+
+  /* line 30, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipInX.scss */
+  40% {
+    -moz-transform: perspective(400px) rotateX(-10deg);
+  }
+
+  /* line 34, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipInX.scss */
+  70% {
+    -moz-transform: perspective(400px) rotateX(10deg);
+  }
+
+  /* line 38, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipInX.scss */
+  100% {
+    -moz-transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+@-opera-keyframes flipInX {
+  /* line 44, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipInX.scss */
+  0% {
+    -o-transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+
+  /* line 49, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipInX.scss */
+  40% {
+    -o-transform: perspective(400px) rotateX(-10deg);
+  }
+
+  /* line 53, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipInX.scss */
+  70% {
+    -o-transform: perspective(400px) rotateX(10deg);
+  }
+
+  /* line 57, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipInX.scss */
+  100% {
+    -o-transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes flipInX {
+  /* line 63, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipInX.scss */
+  0% {
+    transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+
+  /* line 68, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipInX.scss */
+  40% {
+    transform: perspective(400px) rotateX(-10deg);
+  }
+
+  /* line 72, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipInX.scss */
+  70% {
+    transform: perspective(400px) rotateX(10deg);
+  }
+
+  /* line 76, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipInX.scss */
+  100% {
+    transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.flipOutX {
+  -webkit-animation-name: flipOutX;
+  -moz-animation-name: flipOutX;
+  -o-animation-name: flipOutX;
+  animation-name: flipOutX;
+}
+
+@-webkit-keyframes flipOutX {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipOutX.scss */
+  0% {
+    -webkit-transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+
+  /* line 10, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipOutX.scss */
+  100% {
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes flipOutX {
+  /* line 16, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipOutX.scss */
+  0% {
+    -moz-transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+
+  /* line 20, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipOutX.scss */
+  100% {
+    -moz-transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+}
+
+@-opera-keyframes flipOutX {
+  /* line 26, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipOutX.scss */
+  0% {
+    -o-transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+
+  /* line 30, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipOutX.scss */
+  100% {
+    -o-transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+}
+
+@keyframes flipOutX {
+  /* line 36, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipOutX.scss */
+  0% {
+    transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+
+  /* line 40, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipOutX.scss */
+  100% {
+    transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.flipInY {
+  -webkit-animation-name: flipInY;
+  -moz-animation-name: flipInY;
+  -o-animation-name: flipInY;
+  animation-name: flipInY;
+}
+
+@-webkit-keyframes flipInY {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipInY.scss */
+  0% {
+    -webkit-transform: perspective(400px) rotateY(90deg);
+    opacity: 0;
+  }
+
+  /* line 11, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipInY.scss */
+  40% {
+    -webkit-transform: perspective(400px) rotateY(-10deg);
+  }
+
+  /* line 15, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipInY.scss */
+  70% {
+    -webkit-transform: perspective(400px) rotateY(10deg);
+  }
+
+  /* line 19, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipInY.scss */
+  100% {
+    -webkit-transform: perspective(400px) rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes flipInY {
+  /* line 25, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipInY.scss */
+  0% {
+    -moz-transform: perspective(400px) rotateY(90deg);
+    opacity: 0;
+  }
+
+  /* line 30, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipInY.scss */
+  40% {
+    -moz-transform: perspective(400px) rotateY(-10deg);
+  }
+
+  /* line 34, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipInY.scss */
+  70% {
+    -moz-transform: perspective(400px) rotateY(10deg);
+  }
+
+  /* line 38, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipInY.scss */
+  100% {
+    -moz-transform: perspective(400px) rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+@-opera-keyframes flipInY {
+  /* line 44, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipInY.scss */
+  0% {
+    -o-transform: perspective(400px) rotateY(90deg);
+    opacity: 0;
+  }
+
+  /* line 49, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipInY.scss */
+  40% {
+    -o-transform: perspective(400px) rotateY(-10deg);
+  }
+
+  /* line 53, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipInY.scss */
+  70% {
+    -o-transform: perspective(400px) rotateY(10deg);
+  }
+
+  /* line 57, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipInY.scss */
+  100% {
+    -o-transform: perspective(400px) rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes flipInY {
+  /* line 63, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipInY.scss */
+  0% {
+    transform: perspective(400px) rotateY(90deg);
+    opacity: 0;
+  }
+
+  /* line 68, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipInY.scss */
+  40% {
+    transform: perspective(400px) rotateY(-10deg);
+  }
+
+  /* line 72, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipInY.scss */
+  70% {
+    transform: perspective(400px) rotateY(10deg);
+  }
+
+  /* line 76, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipInY.scss */
+  100% {
+    transform: perspective(400px) rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.flipOutY {
+  -webkit-animation-name: flipOutY;
+  -moz-animation-name: flipOutY;
+  -o-animation-name: flipOutY;
+  animation-name: flipOutY;
+}
+
+@-webkit-keyframes flipOutY {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipOutY.scss */
+  0% {
+    -webkit-transform: perspective(400px) rotateY(0deg);
+    opacity: 1;
+  }
+
+  /* line 10, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipOutY.scss */
+  100% {
+    -webkit-transform: perspective(400px) rotateY(90deg);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes flipOutY {
+  /* line 16, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipOutY.scss */
+  0% {
+    -moz-transform: perspective(400px) rotateY(0deg);
+    opacity: 1;
+  }
+
+  /* line 20, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipOutY.scss */
+  100% {
+    -moz-transform: perspective(400px) rotateY(90deg);
+    opacity: 0;
+  }
+}
+
+@-opera-keyframes flipOutY {
+  /* line 26, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipOutY.scss */
+  0% {
+    -o-transform: perspective(400px) rotateY(0deg);
+    opacity: 1;
+  }
+
+  /* line 30, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipOutY.scss */
+  100% {
+    -o-transform: perspective(400px) rotateY(90deg);
+    opacity: 0;
+  }
+}
+
+@keyframes flipOutY {
+  /* line 36, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipOutY.scss */
+  0% {
+    transform: perspective(400px) rotateY(0deg);
+    opacity: 1;
+  }
+
+  /* line 40, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/flip/_flipOutY.scss */
+  100% {
+    transform: perspective(400px) rotateY(90deg);
+    opacity: 0;
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.rollIn {
+  -webkit-animation-name: rollIn;
+  -moz-animation-name: rollIn;
+  -o-animation-name: rollIn;
+  animation-name: rollIn;
+}
+
+@-webkit-keyframes rollIn {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/roll/_rollIn.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%) rotate(-120deg);
+  }
+
+  /* line 7, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/roll/_rollIn.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px) rotate(0deg);
+  }
+}
+
+@-moz-keyframes rollIn {
+  /* line 10, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/roll/_rollIn.scss */
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-100%) rotate(-120deg);
+  }
+
+  /* line 11, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/roll/_rollIn.scss */
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0px) rotate(0deg);
+  }
+}
+
+@-opera-keyframes rollIn {
+  /* line 14, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/roll/_rollIn.scss */
+  0% {
+    opacity: 0;
+    -o-transform: translateX(-100%) rotate(-120deg);
+  }
+
+  /* line 15, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/roll/_rollIn.scss */
+  100% {
+    opacity: 1;
+    -o-transform: translateX(0px) rotate(0deg);
+  }
+}
+
+@keyframes rollIn {
+  /* line 18, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/roll/_rollIn.scss */
+  0% {
+    opacity: 0;
+    transform: translateX(-100%) rotate(-120deg);
+  }
+
+  /* line 19, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/roll/_rollIn.scss */
+  100% {
+    opacity: 1;
+    transform: translateX(0px) rotate(0deg);
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.rollOut {
+  -webkit-animation-name: rollOut;
+  -moz-animation-name: rollOut;
+  -o-animation-name: rollOut;
+  animation-name: rollOut;
+}
+
+@-webkit-keyframes rollOut {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/roll/_rollOut.scss */
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0px) rotate(0deg);
+  }
+
+  /* line 11, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/roll/_rollOut.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(100%) rotate(120deg);
+  }
+}
+
+@-moz-keyframes rollOut {
+  /* line 17, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/roll/_rollOut.scss */
+  0% {
+    opacity: 1;
+    -moz-transform: translateX(0px) rotate(0deg);
+  }
+
+  /* line 22, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/roll/_rollOut.scss */
+  100% {
+    opacity: 0;
+    -moz-transform: translateX(100%) rotate(120deg);
+  }
+}
+
+@-opera-keyframes rollOut {
+  /* line 28, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/roll/_rollOut.scss */
+  0% {
+    opacity: 1;
+    -o-transform: translateX(0px) rotate(0deg);
+  }
+
+  /* line 33, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/roll/_rollOut.scss */
+  100% {
+    opacity: 0;
+    -o-transform: translateX(100%) rotate(120deg);
+  }
+}
+
+@keyframes rollOut {
+  /* line 39, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/roll/_rollOut.scss */
+  0% {
+    opacity: 1;
+    transform: translateX(0px) rotate(0deg);
+  }
+
+  /* line 44, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/roll/_rollOut.scss */
+  100% {
+    opacity: 0;
+    transform: translateX(100%) rotate(120deg);
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.rotateIn {
+  -webkit-animation-name: rotateIn;
+  -moz-animation-name: rotateIn;
+  -o-animation-name: rotateIn;
+  animation-name: rotateIn;
+}
+
+@-webkit-keyframes rotateIn {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateIn.scss */
+  0% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: rotate(-200deg);
+    opacity: 0;
+  }
+
+  /* line 12, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateIn.scss */
+  100% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes rotateIn {
+  /* line 19, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateIn.scss */
+  0% {
+    -moz-transform-origin: center center;
+    -moz-transform: rotate(-200deg);
+    opacity: 0;
+  }
+
+  /* line 25, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateIn.scss */
+  100% {
+    -moz-transform-origin: center center;
+    -moz-transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@-opera-keyframes rotateIn {
+  /* line 32, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateIn.scss */
+  0% {
+    -o-transform-origin: center center;
+    -o-transform: rotate(-200deg);
+    opacity: 0;
+  }
+
+  /* line 38, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateIn.scss */
+  100% {
+    -o-transform-origin: center center;
+    -o-transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rotateIn {
+  /* line 45, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateIn.scss */
+  0% {
+    transform-origin: center center;
+    transform: rotate(-200deg);
+    opacity: 0;
+  }
+
+  /* line 51, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateIn.scss */
+  100% {
+    transform-origin: center center;
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.rotateInUpLeft {
+  -webkit-animation-name: rotateInUpLeft;
+  -moz-animation-name: rotateInUpLeft;
+  -o-animation-name: rotateInUpLeft;
+  animation-name: rotateInUpLeft;
+}
+
+@-webkit-keyframes rotateInUpLeft {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateInUpLeft.scss */
+  0% {
+    -webkit-transform-origin: left bottom;
+    -webkit-transform: rotate(90deg);
+    opacity: 0;
+  }
+
+  /* line 12, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateInUpLeft.scss */
+  100% {
+    -webkit-transform-origin: left bottom;
+    -webkit-transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes rotateInUpLeft {
+  /* line 19, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateInUpLeft.scss */
+  0% {
+    -moz-transform-origin: left bottom;
+    -moz-transform: rotate(90deg);
+    opacity: 0;
+  }
+
+  /* line 25, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateInUpLeft.scss */
+  100% {
+    -moz-transform-origin: left bottom;
+    -moz-transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@-opera-keyframes rotateInUpLeft {
+  /* line 32, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateInUpLeft.scss */
+  0% {
+    -o-transform-origin: left bottom;
+    -o-transform: rotate(90deg);
+    opacity: 0;
+  }
+
+  /* line 38, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateInUpLeft.scss */
+  100% {
+    -o-transform-origin: left bottom;
+    -o-transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rotateInUpLeft {
+  /* line 45, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateInUpLeft.scss */
+  0% {
+    transform-origin: left bottom;
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+
+  /* line 51, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateInUpLeft.scss */
+  100% {
+    transform-origin: left bottom;
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.rotateInDownLeft {
+  -webkit-animation-name: rotateInDownLeft;
+  -moz-animation-name: rotateInDownLeft;
+  -o-animation-name: rotateInDownLeft;
+  animation-name: rotateInDownLeft;
+}
+
+@-webkit-keyframes rotateInDownLeft {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateInDownLeft.scss */
+  0% {
+    -webkit-transform-origin: left bottom;
+    -webkit-transform: rotate(-90deg);
+    opacity: 0;
+  }
+
+  /* line 12, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateInDownLeft.scss */
+  100% {
+    -webkit-transform-origin: left bottom;
+    -webkit-transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes rotateInDownLeft {
+  /* line 19, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateInDownLeft.scss */
+  0% {
+    -moz-transform-origin: left bottom;
+    -moz-transform: rotate(-90deg);
+    opacity: 0;
+  }
+
+  /* line 25, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateInDownLeft.scss */
+  100% {
+    -moz-transform-origin: left bottom;
+    -moz-transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@-opera-keyframes rotateInDownLeft {
+  /* line 32, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateInDownLeft.scss */
+  0% {
+    -o-transform-origin: left bottom;
+    -o-transform: rotate(-90deg);
+    opacity: 0;
+  }
+
+  /* line 38, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateInDownLeft.scss */
+  100% {
+    -o-transform-origin: left bottom;
+    -o-transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rotateInDownLeft {
+  /* line 45, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateInDownLeft.scss */
+  0% {
+    transform-origin: left bottom;
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
+
+  /* line 51, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateInDownLeft.scss */
+  100% {
+    transform-origin: left bottom;
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.rotateInDownRight, .rotateInUpRight {
+  -webkit-animation-name: rotateInUpRight;
+  -moz-animation-name: rotateInUpRight;
+  -o-animation-name: rotateInUpRight;
+  animation-name: rotateInUpRight;
+}
+
+@-webkit-keyframes rotateInUpRight {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateInUpRight.scss */
+  0% {
+    -webkit-transform-origin: right bottom;
+    -webkit-transform: rotate(-90deg);
+    opacity: 0;
+  }
+
+  /* line 12, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateInUpRight.scss */
+  100% {
+    -webkit-transform-origin: right bottom;
+    -webkit-transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes rotateInUpRight {
+  /* line 19, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateInUpRight.scss */
+  0% {
+    -moz-transform-origin: right bottom;
+    -moz-transform: rotate(-90deg);
+    opacity: 0;
+  }
+
+  /* line 25, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateInUpRight.scss */
+  100% {
+    -moz-transform-origin: right bottom;
+    -moz-transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@-opera-keyframes rotateInUpRight {
+  /* line 32, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateInUpRight.scss */
+  0% {
+    -o-transform-origin: right bottom;
+    -o-transform: rotate(-90deg);
+    opacity: 0;
+  }
+
+  /* line 38, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateInUpRight.scss */
+  100% {
+    -o-transform-origin: right bottom;
+    -o-transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rotateInUpRight {
+  /* line 45, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateInUpRight.scss */
+  0% {
+    transform-origin: right bottom;
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
+
+  /* line 51, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateInUpRight.scss */
+  100% {
+    transform-origin: right bottom;
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rotateInDownRight {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateInDownRight.scss */
+  0% {
+    -webkit-transform-origin: right bottom;
+    -webkit-transform: rotate(90deg);
+    opacity: 0;
+  }
+
+  /* line 12, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateInDownRight.scss */
+  100% {
+    -webkit-transform-origin: right bottom;
+    -webkit-transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes rotateInDownRight {
+  /* line 19, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateInDownRight.scss */
+  0% {
+    -moz-transform-origin: right bottom;
+    -moz-transform: rotate(90deg);
+    opacity: 0;
+  }
+
+  /* line 25, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateInDownRight.scss */
+  100% {
+    -moz-transform-origin: right bottom;
+    -moz-transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@-opera-keyframes rotateInDownRight {
+  /* line 32, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateInDownRight.scss */
+  0% {
+    -o-transform-origin: right bottom;
+    -o-transform: rotate(90deg);
+    opacity: 0;
+  }
+
+  /* line 38, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateInDownRight.scss */
+  100% {
+    -o-transform-origin: right bottom;
+    -o-transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rotateInDownRight {
+  /* line 45, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateInDownRight.scss */
+  0% {
+    transform-origin: right bottom;
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+
+  /* line 51, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateInDownRight.scss */
+  100% {
+    transform-origin: right bottom;
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.rotateOut {
+  -webkit-animation-name: rotateOut;
+  -moz-animation-name: rotateOut;
+  -o-animation-name: rotateOut;
+  animation-name: rotateOut;
+}
+
+@-webkit-keyframes rotateOut {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateOut.scss */
+  0% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 12, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateOut.scss */
+  100% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: rotate(200deg);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes rotateOut {
+  /* line 19, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateOut.scss */
+  0% {
+    -moz-transform-origin: center center;
+    -moz-transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 25, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateOut.scss */
+  100% {
+    -moz-transform-origin: center center;
+    -moz-transform: rotate(200deg);
+    opacity: 0;
+  }
+}
+
+@-opera-keyframes rotateOut {
+  /* line 32, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateOut.scss */
+  0% {
+    -o-transform-origin: center center;
+    -o-transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 38, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateOut.scss */
+  100% {
+    -o-transform-origin: center center;
+    -o-transform: rotate(200deg);
+    opacity: 0;
+  }
+}
+
+@keyframes rotateOut {
+  /* line 45, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateOut.scss */
+  0% {
+    transform-origin: center center;
+    transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 51, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateOut.scss */
+  100% {
+    transform-origin: center center;
+    transform: rotate(200deg);
+    opacity: 0;
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.rotateOutUpLeft {
+  -webkit-animation-name: rotateOutUpLeft;
+  -moz-animation-name: rotateOutUpLeft;
+  -o-animation-name: rotateOutUpLeft;
+  animation-name: rotateOutUpLeft;
+}
+
+@-webkit-keyframes rotateOutUpLeft {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateOutUpLeft.scss */
+  0% {
+    -webkit-transform-origin: left bottom;
+    -webkit-transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 12, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateOutUpLeft.scss */
+  100% {
+    -webkit-transform-origin: left bottom;
+    -webkit-transform: rotate(-90deg);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes rotateOutUpLeft {
+  /* line 19, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateOutUpLeft.scss */
+  0% {
+    -moz-transform-origin: left bottom;
+    -moz-transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 25, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateOutUpLeft.scss */
+  100% {
+    -moz-transform-origin: left bottom;
+    -moz-transform: rotate(-90deg);
+    opacity: 0;
+  }
+}
+
+@-opera-keyframes rotateOutUpLeft {
+  /* line 32, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateOutUpLeft.scss */
+  0% {
+    -o-transform-origin: left bottom;
+    -o-transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 38, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateOutUpLeft.scss */
+  100% {
+    -o-transform-origin: left bottom;
+    -o-transform: rotate(-90deg);
+    opacity: 0;
+  }
+}
+
+@keyframes rotateOutUpLeft {
+  /* line 45, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateOutUpLeft.scss */
+  0% {
+    transform-origin: left bottom;
+    transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 51, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateOutUpLeft.scss */
+  100% {
+    transform-origin: left bottom;
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.rotateOutDownLeft {
+  -webkit-animation-name: rotateOutDownLeft;
+  -moz-animation-name: rotateOutDownLeft;
+  -o-animation-name: rotateOutDownLeft;
+  animation-name: rotateOutDownLeft;
+}
+
+@-webkit-keyframes rotateOutDownLeft {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateOutDownLeft.scss */
+  0% {
+    -webkit-transform-origin: left bottom;
+    -webkit-transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 12, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateOutDownLeft.scss */
+  100% {
+    -webkit-transform-origin: left bottom;
+    -webkit-transform: rotate(90deg);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes rotateOutDownLeft {
+  /* line 19, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateOutDownLeft.scss */
+  0% {
+    -moz-transform-origin: left bottom;
+    -moz-transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 25, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateOutDownLeft.scss */
+  100% {
+    -moz-transform-origin: left bottom;
+    -moz-transform: rotate(90deg);
+    opacity: 0;
+  }
+}
+
+@-opera-keyframes rotateOutDownLeft {
+  /* line 32, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateOutDownLeft.scss */
+  0% {
+    -o-transform-origin: left bottom;
+    -o-transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 38, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateOutDownLeft.scss */
+  100% {
+    -o-transform-origin: left bottom;
+    -o-transform: rotate(90deg);
+    opacity: 0;
+  }
+}
+
+@keyframes rotateOutDownLeft {
+  /* line 45, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateOutDownLeft.scss */
+  0% {
+    transform-origin: left bottom;
+    transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 51, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateOutDownLeft.scss */
+  100% {
+    transform-origin: left bottom;
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.rotateOutUpRight {
+  -webkit-animation-name: rotateOutUpRight;
+  -moz-animation-name: rotateOutUpRight;
+  -o-animation-name: rotateOutUpRight;
+  animation-name: rotateOutUpRight;
+}
+
+@-webkit-keyframes rotateOutUpRight {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateOutUpRight.scss */
+  0% {
+    -webkit-transform-origin: right bottom;
+    -webkit-transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 12, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateOutUpRight.scss */
+  100% {
+    -webkit-transform-origin: right bottom;
+    -webkit-transform: rotate(90deg);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes rotateOutUpRight {
+  /* line 19, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateOutUpRight.scss */
+  0% {
+    -moz-transform-origin: right bottom;
+    -moz-transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 25, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateOutUpRight.scss */
+  100% {
+    -moz-transform-origin: right bottom;
+    -moz-transform: rotate(90deg);
+    opacity: 0;
+  }
+}
+
+@-opera-keyframes rotateOutUpRight {
+  /* line 32, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateOutUpRight.scss */
+  0% {
+    -o-transform-origin: right bottom;
+    -o-transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 38, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateOutUpRight.scss */
+  100% {
+    -o-transform-origin: right bottom;
+    -o-transform: rotate(90deg);
+    opacity: 0;
+  }
+}
+
+@keyframes rotateOutUpRight {
+  /* line 45, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateOutUpRight.scss */
+  0% {
+    transform-origin: right bottom;
+    transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 51, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateOutUpRight.scss */
+  100% {
+    transform-origin: right bottom;
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.rotateOutDownRight {
+  -webkit-animation-name: rotateOutDownRight;
+  -moz-animation-name: rotateOutDownRight;
+  -o-animation-name: rotateOutDownRight;
+  animation-name: rotateOutDownRight;
+}
+
+@-webkit-keyframes rotateOutDownRight {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateOutDownRight.scss */
+  0% {
+    -webkit-transform-origin: right bottom;
+    -webkit-transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 12, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateOutDownRight.scss */
+  100% {
+    -webkit-transform-origin: right bottom;
+    -webkit-transform: rotate(-90deg);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes rotateOutDownRight {
+  /* line 19, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateOutDownRight.scss */
+  0% {
+    -moz-transform-origin: right bottom;
+    -moz-transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 25, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateOutDownRight.scss */
+  100% {
+    -moz-transform-origin: right bottom;
+    -moz-transform: rotate(-90deg);
+    opacity: 0;
+  }
+}
+
+@-opera-keyframes rotateOutDownRight {
+  /* line 32, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateOutDownRight.scss */
+  0% {
+    -o-transform-origin: right bottom;
+    -o-transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 38, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateOutDownRight.scss */
+  100% {
+    -o-transform-origin: right bottom;
+    -o-transform: rotate(-90deg);
+    opacity: 0;
+  }
+}
+
+@keyframes rotateOutDownRight {
+  /* line 45, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateOutDownRight.scss */
+  0% {
+    transform-origin: right bottom;
+    transform: rotate(0);
+    opacity: 1;
+  }
+
+  /* line 51, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/rotate/_rotateOutDownRight.scss */
+  100% {
+    transform-origin: right bottom;
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.flash {
+  -webkit-animation-name: flash;
+  -moz-animation-name: flash;
+  -o-animation-name: flash;
+  animation-name: flash;
+}
+
+@-webkit-keyframes flash {
+  /* line 5, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_flash.scss */
+  0%,    50%,    100% {
+    opacity: 1;
+  }
+
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_flash.scss */
+  25%,    75% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes flash {
+  /* line 5, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_flash.scss */
+  0%,    50%,    100% {
+    opacity: 1;
+  }
+
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_flash.scss */
+  25%,    75% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes flash {
+  /* line 5, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_flash.scss */
+  0%,    50%,    100% {
+    opacity: 1;
+  }
+
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_flash.scss */
+  25%,    75% {
+    opacity: 0;
+  }
+}
+
+@keyframes flash {
+  /* line 5, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_flash.scss */
+  0%,    50%,    100% {
+    opacity: 1;
+  }
+
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_flash.scss */
+  25%,    75% {
+    opacity: 0;
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.shake {
+  -webkit-animation-name: shake;
+  -moz-animation-name: shake;
+  -o-animation-name: shake;
+  animation-name: shake;
+}
+
+@-webkit-keyframes shake {
+  /* line 5, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_shake.scss */
+  0%, 100% {
+    -webkit-transform: translateX(0px);
+  }
+
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_shake.scss */
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px);
+  }
+
+  /* line 7, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_shake.scss */
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(10px);
+  }
+}
+
+@-moz-keyframes shake {
+  /* line 10, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_shake.scss */
+  0%, 100% {
+    -moz-transform: translateX(0px);
+  }
+
+  /* line 11, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_shake.scss */
+  10%, 30%, 50%, 70%, 90% {
+    -moz-transform: translateX(-10px);
+  }
+
+  /* line 12, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_shake.scss */
+  20%, 40%, 60%, 80% {
+    -moz-transform: translateX(10px);
+  }
+}
+
+@-opera-keyframes shake {
+  /* line 15, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_shake.scss */
+  0%, 100% {
+    -o-transform: translateX(0px);
+  }
+
+  /* line 16, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_shake.scss */
+  10%, 30%, 50%, 70%, 90% {
+    -o-transform: translateX(-10px);
+  }
+
+  /* line 17, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_shake.scss */
+  20%, 40%, 60%, 80% {
+    -o-transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+  /* line 20, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_shake.scss */
+  0%, 100% {
+    transform: translateX(0px);
+  }
+
+  /* line 21, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_shake.scss */
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+
+  /* line 22, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_shake.scss */
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.tada {
+  -webkit-animation-name: tada;
+  -moz-animation-name: tada;
+  -o-animation-name: tada;
+  animation-name: tada;
+}
+
+@-webkit-keyframes tada {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_tada.scss */
+  0% {
+    -webkit-transform: scale(1);
+  }
+
+  /* line 7, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_tada.scss */
+  10%, 20% {
+    -webkit-transform: scale(0.9) rotate(-3deg);
+  }
+
+  /* line 8, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_tada.scss */
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale(1.1) rotate(3deg);
+  }
+
+  /* line 9, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_tada.scss */
+  40%, 60%, 80% {
+    -webkit-transform: scale(1.1) rotate(-3deg);
+  }
+
+  /* line 10, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_tada.scss */
+  100% {
+    -webkit-transform: scale(1) rotate(0);
+  }
+}
+
+@-moz-keyframes tada {
+  /* line 13, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_tada.scss */
+  0% {
+    -moz-transform: scale(1);
+  }
+
+  /* line 14, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_tada.scss */
+  10%, 20% {
+    -moz-transform: scale(0.9) rotate(-3deg);
+  }
+
+  /* line 15, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_tada.scss */
+  30%, 50%, 70%, 90% {
+    -moz-transform: scale(1.1) rotate(3deg);
+  }
+
+  /* line 16, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_tada.scss */
+  40%, 60%, 80% {
+    -moz-transform: scale(1.1) rotate(-3deg);
+  }
+
+  /* line 17, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_tada.scss */
+  100% {
+    -moz-transform: scale(1) rotate(0);
+  }
+}
+
+@-opera-keyframes tada {
+  /* line 20, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_tada.scss */
+  0% {
+    -o-transform: scale(1);
+  }
+
+  /* line 21, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_tada.scss */
+  10%, 20% {
+    -o-transform: scale(0.9) rotate(-3deg);
+  }
+
+  /* line 22, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_tada.scss */
+  30%, 50%, 70%, 90% {
+    -o-transform: scale(1.1) rotate(3deg);
+  }
+
+  /* line 23, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_tada.scss */
+  40%, 60%, 80% {
+    -o-transform: scale(1.1) rotate(-3deg);
+  }
+
+  /* line 24, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_tada.scss */
+  100% {
+    -o-transform: scale(1) rotate(0);
+  }
+}
+
+@keyframes tada {
+  /* line 27, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_tada.scss */
+  0% {
+    transform: scale(1);
+  }
+
+  /* line 28, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_tada.scss */
+  10%, 20% {
+    transform: scale(0.9) rotate(-3deg);
+  }
+
+  /* line 29, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_tada.scss */
+  30%, 50%, 70%, 90% {
+    transform: scale(1.1) rotate(3deg);
+  }
+
+  /* line 30, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_tada.scss */
+  40%, 60%, 80% {
+    transform: scale(1.1) rotate(-3deg);
+  }
+
+  /* line 31, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_tada.scss */
+  100% {
+    transform: scale(1) rotate(0);
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.swing {
+  -webkit-animation-name: swing;
+  -moz-animation-name: swing;
+  -o-animation-name: swing;
+  animation-name: swing;
+}
+
+@-webkit-keyframes swing {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_swing.scss */
+  20%, 40%, 60%, 80%, 100% {
+    -webkit-transform-origin: top center;
+  }
+
+  /* line 7, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_swing.scss */
+  20% {
+    -webkit-transform: rotate(15deg);
+  }
+
+  /* line 8, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_swing.scss */
+  40% {
+    -webkit-transform: rotate(-10deg);
+  }
+
+  /* line 9, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_swing.scss */
+  60% {
+    -webkit-transform: rotate(5deg);
+  }
+
+  /* line 10, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_swing.scss */
+  80% {
+    -webkit-transform: rotate(-5deg);
+  }
+
+  /* line 11, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_swing.scss */
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+@-moz-keyframes swing {
+  /* line 14, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_swing.scss */
+  20%, 40%, 60%, 80%, 100% {
+    -moz-transform-origin: top center;
+  }
+
+  /* line 15, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_swing.scss */
+  20% {
+    -moz-transform: rotate(15deg);
+  }
+
+  /* line 16, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_swing.scss */
+  40% {
+    -moz-transform: rotate(-10deg);
+  }
+
+  /* line 17, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_swing.scss */
+  60% {
+    -moz-transform: rotate(5deg);
+  }
+
+  /* line 18, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_swing.scss */
+  80% {
+    -moz-transform: rotate(-5deg);
+  }
+
+  /* line 19, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_swing.scss */
+  100% {
+    -moz-transform: rotate(0deg);
+  }
+}
+
+@-opera-keyframes swing {
+  /* line 22, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_swing.scss */
+  20%, 40%, 60%, 80%, 100% {
+    -o-transform-origin: top center;
+  }
+
+  /* line 23, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_swing.scss */
+  20% {
+    -o-transform: rotate(15deg);
+  }
+
+  /* line 24, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_swing.scss */
+  40% {
+    -o-transform: rotate(-10deg);
+  }
+
+  /* line 25, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_swing.scss */
+  60% {
+    -o-transform: rotate(5deg);
+  }
+
+  /* line 26, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_swing.scss */
+  80% {
+    -o-transform: rotate(-5deg);
+  }
+
+  /* line 27, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_swing.scss */
+  100% {
+    -o-transform: rotate(0deg);
+  }
+}
+
+@keyframes swing {
+  /* line 30, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_swing.scss */
+  20%, 40%, 60%, 80%, 100% {
+    transform-origin: top center;
+  }
+
+  /* line 31, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_swing.scss */
+  20% {
+    transform: rotate(15deg);
+  }
+
+  /* line 32, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_swing.scss */
+  40% {
+    transform: rotate(-10deg);
+  }
+
+  /* line 33, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_swing.scss */
+  60% {
+    transform: rotate(5deg);
+  }
+
+  /* line 34, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_swing.scss */
+  80% {
+    transform: rotate(-5deg);
+  }
+
+  /* line 35, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_swing.scss */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.wobble {
+  -webkit-animation-name: wobble;
+  -moz-animation-name: wobble;
+  -o-animation-name: wobble;
+  animation-name: wobble;
+}
+
+@-webkit-keyframes wobble {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wobble.scss */
+  0% {
+    -webkit-transform: translateX(0%);
+  }
+
+  /* line 7, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wobble.scss */
+  15% {
+    -webkit-transform: translateX(-25%) rotate(-5deg);
+  }
+
+  /* line 8, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wobble.scss */
+  30% {
+    -webkit-transform: translateX(20%) rotate(3deg);
+  }
+
+  /* line 9, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wobble.scss */
+  45% {
+    -webkit-transform: translateX(-15%) rotate(-3deg);
+  }
+
+  /* line 10, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wobble.scss */
+  60% {
+    -webkit-transform: translateX(10%) rotate(2deg);
+  }
+
+  /* line 11, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wobble.scss */
+  75% {
+    -webkit-transform: translateX(-5%) rotate(-1deg);
+  }
+
+  /* line 12, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wobble.scss */
+  100% {
+    -webkit-transform: translateX(0%);
+  }
+}
+
+@-moz-keyframes wobble {
+  /* line 15, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wobble.scss */
+  0% {
+    -moz-transform: translateX(0%);
+  }
+
+  /* line 16, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wobble.scss */
+  15% {
+    -moz-transform: translateX(-25%) rotate(-5deg);
+  }
+
+  /* line 17, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wobble.scss */
+  30% {
+    -moz-transform: translateX(20%) rotate(3deg);
+  }
+
+  /* line 18, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wobble.scss */
+  45% {
+    -moz-transform: translateX(-15%) rotate(-3deg);
+  }
+
+  /* line 19, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wobble.scss */
+  60% {
+    -moz-transform: translateX(10%) rotate(2deg);
+  }
+
+  /* line 20, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wobble.scss */
+  75% {
+    -moz-transform: translateX(-5%) rotate(-1deg);
+  }
+
+  /* line 21, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wobble.scss */
+  100% {
+    -moz-transform: translateX(0%);
+  }
+}
+
+@-opera-keyframes wobble {
+  /* line 24, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wobble.scss */
+  0% {
+    -o-transform: translateX(0%);
+  }
+
+  /* line 25, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wobble.scss */
+  15% {
+    -o-transform: translateX(-25%) rotate(-5deg);
+  }
+
+  /* line 26, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wobble.scss */
+  30% {
+    -o-transform: translateX(20%) rotate(3deg);
+  }
+
+  /* line 27, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wobble.scss */
+  45% {
+    -o-transform: translateX(-15%) rotate(-3deg);
+  }
+
+  /* line 28, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wobble.scss */
+  60% {
+    -o-transform: translateX(10%) rotate(2deg);
+  }
+
+  /* line 29, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wobble.scss */
+  75% {
+    -o-transform: translateX(-5%) rotate(-1deg);
+  }
+
+  /* line 30, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wobble.scss */
+  100% {
+    -o-transform: translateX(0%);
+  }
+}
+
+@keyframes wobble {
+  /* line 33, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wobble.scss */
+  0% {
+    transform: translateX(0%);
+  }
+
+  /* line 34, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wobble.scss */
+  15% {
+    transform: translateX(-25%) rotate(-5deg);
+  }
+
+  /* line 35, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wobble.scss */
+  30% {
+    transform: translateX(20%) rotate(3deg);
+  }
+
+  /* line 36, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wobble.scss */
+  45% {
+    transform: translateX(-15%) rotate(-3deg);
+  }
+
+  /* line 37, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wobble.scss */
+  60% {
+    transform: translateX(10%) rotate(2deg);
+  }
+
+  /* line 38, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wobble.scss */
+  75% {
+    transform: translateX(-5%) rotate(-1deg);
+  }
+
+  /* line 39, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wobble.scss */
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.pulse {
+  -webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  -o-animation-name: pulse;
+  animation-name: pulse;
+}
+
+@-webkit-keyframes pulse {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_pulse.scss */
+  0% {
+    -webkit-transform: scale(1);
+  }
+
+  /* line 7, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_pulse.scss */
+  50% {
+    -webkit-transform: scale(1.1);
+  }
+
+  /* line 8, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_pulse.scss */
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@-moz-keyframes pulse {
+  /* line 11, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_pulse.scss */
+  0% {
+    -moz-transform: scale(1);
+  }
+
+  /* line 12, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_pulse.scss */
+  50% {
+    -moz-transform: scale(1.1);
+  }
+
+  /* line 13, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_pulse.scss */
+  100% {
+    -moz-transform: scale(1);
+  }
+}
+
+@-opera-keyframes pulse {
+  /* line 16, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_pulse.scss */
+  0% {
+    -o-transform: scale(1);
+  }
+
+  /* line 17, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_pulse.scss */
+  50% {
+    -o-transform: scale(1.1);
+  }
+
+  /* line 18, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_pulse.scss */
+  100% {
+    -o-transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  /* line 21, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_pulse.scss */
+  0% {
+    transform: scale(1);
+  }
+
+  /* line 22, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_pulse.scss */
+  50% {
+    transform: scale(1.1);
+  }
+
+  /* line 23, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_pulse.scss */
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.hinge {
+  -webkit-animation-name: hinge;
+  -moz-animation-name: hinge;
+  -o-animation-name: hinge;
+  animation-name: hinge;
+}
+
+@-webkit-keyframes hinge {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_hinge.scss */
+  0% {
+    -webkit-transform: rotate(0);
+    -webkit-transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+  }
+
+  /* line 11, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_hinge.scss */
+  20%, 60% {
+    -webkit-transform: rotate(80deg);
+    -webkit-transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+  }
+
+  /* line 16, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_hinge.scss */
+  40% {
+    -webkit-transform: rotate(60deg);
+    -webkit-transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+  }
+
+  /* line 21, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_hinge.scss */
+  80% {
+    -webkit-transform: rotate(60deg) translateY(0);
+    opacity: 1;
+    -webkit-transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+  }
+
+  /* line 27, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_hinge.scss */
+  100% {
+    -webkit-transform: translateY(700px);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes hinge {
+  /* line 33, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_hinge.scss */
+  0% {
+    -moz-transform: rotate(0);
+    -moz-transform-origin: top left;
+    -moz-animation-timing-function: ease-in-out;
+  }
+
+  /* line 38, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_hinge.scss */
+  20%, 60% {
+    -moz-transform: rotate(80deg);
+    -moz-transform-origin: top left;
+    -moz-animation-timing-function: ease-in-out;
+  }
+
+  /* line 43, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_hinge.scss */
+  40% {
+    -moz-transform: rotate(60deg);
+    -moz-transform-origin: top left;
+    -moz-animation-timing-function: ease-in-out;
+  }
+
+  /* line 48, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_hinge.scss */
+  80% {
+    -moz-transform: rotate(60deg) translateY(0);
+    opacity: 1;
+    -moz-transform-origin: top left;
+    -moz-animation-timing-function: ease-in-out;
+  }
+
+  /* line 54, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_hinge.scss */
+  100% {
+    -moz-transform: translateY(700px);
+    opacity: 0;
+  }
+}
+
+@-opera-keyframes hinge {
+  /* line 60, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_hinge.scss */
+  0% {
+    -o-transform: rotate(0);
+    -o-transform-origin: top left;
+    -o-animation-timing-function: ease-in-out;
+  }
+
+  /* line 65, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_hinge.scss */
+  20%, 60% {
+    -o-transform: rotate(80deg);
+    -o-transform-origin: top left;
+    -o-animation-timing-function: ease-in-out;
+  }
+
+  /* line 70, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_hinge.scss */
+  40% {
+    -o-transform: rotate(60deg);
+    -o-transform-origin: top left;
+    -o-animation-timing-function: ease-in-out;
+  }
+
+  /* line 75, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_hinge.scss */
+  80% {
+    -o-transform: rotate(60deg) translateY(0);
+    opacity: 1;
+    -o-transform-origin: top left;
+    -o-animation-timing-function: ease-in-out;
+  }
+
+  /* line 81, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_hinge.scss */
+  100% {
+    -o-transform: translateY(700px);
+    opacity: 0;
+  }
+}
+
+@keyframes hinge {
+  /* line 87, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_hinge.scss */
+  0% {
+    transform: rotate(0);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+
+  /* line 92, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_hinge.scss */
+  20%, 60% {
+    transform: rotate(80deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+
+  /* line 97, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_hinge.scss */
+  40% {
+    transform: rotate(60deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+
+  /* line 102, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_hinge.scss */
+  80% {
+    transform: rotate(60deg) translateY(0);
+    opacity: 1;
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+
+  /* line 108, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_hinge.scss */
+  100% {
+    transform: translateY(700px);
+    opacity: 0;
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.lightSpeedIn {
+  -webkit-animation-name: lightSpeedIn;
+  -moz-animation-name: lightSpeedIn;
+  -o-animation-name: lightSpeedIn;
+  animation-name: lightSpeedIn;
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  -o-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-timing-function: ease-out;
+  -o-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes lightSpeedIn {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_lightSpeedIn.scss */
+  0% {
+    -webkit-transform: translateX(100%) skewX(-30deg);
+    opacity: 0;
+  }
+
+  /* line 7, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_lightSpeedIn.scss */
+  60% {
+    -webkit-transform: translateX(-20%) skewX(30deg);
+    opacity: 1;
+  }
+
+  /* line 8, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_lightSpeedIn.scss */
+  80% {
+    -webkit-transform: translateX(0%) skewX(-15deg);
+    opacity: 1;
+  }
+
+  /* line 9, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_lightSpeedIn.scss */
+  100% {
+    -webkit-transform: translateX(0%) skewX(0deg);
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes lightSpeedIn {
+  /* line 12, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_lightSpeedIn.scss */
+  0% {
+    -moz-transform: translateX(100%) skewX(-30deg);
+    opacity: 0;
+  }
+
+  /* line 13, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_lightSpeedIn.scss */
+  60% {
+    -moz-transform: translateX(-20%) skewX(30deg);
+    opacity: 1;
+  }
+
+  /* line 14, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_lightSpeedIn.scss */
+  80% {
+    -moz-transform: translateX(0%) skewX(-15deg);
+    opacity: 1;
+  }
+
+  /* line 15, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_lightSpeedIn.scss */
+  100% {
+    -moz-transform: translateX(0%) skewX(0deg);
+    opacity: 1;
+  }
+}
+
+@-opera-keyframes lightSpeedIn {
+  /* line 18, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_lightSpeedIn.scss */
+  0% {
+    -o-transform: translateX(100%) skewX(-30deg);
+    opacity: 0;
+  }
+
+  /* line 19, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_lightSpeedIn.scss */
+  60% {
+    -o-transform: translateX(-20%) skewX(30deg);
+    opacity: 1;
+  }
+
+  /* line 20, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_lightSpeedIn.scss */
+  80% {
+    -o-transform: translateX(0%) skewX(-15deg);
+    opacity: 1;
+  }
+
+  /* line 21, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_lightSpeedIn.scss */
+  100% {
+    -o-transform: translateX(0%) skewX(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes lightSpeedIn {
+  /* line 24, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_lightSpeedIn.scss */
+  0% {
+    transform: translateX(100%) skewX(-30deg);
+    opacity: 0;
+  }
+
+  /* line 25, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_lightSpeedIn.scss */
+  60% {
+    transform: translateX(-20%) skewX(30deg);
+    opacity: 1;
+  }
+
+  /* line 26, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_lightSpeedIn.scss */
+  80% {
+    transform: translateX(0%) skewX(-15deg);
+    opacity: 1;
+  }
+
+  /* line 27, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_lightSpeedIn.scss */
+  100% {
+    transform: translateX(0%) skewX(0deg);
+    opacity: 1;
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.lightSpeedOut {
+  -webkit-animation-name: lightSpeedOut;
+  -moz-animation-name: lightSpeedOut;
+  -o-animation-name: lightSpeedOut;
+  animation-name: lightSpeedOut;
+  -webkit-animation-duration: 0.25s;
+  -moz-animation-duration: 0.25s;
+  -o-animation-duration: 0.25s;
+  animation-duration: 0.25s;
+  -webkit-animation-timing-function: ease-in;
+  -moz-animation-timing-function: ease-in;
+  -o-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes lightSpeedOut {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_lightSpeedOut.scss */
+  0% {
+    -webkit-transform: translateX(0%) skewX(0deg);
+    opacity: 1;
+  }
+
+  /* line 7, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_lightSpeedOut.scss */
+  100% {
+    -webkit-transform: translateX(100%) skewX(-30deg);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes lightSpeedOut {
+  /* line 10, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_lightSpeedOut.scss */
+  0% {
+    -moz-transform: translateX(0%) skewX(0deg);
+    opacity: 1;
+  }
+
+  /* line 11, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_lightSpeedOut.scss */
+  100% {
+    -moz-transform: translateX(100%) skewX(-30deg);
+    opacity: 0;
+  }
+}
+
+@-opera-keyframes lightSpeedOut {
+  /* line 14, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_lightSpeedOut.scss */
+  0% {
+    -o-transform: translateX(0%) skewX(0deg);
+    opacity: 1;
+  }
+
+  /* line 15, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_lightSpeedOut.scss */
+  100% {
+    -o-transform: translateX(100%) skewX(-30deg);
+    opacity: 0;
+  }
+}
+
+@keyframes lightSpeedOut {
+  /* line 18, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_lightSpeedOut.scss */
+  0% {
+    transform: translateX(0%) skewX(0deg);
+    opacity: 1;
+  }
+
+  /* line 19, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_lightSpeedOut.scss */
+  100% {
+    transform: translateX(100%) skewX(-30deg);
+    opacity: 0;
+  }
+}
+
+/* line 167, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/_main.scss */
+.wiggle {
+  -webkit-animation-name: wiggle;
+  -moz-animation-name: wiggle;
+  -o-animation-name: wiggle;
+  animation-name: wiggle;
+  -webkit-animation-duration: 0.75s;
+  -moz-animation-duration: 0.75s;
+  -o-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-timing-function: ease-in;
+  -moz-animation-timing-function: ease-in;
+  -o-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes wiggle {
+  /* line 6, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  0% {
+    -webkit-transform: skewX(9deg);
+  }
+
+  /* line 7, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  10% {
+    -webkit-transform: skewX(-8deg);
+  }
+
+  /* line 8, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  20% {
+    -webkit-transform: skewX(7deg);
+  }
+
+  /* line 9, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  30% {
+    -webkit-transform: skewX(-6deg);
+  }
+
+  /* line 10, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  40% {
+    -webkit-transform: skewX(5deg);
+  }
+
+  /* line 11, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  50% {
+    -webkit-transform: skewX(-4deg);
+  }
+
+  /* line 12, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  60% {
+    -webkit-transform: skewX(3deg);
+  }
+
+  /* line 13, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  70% {
+    -webkit-transform: skewX(-2deg);
+  }
+
+  /* line 14, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  80% {
+    -webkit-transform: skewX(1deg);
+  }
+
+  /* line 15, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  90% {
+    -webkit-transform: skewX(0deg);
+  }
+
+  /* line 16, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  100% {
+    -webkit-transform: skewX(0deg);
+  }
+}
+
+@-moz-keyframes wiggle {
+  /* line 19, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  0% {
+    -moz-transform: skewX(9deg);
+  }
+
+  /* line 20, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  10% {
+    -moz-transform: skewX(-8deg);
+  }
+
+  /* line 21, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  20% {
+    -moz-transform: skewX(7deg);
+  }
+
+  /* line 22, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  30% {
+    -moz-transform: skewX(-6deg);
+  }
+
+  /* line 23, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  40% {
+    -moz-transform: skewX(5deg);
+  }
+
+  /* line 24, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  50% {
+    -moz-transform: skewX(-4deg);
+  }
+
+  /* line 25, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  60% {
+    -moz-transform: skewX(3deg);
+  }
+
+  /* line 26, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  70% {
+    -moz-transform: skewX(-2deg);
+  }
+
+  /* line 27, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  80% {
+    -moz-transform: skewX(1deg);
+  }
+
+  /* line 28, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  90% {
+    -moz-transform: skewX(0deg);
+  }
+
+  /* line 29, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  100% {
+    -moz-transform: skewX(0deg);
+  }
+}
+
+@-opera-keyframes wiggle {
+  /* line 32, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  0% {
+    -o-transform: skewX(9deg);
+  }
+
+  /* line 33, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  10% {
+    -o-transform: skewX(-8deg);
+  }
+
+  /* line 34, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  20% {
+    -o-transform: skewX(7deg);
+  }
+
+  /* line 35, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  30% {
+    -o-transform: skewX(-6deg);
+  }
+
+  /* line 36, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  40% {
+    -o-transform: skewX(5deg);
+  }
+
+  /* line 37, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  50% {
+    -o-transform: skewX(-4deg);
+  }
+
+  /* line 38, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  60% {
+    -o-transform: skewX(3deg);
+  }
+
+  /* line 39, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  70% {
+    -o-transform: skewX(-2deg);
+  }
+
+  /* line 40, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  80% {
+    -o-transform: skewX(1deg);
+  }
+
+  /* line 41, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  90% {
+    -o-transform: skewX(0deg);
+  }
+
+  /* line 42, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  100% {
+    -o-transform: skewX(0deg);
+  }
+}
+
+@keyframes wiggle {
+  /* line 45, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  0% {
+    transform: skewX(9deg);
+  }
+
+  /* line 46, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  10% {
+    transform: skewX(-8deg);
+  }
+
+  /* line 47, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  20% {
+    transform: skewX(7deg);
+  }
+
+  /* line 48, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  30% {
+    transform: skewX(-6deg);
+  }
+
+  /* line 49, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  40% {
+    transform: skewX(5deg);
+  }
+
+  /* line 50, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  50% {
+    transform: skewX(-4deg);
+  }
+
+  /* line 51, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  60% {
+    transform: skewX(3deg);
+  }
+
+  /* line 52, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  70% {
+    transform: skewX(-2deg);
+  }
+
+  /* line 53, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  80% {
+    transform: skewX(1deg);
+  }
+
+  /* line 54, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  90% {
+    transform: skewX(0deg);
+  }
+
+  /* line 55, ../../../../Library/Ruby/Gems/1.8/gems/companimation-0.2/stylesheets/companimation/preset/special/_wiggle.scss */
+  100% {
+    transform: skewX(0deg);
+  }
+}
+
+/* line 5, css/sass/_helperclasses.sass */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+}
+/* line 11, css/sass/_helperclasses.sass */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+}
+
+/* line 17, css/sass/_helperclasses.sass */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* line 21, css/sass/_helperclasses.sass */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/* line 30, css/sass/_helperclasses.sass */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* line 39, css/sass/_helperclasses.sass */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 42, css/sass/_helperclasses.sass */
+.clearfix {
+  zoom: 1;
+}
+/* line 44, css/sass/_helperclasses.sass */
+.clearfix:before, .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+/* line 50, css/sass/_helperclasses.sass */
+.clearfix:after {
+  clear: both;
+}
+
+@media print {
+  /* line 2, css/sass/_print.sass */
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 8, css/sass/_print.sass */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 12, css/sass/_print.sass */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 15, css/sass/_print.sass */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* line 18, css/sass/_print.sass */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 23, css/sass/_print.sass */
+  pre,
+  blockquote {
+    border: 1px solid #999999;
+    page-break-inside: avoid;
+  }
+
+  /* line 28, css/sass/_print.sass */
+  thead {
+    display: table-header-group;
+  }
+
+  /* line 31, css/sass/_print.sass */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 35, css/sass/_print.sass */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 41, css/sass/_print.sass */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 47, css/sass/_print.sass */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+/* line 32, css/sass/_global.sass */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 35, css/sass/_global.sass */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222222;
+}
+
+/* line 42, css/sass/_global.sass */
+html {
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+/* line 45, css/sass/_global.sass */
+body {
+  font-size: 16px;
+  line-height: 1.4;
+}
+@media (min-width: 767px) {
+  /* line 45, css/sass/_global.sass */
+  body {
+    font-size: 1.125em;
+  }
+}
+
+/* line 55, css/sass/_global.sass */
+::-moz-selection {
+  background: rgba(0, 0, 0, 0.3);
+  text-shadow: none;
+}
+
+/* line 59, css/sass/_global.sass */
+::selection {
+  background: rgba(0, 0, 0, 0.3);
+  text-shadow: none;
+}
+
+/* line 63, css/sass/_global.sass */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 71, css/sass/_global.sass */
+img {
+  vertical-align: middle;
+}
+
+/* line 74, css/sass/_global.sass */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 79, css/sass/_global.sass */
+textarea {
+  resize: vertical;
+}
+
+/* line 82, css/sass/_global.sass */
+.chromeframe {
+  margin: 0;
+  background: coral;
+  color: white;
+  padding: 1em 0;
+  text-align: center;
+  font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
