@@ -3,6 +3,7 @@
 // CUSTOM IMPORTS
 @import "fonts"
 @import "animation"
+@import "layout"
 // BOILERPLATE IMPORTS
 @import "helperclasses"
 @import "print"
@@ -93,6 +94,63 @@ textarea
 //////////////////////////////
 // Custom Styles
 //////////////////////////////
+
+
+
+// span-columns(<$columns> [<omega> , <$context>, <$padding>, <$from>, <$style>])
+// aside,
+// article
+//     min-height: 600px
+// aside
+//     background: coral
+// article
+//     background: brown
+
+
+$green: #abffd6
+$ltgrey: #e6e6e6
+$dkgrey: #5b5558
+*
+    +box-sizing(border-box)
+h5
+    margin: 0
+    font-size: 18px
+ul
+    list-style: none
+    max-width: 288px
+li
+    margin-bottom: 4px
+a
+    min-height: 42px
+    background: #e6e6e6
+    padding: 10px
+    display: block
+    color: $dkgrey
+    text-decoration: none
+    +transition(2s ease-in all)
+    &:last-child
+        margin-bottom: 0
+p
+    margin: 0
+    overflow: hidden
+    max-height: 0
+    font-size: 13px
+    +transition(1s ease-in all)
+    // +translate3d(translate3d(0, 0, 0) scale(0.001))
+.flipInX
+    a
+        //height: auto
+        min-height: 42px
+    a,
+    p
+        background: $green
+        // +translate3d(translate3d(0, 0, 0) scale(1))
+        // +transition(all 0.2s cubic-bezier(0.23, 1, 0.32, 1) 0.2s)
+    p
+        max-height: 100%
+
+    
+    
 
 
 

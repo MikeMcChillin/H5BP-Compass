@@ -57,7 +57,7 @@ Each new page on the website should get its own `_newpage.sass`, just be sure to
 ##### [Sweet SASS function to convert PX to EM](http://www.pjmccormick.com/sweet-sass-function-convert-px-em)
 
     font-size: em(48px)
-    width: em(300px)
+    width: rem(300px)
 
 
 ## Common Mixins / Compass
@@ -133,4 +133,5 @@ The most efficient way to animate an element is to add a class, and define the s
 * [resize.coffee](https://gist.github.com/MikeMcChillin/5333787) - Set up $(window).resize()
 * [widows.coffee](https://gist.github.com/MikeMcChillin/5338560) - Prevent widows on headlines
 * [arrow-key.coffee](https://gist.github.com/MikeMcChillin/5342967) - Arrow key functions
+* [placeholder.coffee](https://gist.github.com/MikeMcChillin/5438110) - HTML5 Placeholder polyfill
 

@@ -14,6 +14,7 @@
 // Media Query Variables
 $phone: 480px
 $tablet-portrait: 767px
+$tablet-landscape: ($tablet-portrait + 1)
 $desktop: 1200px
 
 @mixin respond-to($media)
@@ -27,7 +28,7 @@ $desktop: 1200px
             @content
     // Tablet Landscape - Desktop
     @if $media == tablet-landscape
-        @media (min-width: $tablet-portrait + 1)
+        @media (min-width: $tablet-landscape)
             @content
     // Large Desktop
     @if $media == desktop
