@@ -1,7 +1,4 @@
-# http://mikefowler.me/companimation/
-#require "companimation"
-require "/Library/Ruby/Gems/1.8/gems/companimation-0.2/lib/companimation.rb"
-require "/Library/Ruby/Gems/1.8/gems/susy-1.0.8/lib/susy.rb"
+require "/Library/Ruby/Gems/1.8/gems/animation-0.1.alpha.3/lib/animation.rb"
 
 http_path = "/"
 css_dir = "/"
