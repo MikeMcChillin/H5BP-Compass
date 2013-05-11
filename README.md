@@ -126,6 +126,7 @@ The most efficient way to animate an element is to add a class, and define the s
 
 ## Common CoffeeScript Snippets
 ##### Be sure to check out these commonly used coffeescript gists.
+* [scrollMonitor](https://github.com/sakabako/scrollMonitor) - Amazingly efficient scroll function helper
 * [scrollio](https://gist.github.com/MikeMcChillin/5333739) - In page navigation
 * [campaign-monitor-ajax-subscribe.coffee](https://gist.github.com/MikeMcChillin/5333820) - Ajax subscribe to a Campaign Monitor email address.
 * [scroll-events.coffee](https://gist.github.com/MikeMcChillin/5333753) - Set up scroll events using $(window).scroll and scrollTop()
