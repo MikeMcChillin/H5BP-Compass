@@ -101,7 +101,7 @@ In case you missed it above, you need to install animation (a compass addon)
 * [Animation Compass Plugin](https://github.com/ericam/compass-animation) - All the tools you need to write and apply css3 animations in compass
 
 
-The most efficient way to animate an element is to add a class, and define the styles within sass. Then extend the class that you're adding on the element in sass: `@extend %fadeIn`
+The most efficient way to animate an element is to add a class, and define the styles within sass.
 * [Use translate-X/Y instead of top/left](http://paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/)
 * [Animate.css](http://daneden.me/animate/): animation demos
 
