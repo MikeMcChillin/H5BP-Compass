@@ -41,7 +41,11 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
-/* line 61, css/sass/_normalize.sass */
+/* line 57, css/sass/_normalize.sass */
+html,
+button,
+input,
+select,
 textarea {
   font-family: sans-serif;
 }
@@ -344,6 +348,22 @@ table {
 /* line 39, css/sass/_helperclasses.sass */
 .invisible {
   visibility: hidden;
+}
+
+/* line 42, css/sass/_helperclasses.sass */
+.clearfix {
+  zoom: 1;
+}
+/* line 44, css/sass/_helperclasses.sass */
+.clearfix:before, .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+/* line 50, css/sass/_helperclasses.sass */
+.clearfix:after {
+  clear: both;
 }
 
 @media print {

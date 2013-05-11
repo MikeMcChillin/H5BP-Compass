@@ -12,11 +12,11 @@ The rest was added & customized by [@MikeMcChillin](https://twitter.com/mikemcch
 
 ## Installation
 **Required:** 
-You must update to latest version of Sass (3.2), then Compass(0.13). Also install companimation for some easy compass animations.
+You must update to latest version of Sass (3.2), then Compass(0.13). Also install animation for some easy compassy animation mixins.
 
     sudo gem install sass --pre
     sudo gem install compass --pre
-    sudo gem install companimation
+    gem install animation --pre
 
 
 ## File Structure
@@ -94,13 +94,12 @@ Each new page on the website should get its own `_newpage.sass`, just be sure to
             float: left
 
 ## Animation
-In case you missed it above, you need to install companimation (a compass addon)
+In case you missed it above, you need to install animation (a compass addon)
 
-    sudo gem install companimation    
+    gem install animation --pre    
 
-* [Companimation](http://mikefowler.me/companimation/) - a basic set of mixins to help you create your own animations super quick, and a collection of presets (both original and sourced from Dan Eden's Animate.css) to get you up and running fast
+* [Animation Compass Plugin](https://github.com/ericam/compass-animation) - All the tools you need to write and apply css3 animations in compass
 
-Change the default settings in `_animations.sass`
 
 The most efficient way to animate an element is to add a class, and define the styles within sass. Then extend the class that you're adding on the element in sass: `@extend %fadeIn`
 * [Use translate-X/Y instead of top/left](http://paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/)
