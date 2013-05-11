@@ -108,7 +108,8 @@ The most efficient way to animate an element is to add a class, and define the s
 
 ## Fonts
 
-##### Place your font files in the `/fonts` folder, update `$font-name` in `_fonts.sass`
+Place your font files in the `/fonts` folder, update `$font-name` in `_fonts.sass`
+Define the path of the fonts in `config.rb`
 
 ## Mediaqueries
 
