@@ -458,49 +458,43 @@ textarea {
 }
 
 /* line 44, css/sass/_global.sass */
-html {
-  -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-}
-
-/* line 47, css/sass/_global.sass */
 body {
-  font-family: "courier", sans-serif;
+  font: normal 100%/1.5 Georgia, "Times New Roman", serif;
   font-size: 16px;
-  line-height: 1.4;
 }
 @media (min-width: 767px) {
-  /* line 47, css/sass/_global.sass */
+  /* line 44, css/sass/_global.sass */
   body {
-    font-size: em(18px);
+    font-size: 112.5%;
+    line-height: 1.6;
   }
 }
 @media (min-width: 768px) {
-  /* line 47, css/sass/_global.sass */
+  /* line 44, css/sass/_global.sass */
   body {
-    font-size: em(22px);
+    font-size: 125%;
   }
 }
 @media (min-width: 1200px) {
-  /* line 47, css/sass/_global.sass */
+  /* line 44, css/sass/_global.sass */
   body {
-    font-size: em(24px);
+    font-size: 137.5%;
   }
 }
 
-/* line 58, css/sass/_global.sass */
+/* line 55, css/sass/_global.sass */
 ::-moz-selection {
   background: rgba(0, 0, 0, 0.3);
   text-shadow: none;
 }
 
-/* line 62, css/sass/_global.sass */
+/* line 59, css/sass/_global.sass */
 ::selection {
   background: rgba(0, 0, 0, 0.3);
   text-shadow: none;
 }
 
-/* line 66, css/sass/_global.sass */
+/* line 63, css/sass/_global.sass */
 hr {
   display: block;
   height: 1px;
@@ -510,24 +504,24 @@ hr {
   padding: 0;
 }
 
-/* line 74, css/sass/_global.sass */
+/* line 71, css/sass/_global.sass */
 img {
   vertical-align: middle;
 }
 
-/* line 77, css/sass/_global.sass */
+/* line 74, css/sass/_global.sass */
 fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
 
-/* line 82, css/sass/_global.sass */
+/* line 79, css/sass/_global.sass */
 textarea {
   resize: vertical;
 }
 
-/* line 85, css/sass/_global.sass */
+/* line 82, css/sass/_global.sass */
 .chromeframe {
   margin: 0;
   background: coral;

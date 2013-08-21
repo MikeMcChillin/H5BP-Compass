@@ -38,7 +38,7 @@ Each new page on the website should get its own `_newpage.sass`, just be sure to
 
 #### [Webkit Animation Flicker](http://bit.ly/NEdoDq)
 
-    -webkit-backface-visibility: hidden
+    +backface-visibility(hidden)
 
 ##### [Optimize Legibility](http://www.usabilitypost.com/2012/11/06/optimize-legibility/)
 
@@ -70,7 +70,7 @@ Each new page on the website should get its own `_newpage.sass`, just be sure to
 
 ## Helper Classes
 
-##### [.ir mixin](https://github.com/h5bp/html5-boilerplate/blob/master/doc/css.md#ir) - Replace text with an image
+##### [@extend .ir](https://github.com/h5bp/html5-boilerplate/blob/master/doc/css.md#ir) - Replace text with an image
 
     <div class="logo">This is the name of the site</div>
 
@@ -80,7 +80,7 @@ Each new page on the website should get its own `_newpage.sass`, just be sure to
         width: 100px
         @extend %ir
 
-##### [.clearfix mixin](http://stackoverflow.com/questions/7154705/sass-scss-mixin-for-clearfix-best-approach/7154716#7154716) - Extend clearfix on parent elements with floated children
+##### [@extend .clearfix](http://stackoverflow.com/questions/7154705/sass-scss-mixin-for-clearfix-best-approach/7154716#7154716) - Extend clearfix on parent elements with floated children
 
     <ul>
         <li>Floated Left</li>

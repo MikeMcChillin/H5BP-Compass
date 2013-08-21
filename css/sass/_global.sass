@@ -41,19 +41,16 @@ select,
 textarea
     color: $maintextcolor
 
-html
-    -webkit-font-smoothing: antialiased
-    font-smoothing: antialiased
 body    
-    font-family: 'courier', sans-serif
+    font: normal 100%/1.5 Georgia, "Times New Roman", serif
     font-size: 16px
-    line-height: 1.4
     @include respond-to(tablet-portrait)
-        font-size: em(18px)
+        font-size: 112.5%
+        line-height: 1.6
     @include respond-to(tablet-landscape)
-        font-size: em(22px)
+        font-size: 125%
     @include respond-to(desktop)
-        font-size: em(24px)
+        font-size: 137.5%
 
 ::-moz-selection
     background: rgba(0,0,0,.3)
