@@ -12,11 +12,10 @@ The rest was added & customized by [@MikeMcChillin](https://twitter.com/mikemcch
 
 ## Installation
 **Required:** 
-You must update to latest version of Sass (3.2), then Compass(0.13). Also install animation for some easy compassy animation mixins.
+You must update to latest version of Sass (3.3), then Compass(0.13).
 
     sudo gem install sass --pre
     sudo gem install compass --pre
-    gem install animation --pre
 
 
 ## File Structure
@@ -54,12 +53,6 @@ Each new page on the website should get its own `_newpage.sass`, just be sure to
         text-rendering: optimizeLegibility
 
 
-##### [Sweet SASS function to convert PX to EM](http://www.pjmccormick.com/sweet-sass-function-convert-px-em)
-
-    font-size: em(48px)
-    width: rem(300px)
-
-
 ## Common Mixins / Compass
 
 * `+inline-block` - [+inline-block](http://compass-style.org/reference/compass/css3/inline_block/)
@@ -94,11 +87,8 @@ Each new page on the website should get its own `_newpage.sass`, just be sure to
             float: left
 
 ## Animation
-In case you missed it above, you need to install animation (a compass addon)
-
-    gem install animation --pre    
-
-* [Animation Compass Plugin](https://github.com/ericam/compass-animation) - All the tools you need to write and apply css3 animations in compass
+Make sure you update your Codekit preferences to compile with the latest version of Compass & Sass.
+Preferences > Languages > Compass then select compass from /usr/bin/. Repeat with Sass.
 
 
 The most efficient way to animate an element is to add a class, and define the styles within sass.
