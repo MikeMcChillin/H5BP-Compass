@@ -31,9 +31,6 @@ Each new page on the website should get its own `_newpage.sass`, just be sure to
 
 ##### [Webkit Font Smoothing](http://maxvoltar.com/archive/-webkit-font-smoothing)
 
-    html
-            -webkit-font-smoothing: antialiased
-            font-smoothing: antialiased
 
 #### [Webkit Animation Flicker](http://bit.ly/NEdoDq)
 
@@ -51,6 +48,7 @@ Each new page on the website should get its own `_newpage.sass`, just be sure to
         margin: 0
         line-height: 1
         text-rendering: optimizeLegibility
+        -webkit-font-smoothing: antialiased
 
 
 ## Common Mixins / Compass
