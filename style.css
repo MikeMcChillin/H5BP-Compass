@@ -462,20 +462,20 @@ body {
   font: normal 100%/1.5 Georgia, "Times New Roman", serif;
   font-size: 16px;
 }
-@media (min-width: 767px) {
+@media (min-width: 37.5em) {
   /* line 44, css/sass/_global.sass */
   body {
     font-size: 112.5%;
     line-height: 1.6;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 48em) {
   /* line 44, css/sass/_global.sass */
   body {
     font-size: 125%;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 60em) {
   /* line 44, css/sass/_global.sass */
   body {
     font-size: 137.5%;
