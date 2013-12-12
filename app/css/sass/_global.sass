@@ -1,0 +1,103 @@
+@import normalize
+// CUSTOM IMPORTS
+@import fonts
+@import animations
+// BOILERPLATE IMPORTS
+@import helperclasses
+@import print
+
+
+//////////////////////////////
+// Variables
+//////////////////////////////
+// Main Color Palette
+
+// Accent Colors
+$white: #fff
+$maintextcolor: #222
+
+
+
+//////////////////////////////
+// Mixins
+//////////////////////////////
+
+
+    
+
+//////////////////////////////
+// Global Styles
+//////////////////////////////
+*,
+*:after,
+*:before
+    box-sizing: border-box
+
+html,
+button,
+input,
+select,
+textarea
+    color: $maintextcolor
+
+body    
+    font: normal 100%/1.5 Georgia, "Times New Roman", serif
+    font-size: 16px
+    +respond-to(tablet-portrait)
+        font-size: 112.5%
+        line-height: 1.6
+    +respond-to(tablet-landscape)
+        font-size: 125%
+    +respond-to(desktop)
+        font-size: 137.5%
+
+::-moz-selection
+    background: rgba(0,0,0,.3)
+    text-shadow: none
+
+::selection 
+    background: rgba(0,0,0,.3)
+    text-shadow: none
+
+hr 
+    display: block
+    height: 1px
+    border: 0
+    border-top: 1px solid #ccc
+    margin: 1em 0
+    padding: 0
+
+img 
+    vertical-align: middle
+
+fieldset 
+    border: 0
+    margin: 0
+    padding: 0
+
+textarea
+    resize: vertical
+
+.chromeframe
+    margin: 0
+    background: black
+    color: $white
+    padding: 1em 0
+    text-align: center
+    font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+
+
+
+
+//////////////////////////////
+// Custom Styles
+//////////////////////////////
+
+.table
+    transition: color 0.3s ease
+    background: pink
+    
+
+
+
+
