@@ -29,12 +29,25 @@ module.exports = function(grunt) {
 				}],
 			},
 		},
+		// autoprefixer: {
+		// 	dist: {
+		// 		files: {
+		// 			'app/css/style.css': 'app/css/style.css',
+		// 			'app/css/oldie.css': 'app/css/oldie.css',
+		// 		},
+		// 	},
+		// },
+
 		autoprefixer: {
-			dist: {
-				files: {
-					'app/css/style.css': 'app/css/style.css',
-					'app/css/oldie.css': 'app/css/oldie.css',
-				},
+			// options: {
+			// 	browsers: ['last 2 versions', 'ie 9']
+			// }
+			// prefix all specified files and save them separately
+			multiple_files: {
+				expand: true,
+				flatten: true,
+				src: ['app/css/*.css'], // -> src/css/file1.css, src/css/file2.css
+				dest: 'app/css', // -> dest/css/file1.css, dest/css/file2.css
 			},
 		},
 		coffee: {
@@ -110,21 +123,9 @@ module.exports = function(grunt) {
 					spawn: false,
 				},
 			},
-			js: {
-				files: ['app/js/*.js', 'app/js/vendors/*.js'],
-				options: {
-					spawn: false,
-				},
-			},
 			sass: {
 				files: ['app/css/sass/*.sass'],
-				tasks: ['sass'],
-				options: {
-					spawn: false,
-				},
-			},
-			css: {
-				files: ['app/css/*.css'],
+				tasks: ['sass', 'autoprefixer'],
 				options: {
 					spawn: false,
 				},
@@ -145,6 +146,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	// 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-	grunt.registerTask('default', ['sass', 'autoprefixer', 'coffee', 'concat', 'uglify', 'imagemin', 'svgmin', 'connect', 'watch']); // 'connect'
+	grunt.registerTask('default', ['sass', 'autoprefixer', 'coffee', 'concat', 'uglify', 'imagemin', 'svgmin', 'connect', 'watch']);
 
 };
